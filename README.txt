@@ -1,1 +1,0 @@
-# KokiSatsukawa.github.io
