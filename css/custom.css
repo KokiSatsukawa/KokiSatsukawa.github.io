@@ -34,6 +34,37 @@ p { line-height: 180%}
     line-height: 1.7;
 }
 
+.home-title {
+    font-family: "Times New Roman", Times, serif;
+    font-style: normal;
+}
+
+.home-subtitle {
+    font-size: 17px;
+    margin-top: 6px;
+}
+
+.home-intro {
+    font-size: 17px;
+}
+
+.home-links {
+    font-size: 17px;
+}
+
+
+
+.cv-item {
+    font-size: 16px;
+}
+
+.detail-text {
+    font-size: 14px;
+}
+
+.section-title {
+    font-size: 20px;
+}
 
 
 .wrapper {
@@ -76,4 +107,3 @@ p { line-height: 180%}
     #banner span {
         padding: 1em 0em;
     }
-
