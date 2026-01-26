@@ -66,6 +66,27 @@ p { line-height: 180%}
     font-size: 20px;
 }
 
+.cv-photo {
+    float: right;
+    width: 260px;
+    max-width: 40%;
+    max-height: 320px;
+    margin: 0 0 15px 20px;
+    height: auto;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .cv-photo {
+        float: none;
+        display: block;
+        width: 60%;
+        max-width: 260px;
+        max-height: 320px;
+        margin: 0 auto 15px;
+    }
+}
+
 
 .wrapper {
     padding: 2em 0em 4em 0em;
