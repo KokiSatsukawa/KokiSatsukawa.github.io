@@ -136,20 +136,28 @@
             function renderItem(item) {
                 const year = item.year ? ` (${item.year})` : "";
                 return `
-                    <article class="publication-card">
+                    <li class="publication-item">
                         <div class="publication-title"><strong>${renderTitle(item)}</strong></div>
                         <div class="publication-authors">${escapeHtml(item.authors)}</div>
                         <div class="publication-venue">${renderVenue(item)}${year}</div>
-                    </article>
+                    </li>
                 `;
             }
 
             function renderSection(section, items) {
-                const cards = items.map(renderItem).join("");
+                const sortedItems = items.slice().sort((a, b) => {
+                    if (!a.year && !b.year) return 0;
+                    if (!a.year) return 1;
+                    if (!b.year) return -1;
+                    return Number(a.year) - Number(b.year);
+                });
+                const cards = sortedItems.map(renderItem).join("");
                 return `
                     <div class="publication-section">
                         <h3 class="section-title">${escapeHtml(section.label)}</h3>
-                        ${cards}
+                        <ol class="publication-list">
+                            ${cards}
+                        </ol>
                     </div>
                 `;
             }
