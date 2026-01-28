@@ -95,9 +95,6 @@ def format_publication(pub: dict) -> str:
     authors = latex_escape(pub.get("authors", ""))
     venue = latex_escape(pub.get("venue_pdf") or pub.get("venue", ""))
     year = pub.get("year")
-    link = pub.get("link") or pub.get("doi")
-    if link:
-        title = rf"\href{{{link}}}{{{title}}}"
     parts = [part for part in [title, authors, venue] if part]
     if year:
         parts.append(f"({year})")
@@ -119,24 +116,33 @@ def write_tex_sections(output_dir: Path, data: dict) -> None:
     sections_dir.mkdir(exist_ok=True)
 
     publications = data.get("publications", [])
-    publications_tex = "\n".join(format_publication(pub) for pub in publications)
-    publications_body = "\n".join(
-        [
-            r"\begin{enumerate}",
-            publications_tex,
-            r"\end{enumerate}",
-            "",
-        ]
-    )
+    display_sections = data.get("web", {}).get("display_subtypes", [])
+    section_blocks = []
+    for section in display_sections:
+        items = [pub for pub in publications if pub.get("subtype") == section.get("id")]
+        if not items:
+            continue
+        items_tex = "\n".join(format_publication(pub) for pub in items)
+        section_blocks.extend(
+            [
+                rf"\section{{{latex_escape(section.get('label', ''))}}}",
+                r"\begin{enumerate}[label={[\thesection.\arabic*]}]",
+                items_tex,
+                r"\end{enumerate}",
+                "",
+            ]
+        )
+    publications_body = "\n".join(section_blocks)
     (sections_dir / "publications.tex").write_text(publications_body, encoding="utf-8")
 
     grants = data.get("grants", [])
     grants_tex = "\n".join(format_grant(grant) for grant in grants)
     grants_body = "\n".join(
         [
-            r"\begin{itemize}",
+            r"\section{Grants}",
+            r"\begin{enumerate}[label={[\thesection.\arabic*]}]",
             grants_tex,
-            r"\end{itemize}",
+            r"\end{enumerate}",
             "",
         ]
     )
@@ -188,9 +194,7 @@ def write_tex_sections(output_dir: Path, data: dict) -> None:
             "",
             r"\begin{document}",
             r"\maketitle",
-            r"\section*{Publications}",
             r"\input{sections/publications}",
-            r"\section*{Grants}",
             r"\input{sections/grants}",
             r"\end{document}",
             "",
