@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-01-28T10:50:47Z",
+  "generated_at": "2026-01-28T12:10:05.036034+00:00",
   "meta": {
     "complete_pdf_url": "images/List.pdf"
   },
@@ -584,6 +584,24 @@
       "title": "Uniqueness of dynamic user equilibrium in a corridor network",
       "authors": "Koki Satsukawa",
       "venue": "Under review / revision / preparation"
+    }
+  ],
+  "grants": [
+    {
+      "id": "grant-2024-jsps-dummy",
+      "title": "Grant-in-Aid for Scientific Research (C) (dummy)",
+      "agency": "Japan Society for the Promotion of Science",
+      "role": "Principal Investigator",
+      "period": "2024–2026",
+      "amount": "JPY 3,000,000"
+    },
+    {
+      "id": "grant-2022-university-dummy",
+      "title": "University Research Seed Fund (dummy)",
+      "agency": "The University of Tokyo",
+      "role": "Co-Investigator",
+      "period": "2022–2023",
+      "amount": "JPY 1,000,000"
     }
   ]
 }

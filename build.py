@@ -26,11 +26,18 @@ def load_yaml(path: Path) -> dict:
 
 
 def build_json(data: dict) -> dict:
+    publications = data.get("publications", [])
+    web_publications = [
+        publication
+        for publication in publications
+        if publication.get("web", True)
+    ]
     return {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "meta": data.get("meta", {}),
         "web": data.get("web", {}),
-        "publications": data.get("publications", []),
+        "publications": web_publications,
+        "grants": data.get("grants", []),
     }
 
 
@@ -50,6 +57,75 @@ def write_bibtex(output_dir: Path, publications: list[dict]) -> None:
     bib_path.write_text("\n\n".join(entries) + "\n", encoding="utf-8")
 
 
+def latex_escape(text: str) -> str:
+    replacements = {
+        "\\": r"\textbackslash{}",
+        "&": r"\&",
+        "%": r"\%",
+        "$": r"\$",
+        "#": r"\#",
+        "_": r"\_",
+        "{": r"\{",
+        "}": r"\}",
+        "~": r"\textasciitilde{}",
+        "^": r"\textasciicircum{}",
+    }
+    return "".join(replacements.get(char, char) for char in text)
+
+
+def format_publication(pub: dict) -> str:
+    title = latex_escape(pub.get("title", ""))
+    authors = latex_escape(pub.get("authors", ""))
+    venue = latex_escape(pub.get("venue", ""))
+    year = pub.get("year")
+    link = pub.get("link") or pub.get("doi")
+    if link:
+        title = rf"\href{{{link}}}{{{title}}}"
+    parts = [part for part in [title, authors, venue] if part]
+    if year:
+        parts.append(f"({year})")
+    return r"\item " + " ".join(parts)
+
+
+def format_grant(grant: dict) -> str:
+    title = latex_escape(grant.get("title", ""))
+    agency = latex_escape(grant.get("agency", ""))
+    role = latex_escape(grant.get("role", ""))
+    period = latex_escape(grant.get("period", ""))
+    amount = latex_escape(grant.get("amount", ""))
+    parts = [part for part in [title, agency, role, period, amount] if part]
+    return r"\item " + r" \textbullet{} ".join(parts)
+
+
+def write_tex_sections(output_dir: Path, data: dict) -> None:
+    sections_dir = output_dir / "sections"
+    sections_dir.mkdir(exist_ok=True)
+
+    publications = data.get("publications", [])
+    publications_tex = "\n".join(format_publication(pub) for pub in publications)
+    publications_body = "\n".join(
+        [
+            r"\begin{enumerate}",
+            publications_tex,
+            r"\end{enumerate}",
+            "",
+        ]
+    )
+    (sections_dir / "publications.tex").write_text(publications_body, encoding="utf-8")
+
+    grants = data.get("grants", [])
+    grants_tex = "\n".join(format_grant(grant) for grant in grants)
+    grants_body = "\n".join(
+        [
+            r"\begin{itemize}",
+            grants_tex,
+            r"\end{itemize}",
+            "",
+        ]
+    )
+    (sections_dir / "grants.tex").write_text(grants_body, encoding="utf-8")
+
+
 def main() -> int:
     root = Path(__file__).resolve().parent
     source_path = root / "data" / "cv_source.yaml"
@@ -64,6 +140,7 @@ def main() -> int:
     payload = build_json(data)
     write_json(output_dir / "cv.json", payload)
     write_bibtex(output_dir, data.get("publications", []))
+    write_tex_sections(output_dir, data)
 
     print(f"Wrote {output_dir / 'cv.json'}")
     return 0
