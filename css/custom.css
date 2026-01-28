@@ -66,6 +66,44 @@ p { line-height: 180%}
     font-size: 20px;
 }
 
+.publications-section {
+    margin-bottom: 24px;
+}
+
+.publication-card {
+    border: 1px solid #e0e0e0;
+    border-left: 4px solid #c5c5c5;
+    border-radius: 4px;
+    padding: 12px 16px;
+    margin: 12px 0;
+    background-color: #fff;
+}
+
+.publication-title {
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.publication-authors {
+    color: #6b6b6b;
+    font-size: 13px;
+    margin-bottom: 4px;
+}
+
+.publication-venue {
+    font-size: 13px;
+    margin-bottom: 6px;
+}
+
+.publication-links a {
+    color: #337ab7;
+    text-decoration: none;
+}
+
+.publication-links a:hover {
+    text-decoration: underline;
+}
+
 .cv-photo {
     float: right;
     width: 260px;
