@@ -16,8 +16,8 @@
   }
 
   function renderEntry(entry) {
-    const card = document.createElement("div");
-    card.className = "publication-card";
+    const item = document.createElement("li");
+    item.className = "publication-item";
 
     const title = document.createElement("div");
     title.className = "publication-title";
@@ -38,12 +38,12 @@
     }
     venue.textContent = pieces.join(" • ");
 
-    card.appendChild(title);
+    item.appendChild(title);
     if (entry.authors) {
-      card.appendChild(authors);
+      item.appendChild(authors);
     }
     if (pieces.length) {
-      card.appendChild(venue);
+      item.appendChild(venue);
     }
 
     if (Array.isArray(entry.links) && entry.links.length) {
@@ -63,10 +63,10 @@
           links.appendChild(document.createTextNode(" • "));
         }
       });
-      card.appendChild(links);
+      item.appendChild(links);
     }
 
-    return card;
+    return item;
   }
 
   function renderSection(label, entries) {
@@ -86,9 +86,12 @@
       return section;
     }
 
+    const list = document.createElement("ol");
+    list.className = "LICV publications-list";
     entries.forEach((entry) => {
-      section.appendChild(renderEntry(entry));
+      list.appendChild(renderEntry(entry));
     });
+    section.appendChild(list);
     return section;
   }
 

@@ -70,13 +70,14 @@ p { line-height: 180%}
     margin-bottom: 24px;
 }
 
-.publication-card {
-    border: 1px solid #e0e0e0;
-    border-left: 4px solid #c5c5c5;
-    border-radius: 4px;
-    padding: 12px 16px;
-    margin: 12px 0;
-    background-color: #fff;
+.publications-list {
+    list-style: decimal;
+    padding-left: 18px;
+    margin-left: 0;
+}
+
+.publication-item {
+    margin-bottom: 12px;
 }
 
 .publication-title {
