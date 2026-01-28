@@ -124,28 +124,22 @@
                 return venueText;
             }
 
-            function renderLinks(item) {
-                const links = [];
-                if (item.link) {
-                    links.push(`<a href="${item.link}" target="_blank" rel="noopener noreferrer">Link</a>`);
+            function renderTitle(item) {
+                const title = escapeHtml(item.title);
+                const href = item.link || item.doi;
+                if (href) {
+                    return `<a href="${href}" target="_blank" rel="noopener noreferrer">${title}</a>`;
                 }
-                if (item.doi) {
-                    links.push(`<a href="${item.doi}" target="_blank" rel="noopener noreferrer">DOI</a>`);
-                }
-                if (!links.length) {
-                    return "";
-                }
-                return `<div class="publication-links">${links.join(" ")}</div>`;
+                return title;
             }
 
             function renderItem(item) {
                 const year = item.year ? ` (${item.year})` : "";
                 return `
                     <article class="publication-card">
-                        <div class="publication-title"><strong>${escapeHtml(item.title)}</strong></div>
+                        <div class="publication-title"><strong>${renderTitle(item)}</strong></div>
                         <div class="publication-authors">${escapeHtml(item.authors)}</div>
                         <div class="publication-venue">${renderVenue(item)}${year}</div>
-                        ${renderLinks(item)}
                     </article>
                 `;
             }
