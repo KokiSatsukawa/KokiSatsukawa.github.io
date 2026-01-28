@@ -72,6 +72,7 @@ cv:
             - society
         - id: review
           label: "学術査読"
+          list: false
           subtypes:
             - review
 publications:

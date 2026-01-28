@@ -137,12 +137,13 @@
             }
 
             function renderItem(item) {
-                const year = item.year ? ` (${item.year})` : "";
+                const venue = renderVenue(item);
+                const year = item.year ? `${venue ? ", " : ""}${item.year}` : "";
                 return `
                     <li class="publication-item">
                         <div class="publication-title">${renderTitle(item)}</div>
                         <div class="publication-authors">${escapeHtml(item.authors)}</div>
-                        <div class="publication-venue">${renderVenue(item)}${year}</div>
+                        <div class="publication-venue">${venue}${year}</div>
                     </li>
                 `;
             }

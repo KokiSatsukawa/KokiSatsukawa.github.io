@@ -164,12 +164,17 @@ def write_tex_sections(output_dir: Path, data: dict) -> None:
         has_list = False
         subsection_started = False
 
-        def render_entries(items: list[dict], resume: bool) -> None:
+        def render_entries(items: list[dict], resume: bool, list_mode: bool = True) -> None:
             nonlocal has_list, subsection_started
             if not items:
                 return
-            option = "[label={[\thesection.\arabic*]}]" if not resume else "[resume]"
-            cv_blocks.append(rf"\begin{{enumerate}}{option}")
+            if list_mode:
+                option = (
+                    "[label={[\thesection.\arabic*]}]"
+                    if not resume
+                    else "[resume,label={[\thesection.\arabic*]}]"
+                )
+                cv_blocks.append(rf"\begin{{enumerate}}{option}")
             for entry in items:
                 fmt = section.get("format")
                 if fmt == "publication":
@@ -178,10 +183,14 @@ def write_tex_sections(output_dir: Path, data: dict) -> None:
                     fields = section.get("fields", [])
                     text = format_generic_entry(entry, fields)
                 if text:
-                    cv_blocks.append(rf"\item {text}")
-            cv_blocks.append(r"\end{enumerate}")
-            has_list = True
-            subsection_started = True
+                    if list_mode:
+                        cv_blocks.append(rf"\item {text}")
+                    else:
+                        cv_blocks.append(rf"\noindent {text}\\")
+            if list_mode:
+                cv_blocks.append(r"\end{enumerate}")
+                has_list = True
+                subsection_started = True
 
         subsections = section.get("subsections") or []
         if subsections:
@@ -191,8 +200,9 @@ def write_tex_sections(output_dir: Path, data: dict) -> None:
                 cv_blocks.append(rf"\subsection*{{{sub_label}}}")
                 subtypes = subsection.get("subtypes", [])
                 items = [entry for entry in entries if entry.get("subtype") in subtypes]
-                render_entries(items, resume=resume)
-                if items:
+                list_mode = subsection.get("list", True)
+                render_entries(items, resume=resume, list_mode=list_mode)
+                if items and list_mode:
                     resume = True
             if not has_list:
                 cv_blocks.append(r"\begin{enumerate}[label={[\thesection.\arabic*]}]")
