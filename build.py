@@ -127,55 +127,83 @@ def format_publication(pub: dict) -> str:
         ]
 
     cleaned = [part for part in parts if part]
-    return r"\item " + ", ".join(cleaned) + "."
+    return ", ".join(cleaned) + "."
 
 
-def format_grant(grant: dict) -> str:
-    title = latex_escape(grant.get("title", ""))
-    agency = latex_escape(grant.get("agency", ""))
-    role = latex_escape(grant.get("role", ""))
-    period = latex_escape(grant.get("period", ""))
-    amount = latex_escape(grant.get("amount", ""))
-    parts = [part for part in [title, agency, role, period, amount] if part]
-    return r"\item " + r" \textbullet{} ".join(parts)
+def format_generic_entry(entry: dict, fields: list[str]) -> str:
+    values = []
+    for field in fields:
+        value = entry.get(field)
+        if not value:
+            continue
+        values.append(latex_escape(str(value)))
+    if not values:
+        return ""
+    return ", ".join(values) + "."
 
 
 def write_tex_sections(output_dir: Path, data: dict) -> None:
     sections_dir = output_dir / "sections"
     sections_dir.mkdir(exist_ok=True)
 
-    publications = data.get("publications", [])
-    display_sections = data.get("web", {}).get("display_subtypes", [])
-    section_blocks = []
-    for section in display_sections:
-        items = [pub for pub in publications if pub.get("subtype") == section.get("id")]
-        if not items:
-            continue
-        items_tex = "\n".join(format_publication(pub) for pub in items)
-        section_blocks.extend(
-            [
-                rf"\section{{{latex_escape(section.get('label', ''))}}}",
-                r"\begin{enumerate}[label={[\thesection.\arabic*]}]",
-                items_tex,
-                r"\end{enumerate}",
-                "",
-            ]
-        )
-    publications_body = "\n".join(section_blocks)
-    (sections_dir / "publications.tex").write_text(publications_body, encoding="utf-8")
+    cv_sections = data.get("cv", {}).get("sections", [])
+    cv_blocks = []
 
-    grants = data.get("grants", [])
-    grants_tex = "\n".join(format_grant(grant) for grant in grants)
-    grants_body = "\n".join(
-        [
-            r"\section{Grants}",
-            r"\begin{enumerate}[label={[\thesection.\arabic*]}]",
-            grants_tex,
-            r"\end{enumerate}",
-            "",
-        ]
-    )
-    (sections_dir / "grants.tex").write_text(grants_body, encoding="utf-8")
+    for section in cv_sections:
+        label = latex_escape(section.get("label", ""))
+        source_key = section.get("source", "")
+        entries = data.get(source_key, [])
+        subtypes = section.get("subtypes")
+        if subtypes:
+            entries = [entry for entry in entries if entry.get("subtype") in subtypes]
+
+        if not entries and not section.get("subsections"):
+            continue
+
+        cv_blocks.append(rf"\section{{{label}}}")
+        has_list = False
+        subsection_started = False
+
+        def render_entries(items: list[dict], resume: bool) -> None:
+            nonlocal has_list, subsection_started
+            if not items:
+                return
+            option = "[label={[\thesection.\arabic*]}]" if not resume else "[resume]"
+            cv_blocks.append(rf"\begin{{enumerate}}{option}")
+            for entry in items:
+                fmt = section.get("format")
+                if fmt == "publication":
+                    text = format_publication(entry)
+                else:
+                    fields = section.get("fields", [])
+                    text = format_generic_entry(entry, fields)
+                if text:
+                    cv_blocks.append(rf"\item {text}")
+            cv_blocks.append(r"\end{enumerate}")
+            has_list = True
+            subsection_started = True
+
+        subsections = section.get("subsections") or []
+        if subsections:
+            resume = False
+            for subsection in subsections:
+                sub_label = latex_escape(subsection.get("label", ""))
+                cv_blocks.append(rf"\subsection*{{{sub_label}}}")
+                subtypes = subsection.get("subtypes", [])
+                items = [entry for entry in entries if entry.get("subtype") in subtypes]
+                render_entries(items, resume=resume)
+                if items:
+                    resume = True
+            if not has_list:
+                cv_blocks.append(r"\begin{enumerate}[label={[\thesection.\arabic*]}]")
+                cv_blocks.append(r"\end{enumerate}")
+        else:
+            render_entries(entries, resume=False)
+
+        cv_blocks.append("")
+
+    cv_body = "\n".join(cv_blocks)
+    (sections_dir / "cv.tex").write_text(cv_body, encoding="utf-8")
 
     complete_cv = "\n".join(
         [
@@ -223,8 +251,7 @@ def write_tex_sections(output_dir: Path, data: dict) -> None:
             "",
             r"\begin{document}",
             r"\maketitle",
-            r"\input{sections/publications}",
-            r"\input{sections/grants}",
+            r"\input{sections/cv}",
             r"\end{document}",
             "",
         ]

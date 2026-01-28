@@ -8,6 +8,72 @@ web:
       label: "International Conferences (peer-reviewed)"
     - id: preprint
       label: "Preprints"
+cv:
+  sections:
+    - id: journal_peer_reviewed
+      label: "学術論文（査読有）"
+      source: publications
+      subtypes:
+        - journal_peer_reviewed
+      format: publication
+    - id: international_conference_peer_reviewed
+      label: "国際会議（査読有）"
+      source: publications
+      subtypes:
+        - international_conference_peer_reviewed
+      format: publication
+    - id: books
+      label: "著書・解説"
+      source: books
+      format: generic
+      fields: [authors, title, venue, year]
+    - id: invited_talks
+      label: "招待講演"
+      source: invited_talks
+      format: generic
+      fields: [authors, title, venue, date]
+    - id: other_presentations
+      label: "その他会議発表等"
+      source: presentations
+      format: generic
+      fields: [authors, title, venue, date]
+      subsections:
+        - id: international_seminar_workshop
+          label: "国際セミナー・ワークショップ"
+          subtypes:
+            - international_seminar_workshop
+        - id: domestic_conference_non_peer_reviewed
+          label: "国内会議（査読無）"
+          subtypes:
+            - domestic_conference_non_peer_reviewed
+    - id: grants
+      label: "競争的研究資金"
+      source: grants
+      format: generic
+      fields: [title, agency, role, period, amount]
+    - id: collaborations
+      label: "共同研究実績"
+      source: collaborations
+      format: generic
+      fields: [title, organization, role, period]
+    - id: service
+      label: "社会貢献"
+      source: service
+      format: generic
+      fields: [title, organization, role, period]
+      subsections:
+        - id: committee
+          label: "委員会等"
+          subtypes:
+            - committee
+        - id: society
+          label: "学会活動"
+          subtypes:
+            - society
+        - id: review
+          label: "学術査読"
+          subtypes:
+            - review
 publications:
   - id: journal-2025-mizutani-monitoring
     subtype: journal_peer_reviewed
@@ -481,3 +547,58 @@ grants:
     role: "Co-Investigator"
     period: "2022–2023"
     amount: "JPY 1,000,000"
+
+books:
+  - id: book-2023-dummy
+    authors: "佐津川功季"
+    title: "都市交通計画の基礎（ダミー）"
+    venue: "交通工学出版"
+    year: 2023
+
+invited_talks:
+  - id: invited-2024-dummy
+    authors: "佐津川功季"
+    title: "交通ネットワーク解析の最前線（招待講演・ダミー）"
+    venue: "第10回交通システムシンポジウム"
+    date: "2024年7月"
+
+presentations:
+  - id: seminar-2024-dummy
+    subtype: international_seminar_workshop
+    authors: "佐津川功季"
+    title: "Network dynamics under uncertainty (dummy)"
+    venue: "International Traffic Flow Workshop, Kyoto, Japan"
+    date: "March 2024"
+  - id: domestic-2023-dummy
+    subtype: domestic_conference_non_peer_reviewed
+    authors: "佐津川功季"
+    title: "都市交通における需要変動分析（ダミー）"
+    venue: "土木学会年次学術講演会"
+    date: "2023年9月"
+
+collaborations:
+  - id: collab-2024-dummy
+    title: "都市交通データ分析に関する共同研究（ダミー）"
+    organization: "民間企業A"
+    role: "研究代表"
+    period: "2024–2025"
+
+service:
+  - id: service-committee-2024
+    subtype: committee
+    title: "交通計画委員会 委員（ダミー）"
+    organization: "土木学会"
+    role: "委員"
+    period: "2024–"
+  - id: service-society-2023
+    subtype: society
+    title: "学会年次大会 運営補助（ダミー）"
+    organization: "交通工学研究会"
+    role: "運営委員"
+    period: "2023"
+  - id: service-review-2024
+    subtype: review
+    title: "査読活動（ダミー）"
+    organization: "Transportation Research Part B"
+    role: "Reviewer"
+    period: "2024"
