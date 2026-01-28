@@ -64,21 +64,25 @@ p { line-height: 180%}
 
 .publication-section {
     margin-bottom: 30px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #e0e0e0;
 }
 
 .publication-title {
-    font-size: 16px;
+    font-size: 14px;
     margin-bottom: 4px;
+    font-weight: normal;
 }
 
 .publication-title a {
     color: #000;
     text-decoration: none;
+    border-bottom: 1px solid #ccc;
 }
 
 .publication-title a:hover,
 .publication-title a:focus {
-    text-decoration: underline;
+    border-bottom-color: #999;
 }
 
 .publication-list {
@@ -103,6 +107,10 @@ p { line-height: 180%}
 
 .section-title {
     font-size: 20px;
+}
+
+.publication-section:last-child {
+    border-bottom: none;
 }
 
 .cv-photo {
