@@ -93,12 +93,41 @@ def normalize_publication(publication: dict, variant: str) -> dict:
 def format_publication(pub: dict) -> str:
     title = latex_escape(pub.get("title_pdf") or pub.get("title", ""))
     authors = latex_escape(pub.get("authors", ""))
-    venue = latex_escape(pub.get("venue_pdf") or pub.get("venue", ""))
+    venue_raw = pub.get("venue_pdf") or pub.get("venue", "")
     year = pub.get("year")
-    parts = [part for part in [title, authors, venue] if part]
-    if year:
-        parts.append(f"({year})")
-    return r"\item " + " ".join(parts)
+    month = pub.get("month")
+    subtype = pub.get("subtype", "")
+
+    venue_parts = [part.strip() for part in str(venue_raw).split(",") if part.strip()]
+    venue_name = latex_escape(venue_parts[0]) if venue_parts else ""
+    venue_rest = ", ".join(latex_escape(part) for part in venue_parts[1:])
+
+    if subtype == "international_conference_peer_reviewed":
+        location = venue_rest
+        date_parts = []
+        if month:
+            date_parts.append(latex_escape(month))
+        if year:
+            date_parts.append(str(year))
+        date_text = " ".join(date_parts)
+        parts = [
+            authors,
+            title,
+            rf"\textit{{{venue_name}}}",
+            location,
+            date_text,
+        ]
+    else:
+        parts = [
+            authors,
+            title,
+            rf"\textit{{{venue_name}}}",
+            venue_rest,
+            str(year) if year else "",
+        ]
+
+    cleaned = [part for part in parts if part]
+    return r"\item " + ", ".join(cleaned) + "."
 
 
 def format_grant(grant: dict) -> str:
