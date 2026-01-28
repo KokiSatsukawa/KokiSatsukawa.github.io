@@ -1,5 +1,5 @@
 meta:
-  complete_pdf_url: "images/List.pdf"
+  complete_pdf_url: "output/complete_cv.pdf"
 web:
   display_subtypes:
     - id: journal_peer_reviewed
@@ -58,7 +58,8 @@ publications:
     doi: "https://doi.org/10.1287/trsc.2024.0520"
   - id: journal-2024-satsukawa-bundling
     subtype: journal_peer_reviewed
-    title: "A design of a bundling reservation system for urban transport services under demand uncertainty (in Japanese)"
+    title_web: "A design of a bundling reservation system for urban transport services under demand uncertainty (in Japanese)"
+    title_pdf: "A design of a bundling reservation system for urban transport services under demand uncertainty"
     authors: "Koki Satsukawa, Yusuke Hara, Yosuke Kawasaki and Takamasa Iryo"
     venue: "Japanese Journal of JSCE, 80(9), 23-00206"
     venue_link: "https://www.jstage.jst.go.jp/browse/jscejipm"
@@ -74,7 +75,8 @@ publications:
     doi: "https://doi.org/10.1016/j.ress.2023.109735"
   - id: journal-2023-hara-preference
     subtype: journal_peer_reviewed
-    title: "An experimental approach for evaluating the impact of preference elicitation on search behavior in a reservation system (in Japanese)"
+    title_web: "An experimental approach for evaluating the impact of preference elicitation on search behavior in a reservation system (in Japanese)"
+    title_pdf: "An experimental approach for evaluating the impact of preference elicitation on search behavior in a reservation system"
     authors: "Yusuke Hara, Yosuke Kawasaki, Koki Satsukawa and Takamasa Iryo"
     venue: "Japanese Journal of JSCE, 79(20), 23-20020"
     venue_link: "https://www.jstage.jst.go.jp/browse/jscejipm"
@@ -82,7 +84,8 @@ publications:
     doi: "https://doi.org/10.2208/jscejj.23-20020"
   - id: journal-2022-satsukawa-optimal-repair
     subtype: journal_peer_reviewed
-    title: "Optimal repair policy for ETC facility with economic losses due to traffic congestion during failures (in Japanese)"
+    title_web: "Optimal repair policy for ETC facility with economic losses due to traffic congestion during failures (in Japanese)"
+    title_pdf: "Optimal repair policy for ETC facility with economic losses due to traffic congestion during failures"
     authors: "Koki Satsukawa, Daijiro Mizutani, Yosuke Kawasaki, Takeo Kaneda and Masao Kuwahara"
     venue: "Journal of Japan Society of Civil Engineers, Ser. D3 (Infrastructure Planning and Management), 78(3), 105-121"
     venue_link: "https://www.jstage.jst.go.jp/browse/jscejipm"
@@ -106,7 +109,8 @@ publications:
     doi: "https://doi.org/10.1016/j.trc.2022.103630"
   - id: journal-2022-ikushima-management
     subtype: journal_peer_reviewed
-    title: "Possibility of improving management policies for expressway facilities based on questionnaire survey of on-site engineers (in Japanese)"
+    title_web: "Possibility of improving management policies for expressway facilities based on questionnaire survey of on-site engineers (in Japanese)"
+    title_pdf: "Possibility of improving management policies for expressway facilities based on questionnaire survey of on-site engineers"
     authors: "Rie Ikushima, Daijiro Mizutani, Koki Satsukawa, Yosuke Kawasaki and Masao Kuwahara"
     venue: "Journal of Japan Society of Civil Engineers, Ser. F4 (Construction and Management), 78(1), 51-69"
     venue_link: "https://www.jstage.jst.go.jp/browse/jscejcm/-char/ja"
@@ -122,7 +126,8 @@ publications:
     doi: "https://doi.org/10.1016/j.trb.2021.11.001"
   - id: journal-2021-sakai-departure
     subtype: journal_peer_reviewed
-    title: "Departure time choice problems with heterogeneous values of schedule delay in tandem bottlenecks (in Japanese)"
+    title_web: "Departure time choice problems with heterogeneous values of schedule delay in tandem bottlenecks (in Japanese)"
+    title_pdf: "Departure time choice problems with heterogeneous values of schedule delay in tandem bottlenecks"
     authors: "Takara Sakai, Takashi Akamatsu and Koki Satsukawa"
     venue: "Journal of Japan Society of Civil Engineers, Ser. D3 (Infrastructure Planning and Management), 77(4), 330-345"
     venue_link: "https://www.jstage.jst.go.jp/browse/jscejipm"
@@ -138,7 +143,8 @@ publications:
     doi: "https://doi.org/10.1038/s41598-021-81630-9"
   - id: journal-2021-mizutani-message
     subtype: journal_peer_reviewed
-    title: "A basic method to evaluate management policies of variable message signs on expressways considering user costs (in Japanese)"
+    title_web: "A basic method to evaluate management policies of variable message signs on expressways considering user costs (in Japanese)"
+    title_pdf: "A basic method to evaluate management policies of variable message signs on expressways considering user costs"
     authors: "Daijiro Mizutani, Yosuke Kawasaki, Koki Satsukawa, Takeshi Nakagawa, Shogo Umeda, Rie Ikushima and Masao Kuwahara"
     venue: "Journal of Japan Society of Civil Engineers, Ser. D3 (Infrastructure Planning and Management), 76(5), I_127-I_139"
     venue_link: "https://www.jstage.jst.go.jp/browse/jscejipm"
@@ -162,7 +168,8 @@ publications:
     doi: "https://doi.org/10.1016/j.trb.2018.04.002"
   - id: journal-2017-wada-kinematic
     subtype: journal_peer_reviewed
-    title: "Recent advances in kinematic wave theory of traffic flows: Variational formulation and network extension (in Japanese)"
+    title_web: "Recent advances in kinematic wave theory of traffic flows: Variational formulation and network extension (in Japanese)"
+    title_pdf: "Recent advances in kinematic wave theory of traffic flows: Variational formulation and network extension"
     authors: "Kentaro Wada, Toru Seo, Wataru Nakanishi, Koki Satsukawa and Masami Yanagihara"
     venue: "Journal of Japan Society of Civil Engineers, Ser. D3 (Infrastructure Planning and Management), 73(5), I_1139-I_1158"
     venue_link: "https://www.jstage.jst.go.jp/browse/jscejipm"
@@ -170,7 +177,8 @@ publications:
     doi: "https://doi.org/10.2208/jscejipm.73.I_1139"
   - id: journal-2017-wada-traffic
     subtype: journal_peer_reviewed
-    title: "Traffic performance analysis of road network based on dynamic user equilibrium (in Japanese)"
+    title_web: "Traffic performance analysis of road network based on dynamic user equilibrium (in Japanese)"
+    title_pdf: "Traffic performance analysis of road network based on dynamic user equilibrium"
     authors: "Kentaro Wada and Koki Satsukawa"
     venue: "Journal of Japan Society of Civil Engineers, Ser. D3 (Infrastructure Planning and Management), 73(1), 56-72"
     venue_link: "https://www.jstage.jst.go.jp/browse/jscejipm"
@@ -178,7 +186,8 @@ publications:
     doi: "https://doi.org/10.2208/jscejipm.73.56"
   - id: journal-2017-satsukawa-note
     subtype: journal_peer_reviewed
-    title: "A note on the solution algorithm of Nash equilibrium in dynamic traffic assignment for single destination networks (in Japanese)"
+    title_web: "A note on the solution algorithm of Nash equilibrium in dynamic traffic assignment for single destination networks (in Japanese)"
+    title_pdf: "A note on the solution algorithm of Nash equilibrium in dynamic traffic assignment for single destination networks"
     authors: "Koki Satsukawa and Kentaro Wada"
     venue: "Journal of Japan Society of Civil Engineers, Ser. D3 (Infrastructure Planning and Management), 73(1), 103-108"
     venue_link: "https://www.jstage.jst.go.jp/browse/jscejipm"
@@ -339,7 +348,8 @@ publications:
     year: 2015
   - id: report-2019-satsukawa-congestion
     subtype: report
-    title: "Traffic performance analysis of road network based on congestion patterns (in Japanese)"
+    title_web: "Traffic performance analysis of road network based on congestion patterns (in Japanese)"
+    title_pdf: "Traffic performance analysis of road network based on congestion patterns"
     authors: "Koki Satsukawa and Kentaro Wada"
     venue: "SEISANKENKYU, 71(2), 89-95"
     venue_link: "https://www.jstage.jst.go.jp/browse/seisankenkyu/-char/en"
@@ -347,7 +357,8 @@ publications:
     doi: "https://doi.org/10.11188/seisankenkyu.71.89"
   - id: report-2017-nakanishi-traffic
     subtype: report
-    title: "Recent studies of network traffic flow modeling (in Japanese)"
+    title_web: "Recent studies of network traffic flow modeling (in Japanese)"
+    title_pdf: "Recent studies of network traffic flow modeling"
     authors: "Wataru Nakanishi and Koki Satsukawa"
     venue: "JSTE Magazine \"Traffic Engineering\", 52(4), 33-38"
     venue_link: "https://www.jste.or.jp/index.html"
@@ -372,7 +383,8 @@ publications:
     year: 2020
   - id: talk-2018-satsukawa-csis
     subtype: seminar
-    title: "渋滞パターンに基づく道路ネットワークの交通性能とその低下メカニズムの解析 (in Japanese)"
+    title_web: "渋滞パターンに基づく道路ネットワークの交通性能とその低下メカニズムの解析 (in Japanese)"
+    title_pdf: "渋滞パターンに基づく道路ネットワークの交通性能とその低下メカニズムの解析"
     authors: "Koki Satsukawa, Kentaro Wada and Takashi Oguchi"
     venue: "CSIS DAYS 2018, The University of Tokyo, Japan"
     year: 2018

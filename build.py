@@ -28,7 +28,7 @@ def load_yaml(path: Path) -> dict:
 def build_json(data: dict) -> dict:
     publications = data.get("publications", [])
     web_publications = [
-        publication
+        normalize_publication(publication, variant="web")
         for publication in publications
         if publication.get("web", True)
     ]
@@ -73,10 +73,27 @@ def latex_escape(text: str) -> str:
     return "".join(replacements.get(char, char) for char in text)
 
 
+def normalize_publication(publication: dict, variant: str) -> dict:
+    title = publication.get(f"title_{variant}") or publication.get("title", "")
+    venue = publication.get(f"venue_{variant}") or publication.get("venue", "")
+    normalized = {
+        "id": publication.get("id"),
+        "subtype": publication.get("subtype"),
+        "title": title,
+        "authors": publication.get("authors", ""),
+        "venue": venue,
+        "venue_link": publication.get("venue_link"),
+        "year": publication.get("year"),
+        "link": publication.get("link"),
+        "doi": publication.get("doi"),
+    }
+    return {key: value for key, value in normalized.items() if value}
+
+
 def format_publication(pub: dict) -> str:
-    title = latex_escape(pub.get("title", ""))
+    title = latex_escape(pub.get("title_pdf") or pub.get("title", ""))
     authors = latex_escape(pub.get("authors", ""))
-    venue = latex_escape(pub.get("venue", ""))
+    venue = latex_escape(pub.get("venue_pdf") or pub.get("venue", ""))
     year = pub.get("year")
     link = pub.get("link") or pub.get("doi")
     if link:
@@ -124,6 +141,22 @@ def write_tex_sections(output_dir: Path, data: dict) -> None:
         ]
     )
     (sections_dir / "grants.tex").write_text(grants_body, encoding="utf-8")
+
+    complete_cv = "\n".join(
+        [
+            r"\documentclass{article}",
+            r"\usepackage[hidelinks]{hyperref}",
+            r"\usepackage[margin=1in]{geometry}",
+            r"\begin{document}",
+            r"\section*{Publications}",
+            r"\input{sections/publications}",
+            r"\section*{Grants}",
+            r"\input{sections/grants}",
+            r"\end{document}",
+            "",
+        ]
+    )
+    (output_dir / "complete_cv.tex").write_text(complete_cv, encoding="utf-8")
 
 
 def main() -> int:
