@@ -117,11 +117,14 @@
                 if (!item.venue) {
                     return "";
                 }
-                const venueText = escapeHtml(item.venue);
+                const venueText = item.venue;
                 if (item.venue_link) {
-                    return `<a href="${item.venue_link}" target="_blank" rel="noopener noreferrer">${venueText}</a>`;
+                    const parts = venueText.split(",");
+                    const venueName = escapeHtml(parts[0].trim());
+                    const rest = parts.length > 1 ? `, ${escapeHtml(parts.slice(1).join(",").trim())}` : "";
+                    return `<a href="${item.venue_link}" target="_blank" rel="noopener noreferrer">${venueName}</a>${rest}`;
                 }
-                return venueText;
+                return escapeHtml(venueText);
             }
 
             function renderTitle(item) {
