@@ -22,7 +22,11 @@ This site uses a single YAML source of truth for publications and generates the 
    ```tex
    \input{output/sections/cv}
    ```
-   Then generate the complete PDF CV and place it at the path in `meta.complete_pdf_url` (currently `output/complete_cv.pdf`).
+   Then generate the complete PDF CV and place it at the path in `meta.complete_pdf_url` (currently `output/complete_cv.pdf`). For pLaTeX + dvipdfmx:
+   ```bash
+   platex -kanji=utf8 -interaction=nonstopmode output/complete_cv.tex
+   dvipdfmx output/complete_cv.dvi
+   ```
 4. Commit changes and push to GitHub.
 
 ### Local preview
