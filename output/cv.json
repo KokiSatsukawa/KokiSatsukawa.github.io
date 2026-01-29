@@ -1,0 +1,607 @@
+{
+  "generated_at": "2026-01-28T15:21:06Z",
+  "meta": {
+    "complete_pdf_url": "output/complete_cv.pdf"
+  },
+  "web": {
+    "display_subtypes": [
+      {
+        "id": "journal_peer_reviewed",
+        "label": "Journal Articles (peer-reviewed)"
+      },
+      {
+        "id": "international_conference_peer_reviewed",
+        "label": "International Conferences (peer-reviewed)"
+      },
+      {
+        "id": "preprint",
+        "label": "Preprints"
+      }
+    ]
+  },
+  "publications": [
+    {
+      "id": "journal-2025-mizutani-monitoring",
+      "subtype": "journal_peer_reviewed",
+      "title": "Integrating real-time monitoring information into asset failure modeling: application to ETC facilities",
+      "authors": "Daijiro Mizutani, Rie Ikushima, Koki Satsukawa, Yosuke Kawasaki and Masao Kuwahara",
+      "venue": "Journal of Infrastructure Systems (accepted)",
+      "venue_link": "https://ascelibrary.org/journal/jitse4",
+      "year": 2025
+    },
+    {
+      "id": "journal-2025-satsukawa-adjustment",
+      "subtype": "journal_peer_reviewed",
+      "title": "Adjustment process of adaptive signal control strategies with route choices: a case study with Policy P0",
+      "authors": "Koki Satsukawa, Takamasa Iryo, Naoki Yoshizawa, Michael J. Smith and David Watling",
+      "venue": "Transportmetrica B: Transport Dynamics, 13(1)",
+      "venue_link": "https://www.tandfonline.com/journals/ttrb20",
+      "year": 2025,
+      "doi": "https://dx.doi.org/10.1080/21680566.2025.2516183"
+    },
+    {
+      "id": "journal-2025-mizutani-spare-parts",
+      "subtype": "journal_peer_reviewed",
+      "title": "Optimal road facility spare parts location with continuum approximation",
+      "authors": "Daijiro Mizutani, Shunichi Fukuyama and Koki Satsukawa",
+      "venue": "Transportation Research Part C: Emerging Technologies, 174, 105109",
+      "venue_link": "https://www.sciencedirect.com/journal/transportation-research-part-c-emerging-technologies",
+      "year": 2025,
+      "doi": "https://doi.org/10.1016/j.trc.2025.105109"
+    },
+    {
+      "id": "journal-2024-satsukawa-stability",
+      "subtype": "journal_peer_reviewed",
+      "title": "Stability analysis of a departure time choice problem with atomic vehicle models",
+      "authors": "Koki Satsukawa, Kentaro Wada and Takamasa Iryo",
+      "venue": "Transportation Research Part B: Methodological, 189, 103039",
+      "venue_link": "https://www.sciencedirect.com/journal/transportation-research-part-b-methodological",
+      "year": 2024,
+      "doi": "https://doi.org/10.1016/j.trb.2024.103039"
+    },
+    {
+      "id": "journal-2024-sakai-queue-replacement",
+      "subtype": "journal_peer_reviewed",
+      "title": "Queue replacement principle for corridor problems with heterogeneous commuters",
+      "authors": "Takara Sakai, Takashi Akamatsu and Koki Satsukawa",
+      "venue": "Transportation Research Part B: Methodological, 187, 103024",
+      "venue_link": "https://www.sciencedirect.com/journal/transportation-research-part-b-methodological",
+      "year": 2024,
+      "doi": "https://doi.org/10.1016/j.trb.2024.103024"
+    },
+    {
+      "id": "journal-2024-sakai-telecommuting",
+      "subtype": "journal_peer_reviewed",
+      "title": "A paradox of telecommuting and staggered work hours in the bottleneck model",
+      "authors": "Takara Sakai, Takashi Akamatsu and Koki Satsukawa",
+      "venue": "Transportation Science, 58(6), 1335-1351",
+      "venue_link": "https://pubsonline.informs.org/journal/trsc",
+      "year": 2024,
+      "doi": "https://doi.org/10.1287/trsc.2024.0520"
+    },
+    {
+      "id": "journal-2024-satsukawa-bundling",
+      "subtype": "journal_peer_reviewed",
+      "title": "A design of a bundling reservation system for urban transport services under demand uncertainty (in Japanese)",
+      "authors": "Koki Satsukawa, Yusuke Hara, Yosuke Kawasaki and Takamasa Iryo",
+      "venue": "Japanese Journal of JSCE, 80(9), 23-00206",
+      "venue_link": "https://www.jstage.jst.go.jp/browse/jscejipm",
+      "year": 2024,
+      "doi": "https://doi.org/10.2208/jscejj.23-00206"
+    },
+    {
+      "id": "journal-2024-mizutani-intervention",
+      "subtype": "journal_peer_reviewed",
+      "title": "Optimal intervention policy of emergency storage batteries for expressway facilities considering deterioration risk during lead time of replacement",
+      "authors": "Daijiro Mizutani, Yuto Nakazato, Rie Ikushima, Koki Satsukawa, Yosuke Kawasaki and Masao Kuwahara",
+      "venue": "Reliability Engineering & System Safety, 242, 109735",
+      "venue_link": "https://www.sciencedirect.com/journal/reliability-engineering-and-system-safety",
+      "year": 2024,
+      "doi": "https://doi.org/10.1016/j.ress.2023.109735"
+    },
+    {
+      "id": "journal-2023-hara-preference",
+      "subtype": "journal_peer_reviewed",
+      "title": "An experimental approach for evaluating the impact of preference elicitation on search behavior in a reservation system (in Japanese)",
+      "authors": "Yusuke Hara, Yosuke Kawasaki, Koki Satsukawa and Takamasa Iryo",
+      "venue": "Japanese Journal of JSCE, 79(20), 23-20020",
+      "venue_link": "https://www.jstage.jst.go.jp/browse/jscejipm",
+      "year": 2023,
+      "doi": "https://doi.org/10.2208/jscejj.23-20020"
+    },
+    {
+      "id": "journal-2022-satsukawa-optimal-repair",
+      "subtype": "journal_peer_reviewed",
+      "title": "Optimal repair policy for ETC facility with economic losses due to traffic congestion during failures (in Japanese)",
+      "authors": "Koki Satsukawa, Daijiro Mizutani, Yosuke Kawasaki, Takeo Kaneda and Masao Kuwahara",
+      "venue": "Journal of Japan Society of Civil Engineers, Ser. D3 (Infrastructure Planning and Management), 78(3), 105-121",
+      "venue_link": "https://www.jstage.jst.go.jp/browse/jscejipm",
+      "year": 2022,
+      "doi": "https://doi.org/10.2208/jscejipm.78.3_105"
+    },
+    {
+      "id": "journal-2022-fu-dynamic-traffic",
+      "subtype": "journal_peer_reviewed",
+      "title": "Dynamic traffic assignment in a corridor network with multiple bottlenecks: Optimum versus equilibrium",
+      "authors": "Haoran Fu, Takashi Akamatsu, Koki Satsukawa and Kentaro Wada",
+      "venue": "Transportation Research Part B: Methodological, 161, 218-246",
+      "venue_link": "https://www.sciencedirect.com/journal/transportation-research-part-b-methodological",
+      "year": 2022,
+      "doi": "https://doi.org/10.1016/j.trb.2022.04.007"
+    },
+    {
+      "id": "journal-2022-smith-zero-queue",
+      "subtype": "journal_peer_reviewed",
+      "title": "Zero-queue traffic control, using green-times and prices together",
+      "authors": "Michael J. Smith, Takamasa Iryo, Richard Mounce, Koki Satsukawa and David Watling",
+      "venue": "Transportation Research Part C: Emerging Technologies, 138, 103630",
+      "venue_link": "https://www.sciencedirect.com/journal/transportation-research-part-c-emerging-technologies",
+      "year": 2022,
+      "doi": "https://doi.org/10.1016/j.trc.2022.103630"
+    },
+    {
+      "id": "journal-2022-ikushima-management",
+      "subtype": "journal_peer_reviewed",
+      "title": "Possibility of improving management policies for expressway facilities based on questionnaire survey of on-site engineers (in Japanese)",
+      "authors": "Rie Ikushima, Daijiro Mizutani, Koki Satsukawa, Yosuke Kawasaki and Masao Kuwahara",
+      "venue": "Journal of Japan Society of Civil Engineers, Ser. F4 (Construction and Management), 78(1), 51-69",
+      "venue_link": "https://www.jstage.jst.go.jp/browse/jscejcm/-char/ja",
+      "year": 2022,
+      "doi": "https://doi.org/10.2208/jscejipm.77.4_330"
+    },
+    {
+      "id": "journal-2022-satsukawa-dynamic",
+      "subtype": "journal_peer_reviewed",
+      "title": "Dynamic system optimal assignment with atomic users: Convergence and stability",
+      "authors": "Koki Satsukawa, Kentaro Wada and David Watling",
+      "venue": "Transportation Research Part B: Methodological, 155, 188-209",
+      "venue_link": "https://www.sciencedirect.com/journal/transportation-research-part-b-methodological",
+      "year": 2022,
+      "doi": "https://doi.org/10.1016/j.trb.2021.11.001"
+    },
+    {
+      "id": "journal-2021-sakai-departure",
+      "subtype": "journal_peer_reviewed",
+      "title": "Departure time choice problems with heterogeneous values of schedule delay in tandem bottlenecks (in Japanese)",
+      "authors": "Takara Sakai, Takashi Akamatsu and Koki Satsukawa",
+      "venue": "Journal of Japan Society of Civil Engineers, Ser. D3 (Infrastructure Planning and Management), 77(4), 330-345",
+      "venue_link": "https://www.jstage.jst.go.jp/browse/jscejipm",
+      "year": 2021,
+      "doi": "https://doi.org/10.2208/jscejipm.77.4_330"
+    },
+    {
+      "id": "journal-2021-akamatsu-social",
+      "subtype": "journal_peer_reviewed",
+      "title": "Model-based analysis on social acceptability and feasibility of a focused protection strategy against the COVID-19 pandemic",
+      "authors": "Takashi Akamatsu, Takeshi Nagae, Minoru Osawa, Koki Satsukawa, Takara Sakai and Daijiro Mizutani",
+      "venue": "Scientific Reports, 11, 2003",
+      "venue_link": "https://www.nature.com/srep/",
+      "year": 2021,
+      "doi": "https://doi.org/10.1038/s41598-021-81630-9"
+    },
+    {
+      "id": "journal-2021-mizutani-message",
+      "subtype": "journal_peer_reviewed",
+      "title": "A basic method to evaluate management policies of variable message signs on expressways considering user costs (in Japanese)",
+      "authors": "Daijiro Mizutani, Yosuke Kawasaki, Koki Satsukawa, Takeshi Nakagawa, Shogo Umeda, Rie Ikushima and Masao Kuwahara",
+      "venue": "Journal of Japan Society of Civil Engineers, Ser. D3 (Infrastructure Planning and Management), 76(5), I_127-I_139",
+      "venue_link": "https://www.jstage.jst.go.jp/browse/jscejipm",
+      "year": 2021,
+      "doi": "https://doi.org/10.2208/jscejipm.76.5_I_127"
+    },
+    {
+      "id": "journal-2019-satsukawa-stochastic",
+      "subtype": "journal_peer_reviewed",
+      "title": "Stochastic stability of dynamic user equilibrium in unidirectional networks: Weakly acyclic game approach",
+      "authors": "Koki Satsukawa, Kentaro Wada and Takamasa Iryo",
+      "venue": "Transportation Research Part B: Methodological, 125, 229-247",
+      "venue_link": "https://www.sciencedirect.com/journal/transportation-research-part-b-methodological",
+      "year": 2019,
+      "doi": "https://dx.doi.org/10.1016/j.trb.2019.05.015"
+    },
+    {
+      "id": "journal-2018-wada-throughput",
+      "subtype": "journal_peer_reviewed",
+      "title": "Network throughput under dynamic user equilibrium: Queue spillback, paradox and traffic control",
+      "authors": "Kentaro Wada, Koki Satsukawa, Mike Smith and Takashi Akamatsu",
+      "venue": "Transportation Research Part B: Methodological, 126, 391-413",
+      "venue_link": "https://www.sciencedirect.com/journal/transportation-research-part-b-methodological",
+      "year": 2018,
+      "doi": "https://doi.org/10.1016/j.trb.2018.04.002"
+    },
+    {
+      "id": "journal-2017-wada-kinematic",
+      "subtype": "journal_peer_reviewed",
+      "title": "Recent advances in kinematic wave theory of traffic flows: Variational formulation and network extension (in Japanese)",
+      "authors": "Kentaro Wada, Toru Seo, Wataru Nakanishi, Koki Satsukawa and Masami Yanagihara",
+      "venue": "Journal of Japan Society of Civil Engineers, Ser. D3 (Infrastructure Planning and Management), 73(5), I_1139-I_1158",
+      "venue_link": "https://www.jstage.jst.go.jp/browse/jscejipm",
+      "year": 2017,
+      "doi": "https://doi.org/10.2208/jscejipm.73.I_1139"
+    },
+    {
+      "id": "journal-2017-wada-traffic",
+      "subtype": "journal_peer_reviewed",
+      "title": "Traffic performance analysis of road network based on dynamic user equilibrium (in Japanese)",
+      "authors": "Kentaro Wada and Koki Satsukawa",
+      "venue": "Journal of Japan Society of Civil Engineers, Ser. D3 (Infrastructure Planning and Management), 73(1), 56-72",
+      "venue_link": "https://www.jstage.jst.go.jp/browse/jscejipm",
+      "year": 2017,
+      "doi": "https://doi.org/10.2208/jscejipm.73.56"
+    },
+    {
+      "id": "journal-2017-satsukawa-note",
+      "subtype": "journal_peer_reviewed",
+      "title": "A note on the solution algorithm of Nash equilibrium in dynamic traffic assignment for single destination networks (in Japanese)",
+      "authors": "Koki Satsukawa and Kentaro Wada",
+      "venue": "Journal of Japan Society of Civil Engineers, Ser. D3 (Infrastructure Planning and Management), 73(1), 103-108",
+      "venue_link": "https://www.jstage.jst.go.jp/browse/jscejipm",
+      "year": 2017,
+      "doi": "https://doi.org/10.2208/jscejipm.73.103"
+    },
+    {
+      "id": "conf-2026-satsukawa-gating",
+      "subtype": "international_conference_peer_reviewed",
+      "title": "New stable responsive local gating strategies to control vehicle queues and flows in congested urban networks",
+      "authors": "Koki Satsukawa and Yuki Takayama",
+      "venue": "The 26th International Symposium on Transportation and Traffic Theory (ISTTT26), Munich, Germany (accepted)",
+      "venue_link": "https://www.isttt2026.vtk.ed.tum.de/",
+      "year": 2026
+    },
+    {
+      "id": "conf-2026-kawase-network-design",
+      "subtype": "international_conference_peer_reviewed",
+      "title": "Flexible and reliable transportation network design for emerging transportation services: multi-stage stochastic programming approach",
+      "authors": "Riki Kawase, Koki Satsukawa and Toru Seo",
+      "venue": "The 26th International Symposium on Transportation and Traffic Theory (ISTTT26), Munich, Germany (accepted)",
+      "venue_link": "https://www.isttt2026.vtk.ed.tum.de/",
+      "year": 2026
+    },
+    {
+      "id": "conf-2026-sakai-queue",
+      "subtype": "international_conference_peer_reviewed",
+      "title": "Queue replacement approach to dynamic user equilibrium assignment with route and departure time choice",
+      "authors": "Takara Sakai, Takashi Akamatsu and Koki Satsukawa",
+      "venue": "The 26th International Symposium on Transportation and Traffic Theory (ISTTT26), Munich, Germany (accepted)",
+      "venue_link": "https://www.isttt2026.vtk.ed.tum.de/",
+      "year": 2026
+    },
+    {
+      "id": "conf-2025-suzuki-pricing",
+      "subtype": "international_conference_peer_reviewed",
+      "title": "Designing pricing strategies for community-owned shared transport: An evolutionary approach",
+      "authors": "Sowa Suzuki, Haruki Takiguchi, Takamasa Iryo, Haruko Nakao, Koki Satsukawa, David Watling and Richard Connors",
+      "venue": "The 29th International Conference of Hong Kong Society for Transportation Studies, Hong Kong, China",
+      "venue_link": "https://www.hksts.org/",
+      "year": 2025
+    },
+    {
+      "id": "conf-2025-nihei-evolutionary",
+      "subtype": "international_conference_peer_reviewed",
+      "title": "A distributed evolutionary algorithm for optimisation of public transport operations with mixed-capacity vehicle fleets",
+      "authors": "Takeru Nihei, Takamasa Iryo and Koki Satsukawa",
+      "venue": "The 29th International Conference of Hong Kong Society for Transportation Studies, Hong Kong, China",
+      "venue_link": "https://www.hksts.org/",
+      "year": 2025
+    },
+    {
+      "id": "conf-2025-smith-gating",
+      "subtype": "international_conference_peer_reviewed",
+      "title": "New stable responsive local gating strategies to control vehicle queues and flows in congested urban networks",
+      "authors": "Michael Smith, David Watling, Ronghui Liu, Koki Satsukawa, Takamasa Iryo and Richard Mounce",
+      "venue": "The 10th International Symposium on Dynamic Traffic Assignment (DTA2025), Salerno, Italy",
+      "venue_link": "https://www.motusanimi.it/dta2025/",
+      "year": 2025
+    },
+    {
+      "id": "conf-2025-iryo-markov",
+      "subtype": "international_conference_peer_reviewed",
+      "title": "Markov-chain-based model for the evolutionary process of self-financed shared mobility systems: Theoretical assessments",
+      "authors": "Takamasa Iryo, David Watling, Koki Satsukawa, Richard Connors, Haruko Nakao and Sowa Suzuki",
+      "venue": "The 10th International Symposium on Dynamic Traffic Assignment (DTA2025), Salerno, Italy",
+      "venue_link": "https://www.motusanimi.it/dta2025/",
+      "year": 2025
+    },
+    {
+      "id": "conf-2025-takiguchi-experimental",
+      "subtype": "international_conference_peer_reviewed",
+      "title": "Assessing the evolutionary process of self-financed shared mobility systems: A laboratory experimental approach",
+      "authors": "Haruki Takiguchi, Sowa Suzuki, Takamasa Iryo, Koki Satsukawa and Haruko Nakao",
+      "venue": "The 10th International Symposium on Dynamic Traffic Assignment (DTA2025), Salerno, Italy",
+      "venue_link": "https://www.motusanimi.it/dta2025/",
+      "year": 2025
+    },
+    {
+      "id": "conf-2025-kosaka-lifestyle",
+      "subtype": "international_conference_peer_reviewed",
+      "title": "Exploring optimal lifestyle modification pathway for preventing Cardiovascular disease using machine learning and pathfinding algorithms",
+      "authors": "Yuki Kosaka, Shota Tsurimoto, Masahiro Noguchi, Koki Satsukawa, Masayuki Takamura and Akihiro Nomura",
+      "venue": "European Society of Cardiology Congress 2025 (ESC2025), Madrid, Spain",
+      "venue_link": "https://www.escardio.org/Congresses-Events/ESC-Congress",
+      "year": 2025
+    },
+    {
+      "id": "conf-2025-nakao-evolutionary",
+      "subtype": "international_conference_peer_reviewed",
+      "title": "Evolutionary process of self-financed shared mobility systems",
+      "authors": "Haruko Nakao, Koki Satsukawa, Takamasa Iryo, Richard Connors and Sowa Suzuki",
+      "venue": "The Twelfth Triennial Symposium on Transportation Analysis (TRISTAN XII), Okinawa, Japan",
+      "venue_link": "https://tristanconference.org/editions/tristan-xii/cfp",
+      "year": 2025
+    },
+    {
+      "id": "conf-2024-satsukawa-stability",
+      "subtype": "international_conference_peer_reviewed",
+      "title": "Stability analysis of a departure time choice problem with atomic vehicle models",
+      "authors": "Koki Satsukawa, Kentaro Wada and Takamasa Iryo",
+      "venue": "The 25th International Symposium on Transportation and Traffic Theory (ISTTT25), Ann Arbor, USA",
+      "venue_link": "https://limos.engin.umich.edu/isttt25/",
+      "year": 2024
+    },
+    {
+      "id": "conf-2024-sakai-telecommuting",
+      "subtype": "international_conference_peer_reviewed",
+      "title": "A paradox of telecommuting and staggered work hours in the bottleneck model",
+      "authors": "Takara Sakai, Takashi Akamatsu and Koki Satsukawa",
+      "venue": "The 25th International Symposium on Transportation and Traffic Theory (ISTTT25), Ann Arbor, USA",
+      "venue_link": "https://limos.engin.umich.edu/isttt25/",
+      "year": 2024
+    },
+    {
+      "id": "conf-2023-satsukawa-reservation",
+      "subtype": "international_conference_peer_reviewed",
+      "title": "A study on the design of a reservation system for urban transport services under uncertainty",
+      "authors": "Koki Satsukawa, Yusuke Hara, Yosuke Kawasaki and Takamasa Iryo",
+      "venue": "The 9th International Symposium on Transport Network Resilience (INSTR2023), Hong Kong, China",
+      "venue_link": "https://www.institute-of-transport-studies.hku.hk/instr2023",
+      "year": 2023
+    },
+    {
+      "id": "conf-2023-sakai-welfare",
+      "subtype": "international_conference_peer_reviewed",
+      "title": "Welfare impacts of remote and flexible working policies in the bottleneck model",
+      "authors": "Takara Sakai, Takashi Akamatsu and Koki Satsukawa",
+      "venue": "11th Symposium of the European Association for Research in Transportation (hEART2023), Zurich, Switzerland",
+      "venue_link": "https://heart2023.org/",
+      "year": 2023
+    },
+    {
+      "id": "conf-2023-satsukawa-adjustment",
+      "subtype": "international_conference_peer_reviewed",
+      "title": "Adjustment process of adaptive signal control strategies with route choices: a case study with Policy P0",
+      "authors": "Koki Satsukawa, Takamasa Iryo, Naoki Yoshizawa, Michael J. Smith and David Watling",
+      "venue": "9th International Symposium on Dynamic Traffic Assignment (DTA2023), Chicago, USA",
+      "venue_link": "https://sites.northwestern.edu/dta2023/",
+      "year": 2023
+    },
+    {
+      "id": "conf-2023-sakai-queue",
+      "subtype": "international_conference_peer_reviewed",
+      "title": "Queue replacement principle for corridor problems with heterogeneous commuters",
+      "authors": "Takara Sakai, Takashi Akamatsu and Koki Satsukawa",
+      "venue": "9th International Symposium on Dynamic Traffic Assignment (DTA2023), Chicago, USA",
+      "venue_link": "https://sites.northwestern.edu/dta2023/",
+      "year": 2023
+    },
+    {
+      "id": "conf-2022-sakai-departure",
+      "subtype": "international_conference_peer_reviewed",
+      "title": "Departure time choice problems in a corridor network with heterogeneous value of schedule delay",
+      "authors": "Takara Sakai, Takashi Akamatsu and Koki Satsukawa",
+      "venue": "The 27th International Conference of Hong Kong Society for Transportation Studies, Hong Kong, China (online)",
+      "venue_link": "https://www.hksts.org/",
+      "year": 2022
+    },
+    {
+      "id": "conf-2022-satsukawa-convergence",
+      "subtype": "international_conference_peer_reviewed",
+      "title": "Dynamic system optimal traffic assignment with atomic users: Convergence and stability",
+      "authors": "Koki Satsukawa, Kentaro Wada and David Watling",
+      "venue": "The 24th International Symposium on Transportation and Traffic Theory (ISTTT24), Beijing, China (online)",
+      "venue_link": "http://isttt24.buaa.edu.cn/",
+      "year": 2022
+    },
+    {
+      "id": "conf-2021-smith-zero-queue",
+      "subtype": "international_conference_peer_reviewed",
+      "title": "Zero-queue traffic control using green-times and prices together",
+      "authors": "Michael J. Smith, Takamasa Iryo, Richard Mounce, Koki Satsukawa and David Watling",
+      "venue": "The 8th International Symposium on Dynamic Traffic Assignment, Seattle, USA (online)",
+      "venue_link": "https://dta2020.com/",
+      "year": 2021
+    },
+    {
+      "id": "conf-2019-satsukawa-stochastic",
+      "subtype": "international_conference_peer_reviewed",
+      "title": "Stochastic stability of dynamic user equilibrium in unidirectional networks: Weakly acyclic game approach",
+      "authors": "Koki Satsukawa, Kentaro Wada and Takamasa Iryo",
+      "venue": "The 23rd International Symposium on Transportation and Traffic Theory (ISTTT23), Lausanne, Switzerland",
+      "venue_link": "https://isttt23.sciencesconf.org/",
+      "year": 2019
+    },
+    {
+      "id": "conf-2016-wada-mfd",
+      "subtype": "international_conference_peer_reviewed",
+      "title": "A theoretical analysis of Macroscopic Fundamental Diagram based on dynamic user equilibrium",
+      "authors": "Kentaro Wada and Koki Satsukawa",
+      "venue": "The 6th International Symposium on Dynamic Traffic Assignment, Sydney, Australia",
+      "year": 2016
+    },
+    {
+      "id": "conf-2015-satsukawa-od-structures",
+      "subtype": "international_conference_peer_reviewed",
+      "title": "Effect of origin-destination structures on network performance: Some simple examples",
+      "authors": "Koki Satsukawa and Kentaro Wada",
+      "venue": "The 20th International Conference of Hong Kong Society for Transportation Studies, Hong Kong, China",
+      "venue_link": "https://www.hksts.org/",
+      "year": 2015
+    },
+    {
+      "id": "report-2019-satsukawa-congestion",
+      "subtype": "report",
+      "title": "Traffic performance analysis of road network based on congestion patterns (in Japanese)",
+      "authors": "Koki Satsukawa and Kentaro Wada",
+      "venue": "SEISANKENKYU, 71(2), 89-95",
+      "venue_link": "https://www.jstage.jst.go.jp/browse/seisankenkyu/-char/en",
+      "year": 2019,
+      "doi": "https://doi.org/10.11188/seisankenkyu.71.89"
+    },
+    {
+      "id": "report-2017-nakanishi-traffic",
+      "subtype": "report",
+      "title": "Recent studies of network traffic flow modeling (in Japanese)",
+      "authors": "Wataru Nakanishi and Koki Satsukawa",
+      "venue": "JSTE Magazine \"Traffic Engineering\", 52(4), 33-38",
+      "venue_link": "https://www.jste.or.jp/index.html",
+      "year": 2017
+    },
+    {
+      "id": "talk-2024-satsukawa-convergence",
+      "subtype": "seminar",
+      "title": "Convergence and stability analysis of dynamic traffic assignment with atomic games",
+      "authors": "Koki Satsukawa",
+      "venue": "Dagstuhl Seminar 24281, Dynamic Traffic Models in Transportation Science, Dagstuhl, Germany",
+      "year": 2024
+    },
+    {
+      "id": "talk-2021-satsukawa-dynamic",
+      "subtype": "seminar",
+      "title": "Dynamic network traffic flow analysis and stochastic evolutionary game theory",
+      "authors": "Koki Satsukawa and Kentaro Wada",
+      "venue": "The Thirty-Third RAMP mathematical optimization symposium, Nanzan University, Aichi, Japan",
+      "year": 2021
+    },
+    {
+      "id": "talk-2020-satsukawa-modelling",
+      "subtype": "seminar",
+      "title": "Modelling and control of dynamic traffic flow in mixed networks of autonomous and human-driven vehicles",
+      "authors": "Koki Satsukawa and David Watling",
+      "venue": "International Workshop on Control and DTA: from principles to large-scale implementation, University of Leeds, UK",
+      "year": 2020
+    },
+    {
+      "id": "talk-2018-satsukawa-csis",
+      "subtype": "seminar",
+      "title": "渋滞パターンに基づく道路ネットワークの交通性能とその低下メカニズムの解析 (in Japanese)",
+      "authors": "Koki Satsukawa, Kentaro Wada and Takashi Oguchi",
+      "venue": "CSIS DAYS 2018, The University of Tokyo, Japan",
+      "year": 2018
+    },
+    {
+      "id": "talk-2018-satsukawa-throughput",
+      "subtype": "seminar",
+      "title": "Network throughput under dynamic user equilibrium",
+      "authors": "Koki Satsukawa",
+      "venue": "Joint Seminar between Tongji University and the University of Tokyo and 13th International Workshop on ITS, Tokyo, Japan",
+      "year": 2018
+    },
+    {
+      "id": "talk-2017-satsukawa-ramp",
+      "subtype": "seminar",
+      "title": "A comparative study of coordinated ramp metering strategies for complex networks",
+      "authors": "Koki Satsukawa",
+      "venue": "Symposium on advanced urban traffic operation and control, Tongji University, Shanghai, China",
+      "venue_link": "http://www.its.iis.u-tokyo.ac.jp/en/international-symposium/",
+      "year": 2017
+    },
+    {
+      "id": "talk-2017-satsukawa-frontier",
+      "subtype": "seminar",
+      "title": "Network throughput under dynamic user equilibrium: Queue spillback, paradox and traffic control",
+      "authors": "Koki Satsukawa",
+      "venue": "Frontier of the MFD study (1), Ehime University, Japan",
+      "year": 2017
+    },
+    {
+      "id": "talk-2016-satsukawa-traffic",
+      "subtype": "seminar",
+      "title": "Traffic performance analysis of road network based on dynamic user equilibrium",
+      "authors": "Koki Satsukawa",
+      "venue": "The Second Workshop on Intelligent Transport Systems between Tongji University and the University of Tokyo, Japan",
+      "year": 2016
+    },
+    {
+      "id": "preprint-2025-takiguchi-evolutionary",
+      "subtype": "preprint",
+      "title": "Assessing the evolutionary process of self-financed shared mobility systems: A laboratory experimental approach",
+      "authors": "Haruki Takiguchi, Sowa Suzuki, Takamasa Iryo, Koki Satsukawa and Haruko Nakao",
+      "venue": "Under review / revision / preparation"
+    },
+    {
+      "id": "preprint-2025-iryo-markov",
+      "subtype": "preprint",
+      "title": "Markov-chain-based model for the evolutionary process of self-financed shared mobility systems: Theoretical assessments",
+      "authors": "Takamasa Iryo, David Watling, Koki Satsukawa, Richard Connors, Haruko Nakao and Sowa Suzuki",
+      "venue": "Under review / revision / preparation"
+    },
+    {
+      "id": "preprint-2025-smith-gating",
+      "subtype": "preprint",
+      "title": "New stable responsive local gating strategies to control vehicle queues and flows in congested urban networks",
+      "authors": "Michael Smith, Ronghui Liu, Takamasa Iryo, Koki Satsukawa, Richard Mounce and David Watling",
+      "venue": "Under review / revision / preparation"
+    },
+    {
+      "id": "preprint-2025-sakai-queue",
+      "subtype": "preprint",
+      "title": "Queue replacement approach to dynamic user equilibrium assignment with route and departure time choice",
+      "authors": "Takara Sakai, Takashi Akamatsu and Koki Satsukawa",
+      "venue": "Under review / revision / preparation"
+    },
+    {
+      "id": "preprint-2025-kawase-network-design",
+      "subtype": "preprint",
+      "title": "Flexible and reliable transportation network design for emerging transportation services: multi-stage stochastic programming approach",
+      "authors": "Riki Kawase, Koki Satsukawa and Toru Seo",
+      "venue": "Under review / revision / preparation"
+    },
+    {
+      "id": "preprint-2025-satsukawa-bottleneck",
+      "subtype": "preprint",
+      "title": "A bottleneck model with autonomous vehicles: Scale economies and price regulations",
+      "authors": "Koki Satsukawa and Yuki Takayama",
+      "venue": "Under review / revision / preparation"
+    },
+    {
+      "id": "preprint-2022-sakai-non-existence",
+      "subtype": "preprint",
+      "title": "Non-existence of queues for system optimal departure patterns in tree networks",
+      "authors": "Takara Sakai, Koki Satsukawa and Takashi Akamatsu",
+      "venue": "arXiv preprint",
+      "link": "https://arxiv.org/abs/2205.06015"
+    },
+    {
+      "id": "preprint-2023-akamatsu-global-stability",
+      "subtype": "preprint",
+      "title": "Global stability of day-to-day dynamics for schedule-based Markovian transit assignment with boarding queues",
+      "authors": "Takashi Akamatsu, Koki Satsukawa and Yuki Oyama",
+      "venue": "arXiv preprint",
+      "link": "https://arxiv.org/abs/2304.02194"
+    },
+    {
+      "id": "preprint-2025-satsukawa-uniqueness",
+      "subtype": "preprint",
+      "title": "Uniqueness of dynamic user equilibrium in a corridor network",
+      "authors": "Koki Satsukawa",
+      "venue": "Under review / revision / preparation"
+    }
+  ],
+  "grants": [
+    {
+      "id": "grant-2024-jsps-dummy",
+      "title": "Grant-in-Aid for Scientific Research (C) (dummy)",
+      "agency": "Japan Society for the Promotion of Science",
+      "role": "Principal Investigator",
+      "period": "2024–2026",
+      "amount": "JPY 3,000,000"
+    },
+    {
+      "id": "grant-2022-university-dummy",
+      "title": "University Research Seed Fund (dummy)",
+      "agency": "The University of Tokyo",
+      "role": "Co-Investigator",
+      "period": "2022–2023",
+      "amount": "JPY 1,000,000"
+    }
+  ]
+}
