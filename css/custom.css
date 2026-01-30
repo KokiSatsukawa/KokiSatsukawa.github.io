@@ -29,9 +29,9 @@ body {
 p { line-height: 180%}
 
 .LICV{
-    padding-left: 10px;
-    margin-left: 10px;
-    line-height: 1.7;
+    padding-left: 18px;
+    margin: 6px 0 22px;
+    line-height: 1.6;
 }
 
 .home-title {
@@ -55,11 +55,14 @@ p { line-height: 180%}
 
 
 .cv-item {
-    font-size: 16px;
+    font-size: 15px;
+    letter-spacing: 0.1px;
+    color: #111;
 }
 
 .detail-text {
     font-size: 14px;
+    color: #222;
 }
 
 .publications-page .page-header {
@@ -103,18 +106,37 @@ p { line-height: 180%}
 }
 
 .publication-authors {
-    color: #666;
+    color: #333;
     font-size: 14px;
     margin-bottom: 4px;
 }
 
 .publication-venue {
+    color: #333;
     font-size: 14px;
     margin-bottom: 4px;
 }
 
 .section-title {
     font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    margin: 22px 0 10px;
+}
+
+.section-title u {
+    text-decoration: none;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 2px;
+}
+
+.LICV li {
+    margin-bottom: 10px;
+}
+
+.LICV .detail-text {
+    color: #222;
+    line-height: 1.6;
 }
 
 .publication-section:last-child {
