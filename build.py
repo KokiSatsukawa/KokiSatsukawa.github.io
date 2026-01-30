@@ -98,6 +98,7 @@ def normalize_publication(publication: dict, variant: str) -> dict:
         "title": title,
         "authors": authors,
         "venue": venue,
+        "location": publication.get("location"),
         "venue_link": publication.get("venue_link"),
         "year": publication.get("year"),
         "status": publication.get("status"),
@@ -136,8 +137,8 @@ def format_publication(pub: dict) -> str:
     accepted = pub.get("status") == "accepted"
 
     venue_parts = [part.strip() for part in str(venue_raw).split(",") if part.strip()]
-    venue_name = latex_escape(venue_parts[0]) if venue_parts else ""
-    venue_rest = ", ".join(latex_escape(part) for part in venue_parts[1:])
+    venue_name = latex_escape(venue_raw)
+    venue_rest = ""
 
     volume_text = latex_escape(str(volume)) if volume else ""
     number_text = latex_escape(str(number)) if number else ""
@@ -154,7 +155,10 @@ def format_publication(pub: dict) -> str:
         venue_rest = f"{venue_rest}, {extra_text}" if venue_rest else extra_text
 
     if subtype == "international_conference_peer_reviewed":
-        location = venue_rest
+        location = latex_escape(pub.get("location") or "")
+        if not location and venue_parts:
+            venue_name = latex_escape(venue_parts[0])
+            location = ", ".join(latex_escape(part) for part in venue_parts[1:])
         date_parts = []
         if month:
             date_parts.append(latex_escape(month))
@@ -171,6 +175,8 @@ def format_publication(pub: dict) -> str:
             date_text,
         ]
     else:
+        venue_name = latex_escape(venue_raw)
+        venue_rest = ""
         year_text = str(year) if year else ""
         if accepted:
             year_text = f"{year_text} (Accepted)" if year_text else "(Accepted)"

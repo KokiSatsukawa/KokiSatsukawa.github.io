@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-01-30T15:38:59.465696+00:00",
+  "generated_at": "2026-01-30T15:46:55.712332+00:00",
   "meta": {
     "complete_pdf_url": "output/complete_cv.pdf"
   },
@@ -306,7 +306,8 @@
       "subtype": "international_conference_peer_reviewed",
       "title": "New stable responsive local gating strategies to control vehicle queues and flows in congested urban networks",
       "authors": "Koki Satsukawa and Yuki Takayama",
-      "venue": "The 26th International Symposium on Transportation and Traffic Theory (ISTTT26), Munich, Germany",
+      "venue": "The 26th International Symposium on Transportation and Traffic Theory (ISTTT26)",
+      "location": "Munich, Germany",
       "venue_link": "https://www.isttt2026.vtk.ed.tum.de/",
       "year": 2026,
       "status": "accepted"
@@ -316,7 +317,8 @@
       "subtype": "international_conference_peer_reviewed",
       "title": "Flexible and reliable transportation network design for emerging transportation services: multi-stage stochastic programming approach",
       "authors": "Riki Kawase, Koki Satsukawa and Toru Seo",
-      "venue": "The 26th International Symposium on Transportation and Traffic Theory (ISTTT26), Munich, Germany",
+      "venue": "The 26th International Symposium on Transportation and Traffic Theory (ISTTT26)",
+      "location": "Munich, Germany",
       "venue_link": "https://www.isttt2026.vtk.ed.tum.de/",
       "year": 2026,
       "status": "accepted"
@@ -326,7 +328,8 @@
       "subtype": "international_conference_peer_reviewed",
       "title": "Queue replacement approach to dynamic user equilibrium assignment with route and departure time choice",
       "authors": "Takara Sakai, Takashi Akamatsu and Koki Satsukawa",
-      "venue": "The 26th International Symposium on Transportation and Traffic Theory (ISTTT26), Munich, Germany",
+      "venue": "The 26th International Symposium on Transportation and Traffic Theory (ISTTT26)",
+      "location": "Munich, Germany",
       "venue_link": "https://www.isttt2026.vtk.ed.tum.de/",
       "year": 2026,
       "status": "accepted"
@@ -336,7 +339,8 @@
       "subtype": "international_conference_peer_reviewed",
       "title": "Designing pricing strategies for community-owned shared transport: An evolutionary approach",
       "authors": "Sowa Suzuki, Haruki Takiguchi, Takamasa Iryo, Haruko Nakao, Koki Satsukawa, David Watling and Richard Connors",
-      "venue": "The 29th International Conference of Hong Kong Society for Transportation Studies, Hong Kong, China",
+      "venue": "The 29th International Conference of Hong Kong Society for Transportation Studies",
+      "location": "Hong Kong, China",
       "venue_link": "https://www.hksts.org/",
       "year": 2025
     },
@@ -345,7 +349,8 @@
       "subtype": "international_conference_peer_reviewed",
       "title": "A distributed evolutionary algorithm for optimisation of public transport operations with mixed-capacity vehicle fleets",
       "authors": "Takeru Nihei, Takamasa Iryo and Koki Satsukawa",
-      "venue": "The 29th International Conference of Hong Kong Society for Transportation Studies, Hong Kong, China",
+      "venue": "The 29th International Conference of Hong Kong Society for Transportation Studies",
+      "location": "Hong Kong, China",
       "venue_link": "https://www.hksts.org/",
       "year": 2025
     },
@@ -354,7 +359,8 @@
       "subtype": "international_conference_peer_reviewed",
       "title": "New stable responsive local gating strategies to control vehicle queues and flows in congested urban networks",
       "authors": "Michael Smith, David Watling, Ronghui Liu, Koki Satsukawa, Takamasa Iryo and Richard Mounce",
-      "venue": "The 10th International Symposium on Dynamic Traffic Assignment (DTA2025), Salerno, Italy",
+      "venue": "The 10th International Symposium on Dynamic Traffic Assignment (DTA2025)",
+      "location": "Salerno, Italy",
       "venue_link": "https://www.motusanimi.it/dta2025/",
       "year": 2025
     },
@@ -363,7 +369,8 @@
       "subtype": "international_conference_peer_reviewed",
       "title": "Markov-chain-based model for the evolutionary process of self-financed shared mobility systems: Theoretical assessments",
       "authors": "Takamasa Iryo, David Watling, Koki Satsukawa, Richard Connors, Haruko Nakao and Sowa Suzuki",
-      "venue": "The 10th International Symposium on Dynamic Traffic Assignment (DTA2025), Salerno, Italy",
+      "venue": "The 10th International Symposium on Dynamic Traffic Assignment (DTA2025)",
+      "location": "Salerno, Italy",
       "venue_link": "https://www.motusanimi.it/dta2025/",
       "year": 2025
     },
@@ -372,7 +379,8 @@
       "subtype": "international_conference_peer_reviewed",
       "title": "Assessing the evolutionary process of self-financed shared mobility systems: A laboratory experimental approach",
       "authors": "Haruki Takiguchi, Sowa Suzuki, Takamasa Iryo, Koki Satsukawa and Haruko Nakao",
-      "venue": "The 10th International Symposium on Dynamic Traffic Assignment (DTA2025), Salerno, Italy",
+      "venue": "The 10th International Symposium on Dynamic Traffic Assignment (DTA2025)",
+      "location": "Salerno, Italy",
       "venue_link": "https://www.motusanimi.it/dta2025/",
       "year": 2025
     },
@@ -381,7 +389,8 @@
       "subtype": "international_conference_peer_reviewed",
       "title": "Exploring optimal lifestyle modification pathway for preventing Cardiovascular disease using machine learning and pathfinding algorithms",
       "authors": "Yuki Kosaka, Shota Tsurimoto, Masahiro Noguchi, Koki Satsukawa, Masayuki Takamura and Akihiro Nomura",
-      "venue": "European Society of Cardiology Congress 2025 (ESC2025), Madrid, Spain",
+      "venue": "European Society of Cardiology Congress 2025 (ESC2025)",
+      "location": "Madrid, Spain",
       "venue_link": "https://www.escardio.org/Congresses-Events/ESC-Congress",
       "year": 2025
     },
@@ -390,7 +399,8 @@
       "subtype": "international_conference_peer_reviewed",
       "title": "Evolutionary process of self-financed shared mobility systems",
       "authors": "Haruko Nakao, Koki Satsukawa, Takamasa Iryo, Richard Connors and Sowa Suzuki",
-      "venue": "The Twelfth Triennial Symposium on Transportation Analysis (TRISTAN XII), Okinawa, Japan",
+      "venue": "The Twelfth Triennial Symposium on Transportation Analysis (TRISTAN XII)",
+      "location": "Okinawa, Japan",
       "venue_link": "https://tristanconference.org/editions/tristan-xii/cfp",
       "year": 2025
     },
@@ -399,7 +409,8 @@
       "subtype": "international_conference_peer_reviewed",
       "title": "Stability analysis of a departure time choice problem with atomic vehicle models",
       "authors": "Koki Satsukawa, Kentaro Wada and Takamasa Iryo",
-      "venue": "The 25th International Symposium on Transportation and Traffic Theory (ISTTT25), Ann Arbor, USA",
+      "venue": "The 25th International Symposium on Transportation and Traffic Theory (ISTTT25)",
+      "location": "Ann Arbor, USA",
       "venue_link": "https://limos.engin.umich.edu/isttt25/",
       "year": 2024
     },
@@ -408,7 +419,8 @@
       "subtype": "international_conference_peer_reviewed",
       "title": "A paradox of telecommuting and staggered work hours in the bottleneck model",
       "authors": "Takara Sakai, Takashi Akamatsu and Koki Satsukawa",
-      "venue": "The 25th International Symposium on Transportation and Traffic Theory (ISTTT25), Ann Arbor, USA",
+      "venue": "The 25th International Symposium on Transportation and Traffic Theory (ISTTT25)",
+      "location": "Ann Arbor, USA",
       "venue_link": "https://limos.engin.umich.edu/isttt25/",
       "year": 2024
     },
@@ -417,7 +429,8 @@
       "subtype": "international_conference_peer_reviewed",
       "title": "A study on the design of a reservation system for urban transport services under uncertainty",
       "authors": "Koki Satsukawa, Yusuke Hara, Yosuke Kawasaki and Takamasa Iryo",
-      "venue": "The 9th International Symposium on Transport Network Resilience (INSTR2023), Hong Kong, China",
+      "venue": "The 9th International Symposium on Transport Network Resilience (INSTR2023)",
+      "location": "Hong Kong, China",
       "venue_link": "https://www.institute-of-transport-studies.hku.hk/instr2023",
       "year": 2023
     },
@@ -426,7 +439,8 @@
       "subtype": "international_conference_peer_reviewed",
       "title": "Welfare impacts of remote and flexible working policies in the bottleneck model",
       "authors": "Takara Sakai, Takashi Akamatsu and Koki Satsukawa",
-      "venue": "11th Symposium of the European Association for Research in Transportation (hEART2023), Zurich, Switzerland",
+      "venue": "11th Symposium of the European Association for Research in Transportation (hEART2023)",
+      "location": "Zurich, Switzerland",
       "venue_link": "https://heart2023.org/",
       "year": 2023
     },
@@ -435,7 +449,8 @@
       "subtype": "international_conference_peer_reviewed",
       "title": "Adjustment process of adaptive signal control strategies with route choices: a case study with Policy P0",
       "authors": "Koki Satsukawa, Takamasa Iryo, Naoki Yoshizawa, Michael J. Smith and David Watling",
-      "venue": "9th International Symposium on Dynamic Traffic Assignment (DTA2023), Chicago, USA",
+      "venue": "9th International Symposium on Dynamic Traffic Assignment (DTA2023)",
+      "location": "Chicago, USA",
       "venue_link": "https://sites.northwestern.edu/dta2023/",
       "year": 2023
     },
@@ -444,7 +459,8 @@
       "subtype": "international_conference_peer_reviewed",
       "title": "Queue replacement principle for corridor problems with heterogeneous commuters",
       "authors": "Takara Sakai, Takashi Akamatsu and Koki Satsukawa",
-      "venue": "9th International Symposium on Dynamic Traffic Assignment (DTA2023), Chicago, USA",
+      "venue": "9th International Symposium on Dynamic Traffic Assignment (DTA2023)",
+      "location": "Chicago, USA",
       "venue_link": "https://sites.northwestern.edu/dta2023/",
       "year": 2023
     },
@@ -453,7 +469,8 @@
       "subtype": "international_conference_peer_reviewed",
       "title": "Departure time choice problems in a corridor network with heterogeneous value of schedule delay",
       "authors": "Takara Sakai, Takashi Akamatsu and Koki Satsukawa",
-      "venue": "The 27th International Conference of Hong Kong Society for Transportation Studies, Hong Kong, China (online)",
+      "venue": "The 27th International Conference of Hong Kong Society for Transportation Studies",
+      "location": "Hong Kong, China (online)",
       "venue_link": "https://www.hksts.org/",
       "year": 2022
     },
@@ -462,7 +479,8 @@
       "subtype": "international_conference_peer_reviewed",
       "title": "Dynamic system optimal traffic assignment with atomic users: Convergence and stability",
       "authors": "Koki Satsukawa, Kentaro Wada and David Watling",
-      "venue": "The 24th International Symposium on Transportation and Traffic Theory (ISTTT24), Beijing, China (online)",
+      "venue": "The 24th International Symposium on Transportation and Traffic Theory (ISTTT24)",
+      "location": "Beijing, China (online)",
       "venue_link": "http://isttt24.buaa.edu.cn/",
       "year": 2022
     },
@@ -471,7 +489,8 @@
       "subtype": "international_conference_peer_reviewed",
       "title": "Zero-queue traffic control using green-times and prices together",
       "authors": "Michael J. Smith, Takamasa Iryo, Richard Mounce, Koki Satsukawa and David Watling",
-      "venue": "The 8th International Symposium on Dynamic Traffic Assignment, Seattle, USA (online)",
+      "venue": "The 8th International Symposium on Dynamic Traffic Assignment",
+      "location": "Seattle, USA (online)",
       "venue_link": "https://dta2020.com/",
       "year": 2021
     },
@@ -480,7 +499,8 @@
       "subtype": "international_conference_peer_reviewed",
       "title": "Stochastic stability of dynamic user equilibrium in unidirectional networks: Weakly acyclic game approach",
       "authors": "Koki Satsukawa, Kentaro Wada and Takamasa Iryo",
-      "venue": "The 23rd International Symposium on Transportation and Traffic Theory (ISTTT23), Lausanne, Switzerland",
+      "venue": "The 23rd International Symposium on Transportation and Traffic Theory (ISTTT23)",
+      "location": "Lausanne, Switzerland",
       "venue_link": "https://isttt23.sciencesconf.org/",
       "year": 2019
     },
@@ -489,7 +509,8 @@
       "subtype": "international_conference_peer_reviewed",
       "title": "A theoretical analysis of Macroscopic Fundamental Diagram based on dynamic user equilibrium",
       "authors": "Kentaro Wada and Koki Satsukawa",
-      "venue": "The 6th International Symposium on Dynamic Traffic Assignment, Sydney, Australia",
+      "venue": "The 6th International Symposium on Dynamic Traffic Assignment",
+      "location": "Sydney, Australia",
       "year": 2016
     },
     {
@@ -497,7 +518,8 @@
       "subtype": "international_conference_peer_reviewed",
       "title": "Effect of origin-destination structures on network performance: Some simple examples",
       "authors": "Koki Satsukawa and Kentaro Wada",
-      "venue": "The 20th International Conference of Hong Kong Society for Transportation Studies, Hong Kong, China",
+      "venue": "The 20th International Conference of Hong Kong Society for Transportation Studies",
+      "location": "Hong Kong, China",
       "venue_link": "https://www.hksts.org/",
       "year": 2015
     },

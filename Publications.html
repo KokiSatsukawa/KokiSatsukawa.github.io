@@ -119,10 +119,8 @@
                 }
                 const venueText = item.venue;
                 if (item.venue_link) {
-                    const parts = venueText.split(",");
-                    const venueName = escapeHtml(parts[0].trim());
-                    const rest = parts.length > 1 ? `, ${escapeHtml(parts.slice(1).join(",").trim())}` : "";
-                    return `<a href="${item.venue_link}" target="_blank" rel="noopener noreferrer">${venueName}</a>${rest}`;
+                    const venueName = escapeHtml(venueText);
+                    return `<a href="${item.venue_link}" target="_blank" rel="noopener noreferrer">${venueName}</a>`;
                 }
                 return escapeHtml(venueText);
             }
@@ -140,6 +138,9 @@
                 const venue = renderVenue(item);
                 const yearText = item.year ? String(item.year) : "";
                 const isJapanese = item.language === "ja" || item.language === "japanese";
+                const location = item.subtype === "international_conference_peer_reviewed" && item.location
+                    ? String(item.location)
+                    : "";
                 const volume = item.volume ? String(item.volume) : "";
                 const number = item.number ? String(item.number) : "";
                 const pages = item.pages ? String(item.pages) : "";
@@ -155,6 +156,9 @@
                 let suffix = "";
                 if (extras) {
                     suffix = `${venue ? ", " : ""}${extras}`;
+                }
+                if (location) {
+                    suffix = `${suffix || venue ? ", " : ""}${location}`.trim();
                 }
                 if (yearText) {
                     suffix += `${(suffix || venue) ? ", " : ""}${yearText}`;
