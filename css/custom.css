@@ -39,6 +39,10 @@ p { line-height: 180%}
     line-height: 1.5;
 }
 
+.item-title-strong {
+    font-weight: 600;
+}
+
 .detail-text {
     font-size: 15px;
     color: #333;
@@ -102,6 +106,12 @@ p { line-height: 180%}
     margin: 22px 0 10px;
 }
 
+.section-subtitle {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    margin: 12px 0 6px;
+}
 
 .LICV li {
     margin-bottom: 10px;
