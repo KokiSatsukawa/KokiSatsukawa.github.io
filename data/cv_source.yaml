@@ -138,9 +138,11 @@ publications:
   - id: journal-2024-satsukawa-bundling
     subtype: journal_peer_reviewed
     title_web: "A design of a bundling reservation system for urban transport services under demand uncertainty"
-    title_pdf: "A design of a bundling reservation system for urban transport services under demand uncertainty"
+    title_pdf: "需要の不確実性に対する都市交通サービスのバンドル予約システムの設計"
     authors_web: "Koki Satsukawa, Yusuke Hara, Yosuke Kawasaki and Takamasa Iryo"
+    authors_pdf: "佐津川功季, 原祐輔, 川崎洋輔, 井料隆雅"
     venue_web: "Japanese Journal of JSCE"
+    venue_pdf: "土木学会論文集"
     volume: "80"
     number: "9"
     pages: "23-00206"
@@ -161,9 +163,11 @@ publications:
   - id: journal-2023-hara-preference
     subtype: journal_peer_reviewed
     title_web: "An experimental approach for evaluating the impact of preference elicitation on search behavior in a reservation system"
-    title_pdf: "An experimental approach for evaluating the impact of preference elicitation on search behavior in a reservation system"
+    title_pdf: "予約システムにおける探索行動と選好誘出の影響評価のための実験的アプローチ"
     authors_web: "Yusuke Hara, Yosuke Kawasaki, Koki Satsukawa and Takamasa Iryo"
+    authors_pdf: "原祐輔, 川崎洋輔, 佐津川功季, 井料隆雅"
     venue_web: "Japanese Journal of JSCE"
+    venue_pdf: "土木学会論文集"
     volume: "79"
     number: "20"
     pages: "23-20020"
@@ -174,9 +178,11 @@ publications:
   - id: journal-2022-satsukawa-optimal-repair
     subtype: journal_peer_reviewed
     title_web: "Optimal repair policy for ETC facility with economic losses due to traffic congestion during failures"
-    title_pdf: "Optimal repair policy for ETC facility with economic losses due to traffic congestion during failures"
+    title_pdf: "故障時交通渋滞による経済損失を考慮したETC設備の最適補修施策に関する研究"
     authors_web: "Koki Satsukawa, Daijiro Mizutani, Yosuke Kawasaki, Takeo Kaneda and Masao Kuwahara"
+    authors_pdf: "佐津川功季, 水谷大二郎, 川崎洋輔, 金田威夫, 桑原雅夫"
     venue_web: "Journal of Japan Society of Civil Engineers, Ser. D3 (Infrastructure Planning and Management)"
+    venue_pdf: "土木学会論文集D3（土木計画学）"
     volume: "78"
     number: "3"
     pages: "105-121"
@@ -207,9 +213,11 @@ publications:
   - id: journal-2022-ikushima-management
     subtype: journal_peer_reviewed
     title_web: "Possibility of improving management policies for expressway facilities based on questionnaire survey of on-site engineers"
-    title_pdf: "Possibility of improving management policies for expressway facilities based on questionnaire survey of on-site engineers"
+    title_pdf: "現場技術者へのアンケート調査に基づく高速道路設備の維持管理施策の改善可能性"
     authors_web: "Rie Ikushima, Daijiro Mizutani, Koki Satsukawa, Yosuke Kawasaki and Masao Kuwahara"
+    authors_pdf: "生嶋理恵, 水谷大二郎, 佐津川功季, 川崎洋輔, 桑原雅夫"
     venue_web: "Journal of Japan Society of Civil Engineers, Ser. F4 (Construction and Management)"
+    venue_pdf: "土木学会論文集F4（建設マネジメント）"
     volume: "78"
     number: "1"
     pages: "51-69"
@@ -230,9 +238,11 @@ publications:
   - id: journal-2021-sakai-departure
     subtype: journal_peer_reviewed
     title_web: "Departure time choice problems with heterogeneous values of schedule delay in tandem bottlenecks"
-    title_pdf: "Departure time choice problems with heterogeneous values of schedule delay in tandem bottlenecks"
+    title_pdf: "スケジュールコストの異質性を考慮したタンデムボトルネック出発時刻選択問題"
     authors_web: "Takara Sakai, Takashi Akamatsu and Koki Satsukawa"
+    authors_pdf: "酒井高良, 赤松隆, 佐津川功季"
     venue_web: "Journal of Japan Society of Civil Engineers, Ser. D3 (Infrastructure Planning and Management)"
+    venue_pdf: "土木学会論文集D3（土木計画学）"
     volume: "77"
     number: "4"
     pages: "330-345"
@@ -253,9 +263,11 @@ publications:
   - id: journal-2021-mizutani-message
     subtype: journal_peer_reviewed
     title_web: "A basic method to evaluate management policies of variable message signs on expressways considering user costs"
-    title_pdf: "A basic method to evaluate management policies of variable message signs on expressways considering user costs"
+    title_pdf: "利用者の経済損失を考慮した高速道路情報板の維持管理施策の簡易的評価手法"
     authors_web: "Daijiro Mizutani, Yosuke Kawasaki, Koki Satsukawa, Takeshi Nakagawa, Shogo Umeda, Rie Ikushima and Masao Kuwahara"
+    authors_pdf: "水谷大二郎, 川崎洋輔, 佐津川功季, 中川岳士, 梅田祥吾, 生嶋理恵, 桑原雅夫"
     venue_web: "Journal of Japan Society of Civil Engineers, Ser. D3 (Infrastructure Planning and Management)"
+    venue_pdf: "土木学会論文集D3（土木計画学）"
     volume: "76"
     number: "5"
     pages: "I_127-I_139"
@@ -280,6 +292,7 @@ publications:
     venue_web: "Transportation Research Part B: Methodological"
     volume: "126"
     pages: "391-413"
+    venue_link: "https://www.sciencedirect.com/journal/transportation-research-part-b-methodological"
     year: 2019
     doi: "https://doi.org/10.1016/j.trb.2018.04.002"
   - id: journal-2017-wada-kinematic-wave
@@ -293,6 +306,7 @@ publications:
     volume: "73"
     number: "5"
     pages: "I_1139-I_1158"
+    venue_link: https://www.jstage.jst.go.jp/browse/jscejipm/-char/ja
     year: 2017
     doi: "https://doi.org/10.2208/jscejipm.73.I_1139"
     language: "ja"
@@ -307,6 +321,7 @@ publications:
     volume: "73"
     number: "1"
     pages: "56-72"
+    venue_link: https://www.jstage.jst.go.jp/browse/jscejipm/-char/ja
     year: 2017
     doi: "https://doi.org/10.2208/jscejipm.73.56"
     language: "ja"
@@ -321,6 +336,7 @@ publications:
     volume: "73"
     number: "1"
     pages: "103-108"
+    venue_link: https://www.jstage.jst.go.jp/browse/jscejipm/-char/ja
     year: 2017
     doi: "https://doi.org/10.2208/jscejipm.73.103"
     language: "ja"
