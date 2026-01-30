@@ -55,7 +55,7 @@ p { line-height: 180%}
 
 
 .cv-item {
-    font-size: 15px;
+    font-size: 14px;
     letter-spacing: 0.1px;
     color: #111;
 }
@@ -70,7 +70,15 @@ p { line-height: 180%}
 }
 
 .publications-page .detail-text {
-    font-size: 16px;
+    font-size: 14px;
+}
+
+.cv-page .page-header {
+    font-size: 32px;
+}
+
+.contact-page .page-header {
+    font-size: 32px;
 }
 
 .publication-section {
@@ -124,11 +132,6 @@ p { line-height: 180%}
     margin: 22px 0 10px;
 }
 
-.cv-page .section-title u {
-    text-decoration: none;
-    border-bottom: none;
-    padding-bottom: 0;
-}
 
 .LICV li {
     margin-bottom: 10px;
@@ -146,6 +149,16 @@ p { line-height: 180%}
 }
 
 .cv-page section:last-of-type {
+    border-bottom: none;
+}
+
+.contact-page section {
+    margin-bottom: 30px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.contact-page section:last-of-type {
     border-bottom: none;
 }
 
