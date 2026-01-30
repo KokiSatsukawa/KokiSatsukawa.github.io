@@ -31,7 +31,8 @@ p { line-height: 180%}
 
 
 
-.cv-item {
+.item-title,
+.publication-title {
     font-size: 16px;
     letter-spacing: 0.1px;
     color: #111;
@@ -51,14 +52,13 @@ p { line-height: 180%}
     margin: 0 0 6px;
 }
 
-.publication-section {
+.section-block {
     margin-bottom: 30px;
     padding-bottom: 16px;
     border-bottom: 1px solid #e0e0e0;
 }
 
 .publication-title {
-    font-size: 16px;
     margin-bottom: 4px;
     font-weight: normal;
 }
@@ -112,27 +112,7 @@ p { line-height: 180%}
     line-height: 1.6;
 }
 
-.cv-page section {
-    margin-bottom: 30px;
-    padding-bottom: 16px;
-    border-bottom: 1px solid #e0e0e0;
-}
-
-.cv-page section:last-of-type {
-    border-bottom: none;
-}
-
-.contact-page section {
-    margin-bottom: 30px;
-    padding-bottom: 16px;
-    border-bottom: 1px solid #e0e0e0;
-}
-
-.contact-page section:last-of-type {
-    border-bottom: none;
-}
-
-.publication-section:last-child {
+.section-block:last-child {
     border-bottom: none;
 }
 
