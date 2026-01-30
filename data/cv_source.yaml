@@ -3,9 +3,9 @@ meta:
 web:
   display_subtypes:
     - id: journal_peer_reviewed
-      label: "Journal Articles (peer-reviewed)"
+      label: "Peer-Reviewed Journal Articles"
     - id: international_conference_peer_reviewed
-      label: "International Conferences (peer-reviewed)"
+      label: "Peer-Reviewed International Conferences"
     - id: preprint
       label: "Preprints"
 cv:
