@@ -273,7 +273,6 @@ publications:
     venue_link: "https://www.sciencedirect.com/journal/transportation-research-part-b-methodological"
     year: 2019
     doi: "https://dx.doi.org/10.1016/j.trb.2019.05.015"
-    
   - id: journal-2019-wada-throughput
     subtype: journal_peer_reviewed
     title_web: "Network throughput under dynamic user equilibrium: queue spillback, paradox and traffic control"
@@ -283,8 +282,6 @@ publications:
     pages: "391-413"
     year: 2019
     doi: "https://doi.org/10.1016/j.trb.2018.04.002"
-
-
   - id: journal-2017-wada-kinematic-wave
     subtype: journal_peer_reviewed
     title_web: "Recent advances in kinematic wave theory of traffic flows: variational formulation and network extension"
@@ -299,8 +296,6 @@ publications:
     year: 2017
     doi: "https://doi.org/10.2208/jscejipm.73.I_1139"
     language: "ja"
-
-
   - id: journal-2017-wada-traffic-performance
     subtype: journal_peer_reviewed
     title_web: "Traffic performance analysis of road network based on dynamic user equilibrium"
@@ -315,7 +310,6 @@ publications:
     year: 2017
     doi: "https://doi.org/10.2208/jscejipm.73.56"
     language: "ja"
-
   - id: journal-2017-satsukawa-nash
     subtype: journal_peer_reviewed
     title_web: "A note on the solution algorithm of Nash equilibrium in dynamic traffic assignment for single destination networks"
