@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-01-30T15:28:36.554757+00:00",
+  "generated_at": "2026-01-30T15:38:59.465696+00:00",
   "meta": {
     "complete_pdf_url": "output/complete_cv.pdf"
   },
@@ -253,6 +253,7 @@
       "title": "Network throughput under dynamic user equilibrium: queue spillback, paradox and traffic control",
       "authors": "Kentaro Wada, Koki Satsukawa, Mike Smith and Takashi Akamatsu",
       "venue": "Transportation Research Part B: Methodological",
+      "venue_link": "https://www.sciencedirect.com/journal/transportation-research-part-b-methodological",
       "year": 2019,
       "volume": "126",
       "pages": "391-413",
@@ -264,6 +265,7 @@
       "title": "Recent advances in kinematic wave theory of traffic flows: variational formulation and network extension",
       "authors": "Kentaro Wada, Toru Seo, Wataru Nakanishi, Koki Satsukawa and Masami Yanagihara",
       "venue": "Journal of Japan Society of Civil Engineers, Ser. D3 (Infrastructure Planning and Management)",
+      "venue_link": "https://www.jstage.jst.go.jp/browse/jscejipm/-char/ja",
       "year": 2017,
       "language": "ja",
       "volume": "73",
@@ -277,6 +279,7 @@
       "title": "Traffic performance analysis of road network based on dynamic user equilibrium",
       "authors": "Kentaro Wada and Koki Satsukawa",
       "venue": "Journal of Japan Society of Civil Engineers, Ser. D3 (Infrastructure Planning and Management)",
+      "venue_link": "https://www.jstage.jst.go.jp/browse/jscejipm/-char/ja",
       "year": 2017,
       "language": "ja",
       "volume": "73",
@@ -290,6 +293,7 @@
       "title": "A note on the solution algorithm of Nash equilibrium in dynamic traffic assignment for single destination networks",
       "authors": "Koki Satsukawa and Kentaro Wada",
       "venue": "Journal of Japan Society of Civil Engineers, Ser. D3 (Infrastructure Planning and Management)",
+      "venue_link": "https://www.jstage.jst.go.jp/browse/jscejipm/-char/ja",
       "year": 2017,
       "language": "ja",
       "volume": "73",
