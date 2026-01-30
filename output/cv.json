@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-01-28T12:20:08Z",
+  "generated_at": "2026-01-30T15:03:57.487445+00:00",
   "meta": {
     "complete_pdf_url": "output/complete_cv.pdf"
   },
@@ -7,11 +7,11 @@
     "display_subtypes": [
       {
         "id": "journal_peer_reviewed",
-        "label": "Journal Articles (peer-reviewed)"
+        "label": "Peer-Reviewed Journal Articles"
       },
       {
         "id": "international_conference_peer_reviewed",
-        "label": "International Conferences (peer-reviewed)"
+        "label": "Peer-Reviewed International Conferences"
       },
       {
         "id": "preprint",
@@ -25,9 +25,10 @@
       "subtype": "journal_peer_reviewed",
       "title": "Integrating real-time monitoring information into asset failure modeling: application to ETC facilities",
       "authors": "Daijiro Mizutani, Rie Ikushima, Koki Satsukawa, Yosuke Kawasaki and Masao Kuwahara",
-      "venue": "Journal of Infrastructure Systems (accepted)",
+      "venue": "Journal of Infrastructure Systems",
       "venue_link": "https://ascelibrary.org/journal/jitse4",
-      "year": 2025
+      "year": 2025,
+      "status": "accepted"
     },
     {
       "id": "journal-2025-satsukawa-adjustment",
@@ -230,13 +231,16 @@
       "doi": "https://doi.org/10.2208/jscejipm.73.56"
     },
     {
-      "id": "journal-2017-satsukawa-note",
+      "id": "journal-2017-satsukawa-nash",
       "subtype": "journal_peer_reviewed",
-      "title": "A note on the solution algorithm of Nash equilibrium in dynamic traffic assignment for single destination networks (in Japanese)",
+      "title": "A note on the solution algorithm of Nash equilibrium in dynamic traffic assignment for single destination networks",
       "authors": "Koki Satsukawa and Kentaro Wada",
-      "venue": "Journal of Japan Society of Civil Engineers, Ser. D3 (Infrastructure Planning and Management), 73(1), 103-108",
-      "venue_link": "https://www.jstage.jst.go.jp/browse/jscejipm",
+      "venue": "Journal of Japan Society of Civil Engineers, Ser. D3 (Infrastructure Planning and Management)",
       "year": 2017,
+      "language": "ja",
+      "volume": "73",
+      "number": "1",
+      "pages": "103-108",
       "doi": "https://doi.org/10.2208/jscejipm.73.103"
     },
     {
@@ -244,27 +248,30 @@
       "subtype": "international_conference_peer_reviewed",
       "title": "New stable responsive local gating strategies to control vehicle queues and flows in congested urban networks",
       "authors": "Koki Satsukawa and Yuki Takayama",
-      "venue": "The 26th International Symposium on Transportation and Traffic Theory (ISTTT26), Munich, Germany (accepted)",
+      "venue": "The 26th International Symposium on Transportation and Traffic Theory (ISTTT26), Munich, Germany",
       "venue_link": "https://www.isttt2026.vtk.ed.tum.de/",
-      "year": 2026
+      "year": 2026,
+      "status": "accepted"
     },
     {
       "id": "conf-2026-kawase-network-design",
       "subtype": "international_conference_peer_reviewed",
       "title": "Flexible and reliable transportation network design for emerging transportation services: multi-stage stochastic programming approach",
       "authors": "Riki Kawase, Koki Satsukawa and Toru Seo",
-      "venue": "The 26th International Symposium on Transportation and Traffic Theory (ISTTT26), Munich, Germany (accepted)",
+      "venue": "The 26th International Symposium on Transportation and Traffic Theory (ISTTT26), Munich, Germany",
       "venue_link": "https://www.isttt2026.vtk.ed.tum.de/",
-      "year": 2026
+      "year": 2026,
+      "status": "accepted"
     },
     {
       "id": "conf-2026-sakai-queue",
       "subtype": "international_conference_peer_reviewed",
       "title": "Queue replacement approach to dynamic user equilibrium assignment with route and departure time choice",
       "authors": "Takara Sakai, Takashi Akamatsu and Koki Satsukawa",
-      "venue": "The 26th International Symposium on Transportation and Traffic Theory (ISTTT26), Munich, Germany (accepted)",
+      "venue": "The 26th International Symposium on Transportation and Traffic Theory (ISTTT26), Munich, Germany",
       "venue_link": "https://www.isttt2026.vtk.ed.tum.de/",
-      "year": 2026
+      "year": 2026,
+      "status": "accepted"
     },
     {
       "id": "conf-2025-suzuki-pricing",

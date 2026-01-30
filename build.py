@@ -75,15 +75,21 @@ def latex_escape(text: str) -> str:
 
 def normalize_publication(publication: dict, variant: str) -> dict:
     title = publication.get(f"title_{variant}") or publication.get("title", "")
+    authors = publication.get(f"authors_{variant}") or publication.get("authors", "")
     venue = publication.get(f"venue_{variant}") or publication.get("venue", "")
     normalized = {
         "id": publication.get("id"),
         "subtype": publication.get("subtype"),
         "title": title,
-        "authors": publication.get("authors", ""),
+        "authors": authors,
         "venue": venue,
         "venue_link": publication.get("venue_link"),
         "year": publication.get("year"),
+        "status": publication.get("status"),
+        "language": publication.get("language"),
+        "volume": publication.get("volume"),
+        "number": publication.get("number"),
+        "pages": publication.get("pages"),
         "link": publication.get("link"),
         "doi": publication.get("doi"),
     }
@@ -92,15 +98,29 @@ def normalize_publication(publication: dict, variant: str) -> dict:
 
 def format_publication(pub: dict) -> str:
     title = latex_escape(pub.get("title_pdf") or pub.get("title", ""))
-    authors = latex_escape(pub.get("authors", ""))
+    authors = latex_escape(pub.get("authors_pdf") or pub.get("authors", ""))
     venue_raw = pub.get("venue_pdf") or pub.get("venue", "")
+    volume = pub.get("volume")
+    number = pub.get("number")
+    pages = pub.get("pages")
     year = pub.get("year")
     month = pub.get("month")
     subtype = pub.get("subtype", "")
+    accepted = pub.get("status") == "accepted"
 
     venue_parts = [part.strip() for part in str(venue_raw).split(",") if part.strip()]
     venue_name = latex_escape(venue_parts[0]) if venue_parts else ""
     venue_rest = ", ".join(latex_escape(part) for part in venue_parts[1:])
+
+    extra_text = ""
+    if volume and number:
+        extra_text = f"{volume}({number})"
+    elif volume:
+        extra_text = f"{volume}"
+    if pages:
+        extra_text = f"{extra_text}, {pages}" if extra_text else f"{pages}"
+    if extra_text:
+        venue_rest = f"{venue_rest}, {extra_text}" if venue_rest else extra_text
 
     if subtype == "international_conference_peer_reviewed":
         location = venue_rest
@@ -110,6 +130,8 @@ def format_publication(pub: dict) -> str:
         if year:
             date_parts.append(str(year))
         date_text = " ".join(date_parts)
+        if accepted:
+            date_text = f"{date_text} (Accepted)" if date_text else "(Accepted)"
         parts = [
             authors,
             title,
@@ -118,12 +140,15 @@ def format_publication(pub: dict) -> str:
             date_text,
         ]
     else:
+        year_text = str(year) if year else ""
+        if accepted:
+            year_text = f"{year_text} (Accepted)" if year_text else "(Accepted)"
         parts = [
             authors,
             title,
             rf"\textit{{{venue_name}}}",
             venue_rest,
-            str(year) if year else "",
+            year_text,
         ]
 
     cleaned = [part for part in parts if part]
@@ -170,9 +195,9 @@ def write_tex_sections(output_dir: Path, data: dict) -> None:
                 return
             if list_mode:
                 option = (
-                    "[label={[\thesection.\arabic*]}]"
+                    r"[label={[\thesection.\arabic*]}]"
                     if not resume
-                    else "[resume,label={[\thesection.\arabic*]}]"
+                    else r"[resume,label={[\thesection.\arabic*]}]"
                 )
                 cv_blocks.append(rf"\begin{{enumerate}}{option}")
             for entry in items:

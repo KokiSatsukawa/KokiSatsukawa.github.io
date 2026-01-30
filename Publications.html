@@ -138,12 +138,49 @@
 
             function renderItem(item) {
                 const venue = renderVenue(item);
-                const year = item.year ? `${venue ? ", " : ""}${item.year}` : "";
+                const yearText = item.year ? String(item.year) : "";
+                const isJapanese = item.language === "ja" || item.language === "japanese";
+                const volume = item.volume ? String(item.volume) : "";
+                const number = item.number ? String(item.number) : "";
+                const pages = item.pages ? String(item.pages) : "";
+                let extras = "";
+                if (volume && number) {
+                    extras = `${volume}(${number})`;
+                } else if (volume) {
+                    extras = volume;
+                }
+                if (pages) {
+                    extras = extras ? `${extras}, ${pages}` : pages;
+                }
+                let suffix = "";
+                if (extras) {
+                    suffix = `${venue ? ", " : ""}${extras}`;
+                }
+                if (yearText) {
+                    suffix += `${(suffix || venue) ? ", " : ""}${yearText}`;
+                }
+                if (item.status === "accepted" || isJapanese) {
+                    let tag = "";
+                    if (isJapanese && item.status === "accepted") {
+                        tag = " (In Japanese. Accepted)";
+                    } else if (isJapanese) {
+                        tag = " (In Japanese)";
+                    } else {
+                        tag = " (Accepted)";
+                    }
+                    if (yearText) {
+                        suffix += tag;
+                    } else if (suffix || venue) {
+                        suffix += tag;
+                    } else {
+                        suffix = tag.trim();
+                    }
+                }
                 return `
                     <li class="publication-item">
                         <div class="publication-title item-title">${renderTitle(item)}</div>
                         <div class="publication-authors">${escapeHtml(item.authors)}</div>
-                        <div class="publication-venue">${venue}${year}</div>
+                        <div class="publication-venue">${venue}${suffix}</div>
                     </li>
                 `;
             }
