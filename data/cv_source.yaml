@@ -78,180 +78,243 @@ cv:
 publications:
   - id: journal-2025-mizutani-monitoring
     subtype: journal_peer_reviewed
-    title: "Integrating real-time monitoring information into asset failure modeling: application to ETC facilities"
-    authors: "Daijiro Mizutani, Rie Ikushima, Koki Satsukawa, Yosuke Kawasaki and Masao Kuwahara"
-    venue: "Journal of Infrastructure Systems"
+    title_web: "Integrating real-time monitoring information into asset failure modeling: application to ETC facilities"
+    authors_web: "Daijiro Mizutani, Rie Ikushima, Koki Satsukawa, Yosuke Kawasaki and Masao Kuwahara"
+    venue_web: "Journal of Infrastructure Systems"
     status: accepted
     venue_link: "https://ascelibrary.org/journal/jitse4"
     year: 2025
   - id: journal-2025-satsukawa-adjustment
     subtype: journal_peer_reviewed
-    title: "Adjustment process of adaptive signal control strategies with route choices: a case study with Policy P0"
-    authors: "Koki Satsukawa, Takamasa Iryo, Naoki Yoshizawa, Michael J. Smith and David Watling"
-    venue: "Transportmetrica B: Transport Dynamics, 13(1)"
+    title_web: "Adjustment process of adaptive signal control strategies with route choices: a case study with Policy P0"
+    authors_web: "Koki Satsukawa, Takamasa Iryo, Naoki Yoshizawa, Michael J. Smith and David Watling"
+    venue_web: "Transportmetrica B: Transport Dynamics"
+    volume: "13"
+    number: "1"
     venue_link: "https://www.tandfonline.com/journals/ttrb20"
     year: 2025
     doi: "https://dx.doi.org/10.1080/21680566.2025.2516183"
   - id: journal-2025-mizutani-spare-parts
     subtype: journal_peer_reviewed
-    title: "Optimal road facility spare parts location with continuum approximation"
-    authors: "Daijiro Mizutani, Shunichi Fukuyama and Koki Satsukawa"
-    venue: "Transportation Research Part C: Emerging Technologies, 174, 105109"
+    title_web: "Optimal road facility spare parts location with continuum approximation"
+    authors_web: "Daijiro Mizutani, Shunichi Fukuyama and Koki Satsukawa"
+    venue_web: "Transportation Research Part C: Emerging Technologies"
+    volume: "174"
+    pages: "105109"
     venue_link: "https://www.sciencedirect.com/journal/transportation-research-part-c-emerging-technologies"
     year: 2025
     doi: "https://doi.org/10.1016/j.trc.2025.105109"
   - id: journal-2024-satsukawa-stability
     subtype: journal_peer_reviewed
-    title: "Stability analysis of a departure time choice problem with atomic vehicle models"
-    authors: "Koki Satsukawa, Kentaro Wada and Takamasa Iryo"
-    venue: "Transportation Research Part B: Methodological, 189, 103039"
+    title_web: "Stability analysis of a departure time choice problem with atomic vehicle models"
+    authors_web: "Koki Satsukawa, Kentaro Wada and Takamasa Iryo"
+    venue_web: "Transportation Research Part B: Methodological"
+    volume: "189"
+    pages: "103039"
     venue_link: "https://www.sciencedirect.com/journal/transportation-research-part-b-methodological"
     year: 2024
     doi: "https://doi.org/10.1016/j.trb.2024.103039"
   - id: journal-2024-sakai-queue-replacement
     subtype: journal_peer_reviewed
-    title: "Queue replacement principle for corridor problems with heterogeneous commuters"
-    authors: "Takara Sakai, Takashi Akamatsu and Koki Satsukawa"
-    venue: "Transportation Research Part B: Methodological, 187, 103024"
+    title_web: "Queue replacement principle for corridor problems with heterogeneous commuters"
+    authors_web: "Takara Sakai, Takashi Akamatsu and Koki Satsukawa"
+    venue_web: "Transportation Research Part B: Methodological"
+    volume: "187"
+    pages: "103024"
     venue_link: "https://www.sciencedirect.com/journal/transportation-research-part-b-methodological"
     year: 2024
     doi: "https://doi.org/10.1016/j.trb.2024.103024"
   - id: journal-2024-sakai-telecommuting
     subtype: journal_peer_reviewed
-    title: "A paradox of telecommuting and staggered work hours in the bottleneck model"
-    authors: "Takara Sakai, Takashi Akamatsu and Koki Satsukawa"
-    venue: "Transportation Science, 58(6), 1335-1351"
+    title_web: "A paradox of telecommuting and staggered work hours in the bottleneck model"
+    authors_web: "Takara Sakai, Takashi Akamatsu and Koki Satsukawa"
+    venue_web: "Transportation Science"
+    volume: "58"
+    number: "6"
+    pages: "1335-1351"
     venue_link: "https://pubsonline.informs.org/journal/trsc"
     year: 2024
     doi: "https://doi.org/10.1287/trsc.2024.0520"
   - id: journal-2024-satsukawa-bundling
     subtype: journal_peer_reviewed
-    title_web: "A design of a bundling reservation system for urban transport services under demand uncertainty (in Japanese)"
+    title_web: "A design of a bundling reservation system for urban transport services under demand uncertainty"
     title_pdf: "A design of a bundling reservation system for urban transport services under demand uncertainty"
-    authors: "Koki Satsukawa, Yusuke Hara, Yosuke Kawasaki and Takamasa Iryo"
-    venue: "Japanese Journal of JSCE, 80(9), 23-00206"
+    authors_web: "Koki Satsukawa, Yusuke Hara, Yosuke Kawasaki and Takamasa Iryo"
+    venue_web: "Japanese Journal of JSCE"
+    volume: "80"
+    number: "9"
+    pages: "23-00206"
     venue_link: "https://www.jstage.jst.go.jp/browse/jscejipm"
     year: 2024
     doi: "https://doi.org/10.2208/jscejj.23-00206"
+    language: "ja"
   - id: journal-2024-mizutani-intervention
     subtype: journal_peer_reviewed
-    title: "Optimal intervention policy of emergency storage batteries for expressway facilities considering deterioration risk during lead time of replacement"
-    authors: "Daijiro Mizutani, Yuto Nakazato, Rie Ikushima, Koki Satsukawa, Yosuke Kawasaki and Masao Kuwahara"
-    venue: "Reliability Engineering & System Safety, 242, 109735"
+    title_web: "Optimal intervention policy of emergency storage batteries for expressway facilities considering deterioration risk during lead time of replacement"
+    authors_web: "Daijiro Mizutani, Yuto Nakazato, Rie Ikushima, Koki Satsukawa, Yosuke Kawasaki and Masao Kuwahara"
+    venue_web: "Reliability Engineering & System Safety"
+    volume: "242"
+    pages: "109735"
     venue_link: "https://www.sciencedirect.com/journal/reliability-engineering-and-system-safety"
     year: 2024
     doi: "https://doi.org/10.1016/j.ress.2023.109735"
   - id: journal-2023-hara-preference
     subtype: journal_peer_reviewed
-    title_web: "An experimental approach for evaluating the impact of preference elicitation on search behavior in a reservation system (in Japanese)"
+    title_web: "An experimental approach for evaluating the impact of preference elicitation on search behavior in a reservation system"
     title_pdf: "An experimental approach for evaluating the impact of preference elicitation on search behavior in a reservation system"
-    authors: "Yusuke Hara, Yosuke Kawasaki, Koki Satsukawa and Takamasa Iryo"
-    venue: "Japanese Journal of JSCE, 79(20), 23-20020"
+    authors_web: "Yusuke Hara, Yosuke Kawasaki, Koki Satsukawa and Takamasa Iryo"
+    venue_web: "Japanese Journal of JSCE"
+    volume: "79"
+    number: "20"
+    pages: "23-20020"
     venue_link: "https://www.jstage.jst.go.jp/browse/jscejipm"
     year: 2023
     doi: "https://doi.org/10.2208/jscejj.23-20020"
+    language: "ja"
   - id: journal-2022-satsukawa-optimal-repair
     subtype: journal_peer_reviewed
-    title_web: "Optimal repair policy for ETC facility with economic losses due to traffic congestion during failures (in Japanese)"
+    title_web: "Optimal repair policy for ETC facility with economic losses due to traffic congestion during failures"
     title_pdf: "Optimal repair policy for ETC facility with economic losses due to traffic congestion during failures"
-    authors: "Koki Satsukawa, Daijiro Mizutani, Yosuke Kawasaki, Takeo Kaneda and Masao Kuwahara"
-    venue: "Journal of Japan Society of Civil Engineers, Ser. D3 (Infrastructure Planning and Management), 78(3), 105-121"
+    authors_web: "Koki Satsukawa, Daijiro Mizutani, Yosuke Kawasaki, Takeo Kaneda and Masao Kuwahara"
+    venue_web: "Journal of Japan Society of Civil Engineers, Ser. D3 (Infrastructure Planning and Management)"
+    volume: "78"
+    number: "3"
+    pages: "105-121"
     venue_link: "https://www.jstage.jst.go.jp/browse/jscejipm"
     year: 2022
     doi: "https://doi.org/10.2208/jscejipm.78.3_105"
+    language: "ja"
   - id: journal-2022-fu-dynamic-traffic
     subtype: journal_peer_reviewed
-    title: "Dynamic traffic assignment in a corridor network with multiple bottlenecks: Optimum versus equilibrium"
-    authors: "Haoran Fu, Takashi Akamatsu, Koki Satsukawa and Kentaro Wada"
-    venue: "Transportation Research Part B: Methodological, 161, 218-246"
+    title_web: "Dynamic traffic assignment in a corridor network with multiple bottlenecks: optimum versus equilibrium"
+    authors_web: "Haoran Fu, Takashi Akamatsu, Koki Satsukawa and Kentaro Wada"
+    venue_web: "Transportation Research Part B: Methodological"
+    volume: "161"
+    pages: "218-246"
     venue_link: "https://www.sciencedirect.com/journal/transportation-research-part-b-methodological"
     year: 2022
     doi: "https://doi.org/10.1016/j.trb.2022.04.007"
   - id: journal-2022-smith-zero-queue
     subtype: journal_peer_reviewed
-    title: "Zero-queue traffic control, using green-times and prices together"
-    authors: "Michael J. Smith, Takamasa Iryo, Richard Mounce, Koki Satsukawa and David Watling"
-    venue: "Transportation Research Part C: Emerging Technologies, 138, 103630"
+    title_web: "Zero-queue traffic control, using green-times and prices together"
+    authors_web: "Michael J. Smith, Takamasa Iryo, Richard Mounce, Koki Satsukawa and David Watling"
+    venue_web: "Transportation Research Part C: Emerging Technologies"
+    volume: "138"
+    pages: "103630"
     venue_link: "https://www.sciencedirect.com/journal/transportation-research-part-c-emerging-technologies"
     year: 2022
     doi: "https://doi.org/10.1016/j.trc.2022.103630"
   - id: journal-2022-ikushima-management
     subtype: journal_peer_reviewed
-    title_web: "Possibility of improving management policies for expressway facilities based on questionnaire survey of on-site engineers (in Japanese)"
+    title_web: "Possibility of improving management policies for expressway facilities based on questionnaire survey of on-site engineers"
     title_pdf: "Possibility of improving management policies for expressway facilities based on questionnaire survey of on-site engineers"
-    authors: "Rie Ikushima, Daijiro Mizutani, Koki Satsukawa, Yosuke Kawasaki and Masao Kuwahara"
-    venue: "Journal of Japan Society of Civil Engineers, Ser. F4 (Construction and Management), 78(1), 51-69"
+    authors_web: "Rie Ikushima, Daijiro Mizutani, Koki Satsukawa, Yosuke Kawasaki and Masao Kuwahara"
+    venue_web: "Journal of Japan Society of Civil Engineers, Ser. F4 (Construction and Management)"
+    volume: "78"
+    number: "1"
+    pages: "51-69"
     venue_link: "https://www.jstage.jst.go.jp/browse/jscejcm/-char/ja"
     year: 2022
     doi: "https://doi.org/10.2208/jscejipm.77.4_330"
+    language: "ja"
   - id: journal-2022-satsukawa-dynamic
     subtype: journal_peer_reviewed
-    title: "Dynamic system optimal assignment with atomic users: Convergence and stability"
-    authors: "Koki Satsukawa, Kentaro Wada and David Watling"
-    venue: "Transportation Research Part B: Methodological, 155, 188-209"
+    title_web: "Dynamic system optimal assignment with atomic users: convergence and stability"
+    authors_web: "Koki Satsukawa, Kentaro Wada and David Watling"
+    venue_web: "Transportation Research Part B: Methodological"
+    volume: "155"
+    pages: "188-209"
     venue_link: "https://www.sciencedirect.com/journal/transportation-research-part-b-methodological"
     year: 2022
     doi: "https://doi.org/10.1016/j.trb.2021.11.001"
   - id: journal-2021-sakai-departure
     subtype: journal_peer_reviewed
-    title_web: "Departure time choice problems with heterogeneous values of schedule delay in tandem bottlenecks (in Japanese)"
+    title_web: "Departure time choice problems with heterogeneous values of schedule delay in tandem bottlenecks"
     title_pdf: "Departure time choice problems with heterogeneous values of schedule delay in tandem bottlenecks"
-    authors: "Takara Sakai, Takashi Akamatsu and Koki Satsukawa"
-    venue: "Journal of Japan Society of Civil Engineers, Ser. D3 (Infrastructure Planning and Management), 77(4), 330-345"
+    authors_web: "Takara Sakai, Takashi Akamatsu and Koki Satsukawa"
+    venue_web: "Journal of Japan Society of Civil Engineers, Ser. D3 (Infrastructure Planning and Management)"
+    volume: "77"
+    number: "4"
+    pages: "330-345"
     venue_link: "https://www.jstage.jst.go.jp/browse/jscejipm"
     year: 2021
     doi: "https://doi.org/10.2208/jscejipm.77.4_330"
+    language: "ja"
   - id: journal-2021-akamatsu-social
     subtype: journal_peer_reviewed
-    title: "Model-based analysis on social acceptability and feasibility of a focused protection strategy against the COVID-19 pandemic"
-    authors: "Takashi Akamatsu, Takeshi Nagae, Minoru Osawa, Koki Satsukawa, Takara Sakai and Daijiro Mizutani"
-    venue: "Scientific Reports, 11, 2003"
+    title_web: "Model-based analysis on social acceptability and feasibility of a focused protection strategy against the COVID-19 pandemic"
+    authors_web: "Takashi Akamatsu, Takeshi Nagae, Minoru Osawa, Koki Satsukawa, Takara Sakai and Daijiro Mizutani"
+    venue_web: "Scientific Reports"
+    volume: "11"
+    pages: "2003"
     venue_link: "https://www.nature.com/srep/"
     year: 2021
     doi: "https://doi.org/10.1038/s41598-021-81630-9"
   - id: journal-2021-mizutani-message
     subtype: journal_peer_reviewed
-    title_web: "A basic method to evaluate management policies of variable message signs on expressways considering user costs (in Japanese)"
+    title_web: "A basic method to evaluate management policies of variable message signs on expressways considering user costs"
     title_pdf: "A basic method to evaluate management policies of variable message signs on expressways considering user costs"
-    authors: "Daijiro Mizutani, Yosuke Kawasaki, Koki Satsukawa, Takeshi Nakagawa, Shogo Umeda, Rie Ikushima and Masao Kuwahara"
-    venue: "Journal of Japan Society of Civil Engineers, Ser. D3 (Infrastructure Planning and Management), 76(5), I_127-I_139"
+    authors_web: "Daijiro Mizutani, Yosuke Kawasaki, Koki Satsukawa, Takeshi Nakagawa, Shogo Umeda, Rie Ikushima and Masao Kuwahara"
+    venue_web: "Journal of Japan Society of Civil Engineers, Ser. D3 (Infrastructure Planning and Management)"
+    volume: "76"
+    number: "5"
+    pages: "I_127-I_139"
     venue_link: "https://www.jstage.jst.go.jp/browse/jscejipm"
     year: 2021
     doi: "https://doi.org/10.2208/jscejipm.76.5_I_127"
+    language: "ja"
   - id: journal-2019-satsukawa-stochastic
     subtype: journal_peer_reviewed
-    title: "Stochastic stability of dynamic user equilibrium in unidirectional networks: Weakly acyclic game approach"
-    authors: "Koki Satsukawa, Kentaro Wada and Takamasa Iryo"
-    venue: "Transportation Research Part B: Methodological, 125, 229-247"
+    title_web: "Stochastic stability of dynamic user equilibrium in unidirectional networks: weakly acyclic game approach"
+    authors_web: "Koki Satsukawa, Kentaro Wada and Takamasa Iryo"
+    venue_web: "Transportation Research Part B: Methodological"
+    volume: "125"
+    pages: "229-247"
     venue_link: "https://www.sciencedirect.com/journal/transportation-research-part-b-methodological"
     year: 2019
     doi: "https://dx.doi.org/10.1016/j.trb.2019.05.015"
-  - id: journal-2018-wada-throughput
+    
+  - id: journal-2019-wada-throughput
     subtype: journal_peer_reviewed
-    title: "Network throughput under dynamic user equilibrium: Queue spillback, paradox and traffic control"
-    authors: "Kentaro Wada, Koki Satsukawa, Mike Smith and Takashi Akamatsu"
-    venue: "Transportation Research Part B: Methodological, 126, 391-413"
-    venue_link: "https://www.sciencedirect.com/journal/transportation-research-part-b-methodological"
-    year: 2018
+    title_web: "Network throughput under dynamic user equilibrium: queue spillback, paradox and traffic control"
+    authors_web: "Kentaro Wada, Koki Satsukawa, Mike Smith and Takashi Akamatsu"
+    venue_web: "Transportation Research Part B: Methodological"
+    volume: "126"
+    pages: "391-413"
+    year: 2019
     doi: "https://doi.org/10.1016/j.trb.2018.04.002"
-  - id: journal-2017-wada-kinematic
+
+
+  - id: journal-2017-wada-kinematic-wave
     subtype: journal_peer_reviewed
-    title_web: "Recent advances in kinematic wave theory of traffic flows: Variational formulation and network extension (in Japanese)"
-    title_pdf: "Recent advances in kinematic wave theory of traffic flows: Variational formulation and network extension"
-    authors: "Kentaro Wada, Toru Seo, Wataru Nakanishi, Koki Satsukawa and Masami Yanagihara"
-    venue: "Journal of Japan Society of Civil Engineers, Ser. D3 (Infrastructure Planning and Management), 73(5), I_1139-I_1158"
-    venue_link: "https://www.jstage.jst.go.jp/browse/jscejipm"
+    title_web: "Recent advances in kinematic wave theory of traffic flows: variational formulation and network extension"
+    title_pdf: "Kinematic Wave理論の近年の発展：変分理論とネットワーク拡張"
+    authors_web: "Kentaro Wada, Toru Seo, Wataru Nakanishi, Koki Satsukawa and Masami Yanagihara"
+    authors_pdf: "和田健太郎, 瀬尾亨, 中西航, 佐津川功季, 柳原正実"
+    venue_web: "Journal of Japan Society of Civil Engineers, Ser. D3 (Infrastructure Planning and Management)"
+    venue_pdf: "土木学会論文集D3（土木計画学）"
+    volume: "73"
+    number: "5"
+    pages: "I_1139-I_1158"
     year: 2017
     doi: "https://doi.org/10.2208/jscejipm.73.I_1139"
-  - id: journal-2017-wada-traffic
+    language: "ja"
+
+
+  - id: journal-2017-wada-traffic-performance
     subtype: journal_peer_reviewed
-    title_web: "Traffic performance analysis of road network based on dynamic user equilibrium (in Japanese)"
-    title_pdf: "Traffic performance analysis of road network based on dynamic user equilibrium"
-    authors: "Kentaro Wada and Koki Satsukawa"
-    venue: "Journal of Japan Society of Civil Engineers, Ser. D3 (Infrastructure Planning and Management), 73(1), 56-72"
-    venue_link: "https://www.jstage.jst.go.jp/browse/jscejipm"
+    title_web: "Traffic performance analysis of road network based on dynamic user equilibrium"
+    title_pdf: "動的配分理論による道路ネットワークの交通性能解析"
+    authors_web: "Kentaro Wada and Koki Satsukawa"
+    authors_pdf: "和田健太郎, 佐津川功季"
+    venue_web: "Journal of Japan Society of Civil Engineers, Ser. D3 (Infrastructure Planning and Management)"
+    venue_pdf: "土木学会論文集D3（土木計画学）"
+    volume: "73"
+    number: "1"
+    pages: "56-72"
     year: 2017
     doi: "https://doi.org/10.2208/jscejipm.73.56"
+    language: "ja"
 
   - id: journal-2017-satsukawa-nash
     subtype: journal_peer_reviewed

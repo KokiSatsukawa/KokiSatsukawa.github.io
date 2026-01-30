@@ -74,9 +74,24 @@ def latex_escape(text: str) -> str:
 
 
 def normalize_publication(publication: dict, variant: str) -> dict:
-    title = publication.get(f"title_{variant}") or publication.get("title", "")
-    authors = publication.get(f"authors_{variant}") or publication.get("authors", "")
-    venue = publication.get(f"venue_{variant}") or publication.get("venue", "")
+    title = (
+        publication.get(f"title_{variant}")
+        or publication.get("title_web")
+        or publication.get("title_pdf")
+        or publication.get("title", "")
+    )
+    authors = (
+        publication.get(f"authors_{variant}")
+        or publication.get("authors_web")
+        or publication.get("authors_pdf")
+        or publication.get("authors", "")
+    )
+    venue = (
+        publication.get(f"venue_{variant}")
+        or publication.get("venue_web")
+        or publication.get("venue_pdf")
+        or publication.get("venue", "")
+    )
     normalized = {
         "id": publication.get("id"),
         "subtype": publication.get("subtype"),
@@ -97,9 +112,21 @@ def normalize_publication(publication: dict, variant: str) -> dict:
 
 
 def format_publication(pub: dict) -> str:
-    title = latex_escape(pub.get("title_pdf") or pub.get("title", ""))
-    authors = latex_escape(pub.get("authors_pdf") or pub.get("authors", ""))
-    venue_raw = pub.get("venue_pdf") or pub.get("venue", "")
+    title = latex_escape(
+        pub.get("title_pdf")
+        or pub.get("title_web")
+        or pub.get("title", "")
+    )
+    authors = latex_escape(
+        pub.get("authors_pdf")
+        or pub.get("authors_web")
+        or pub.get("authors", "")
+    )
+    venue_raw = (
+        pub.get("venue_pdf")
+        or pub.get("venue_web")
+        or pub.get("venue", "")
+    )
     volume = pub.get("volume")
     number = pub.get("number")
     pages = pub.get("pages")
@@ -112,13 +139,17 @@ def format_publication(pub: dict) -> str:
     venue_name = latex_escape(venue_parts[0]) if venue_parts else ""
     venue_rest = ", ".join(latex_escape(part) for part in venue_parts[1:])
 
+    volume_text = latex_escape(str(volume)) if volume else ""
+    number_text = latex_escape(str(number)) if number else ""
+    pages_text = latex_escape(str(pages)) if pages else ""
+
     extra_text = ""
-    if volume and number:
-        extra_text = f"{volume}({number})"
-    elif volume:
-        extra_text = f"{volume}"
-    if pages:
-        extra_text = f"{extra_text}, {pages}" if extra_text else f"{pages}"
+    if volume_text and number_text:
+        extra_text = f"{volume_text}({number_text})"
+    elif volume_text:
+        extra_text = f"{volume_text}"
+    if pages_text:
+        extra_text = f"{extra_text}, {pages_text}" if extra_text else f"{pages_text}"
     if extra_text:
         venue_rest = f"{venue_rest}, {extra_text}" if venue_rest else extra_text
 
