@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-01-31T03:34:05.459248+00:00",
+  "generated_at": "2026-01-31T08:42:36.404811+00:00",
   "meta": {
     "complete_pdf_url": "output/complete_cv.pdf"
   },
@@ -738,6 +738,294 @@
       "venue": "7th Joint student seminar on civil infrastructure, Bangkok, Thailand",
       "year": 2015,
       "month": "August"
+    },
+    {
+      "id": "domestic-2025-chhor-rl",
+      "subtype": "domestic_conference_non_peer_reviewed",
+      "authors": "Tithmesa Chhor, 羽生昇平, 佐津川功季, 井料隆雅",
+      "title": "共有右折車線を有する交差点における強化学習に基づく交通信号制御の頑健性の評価",
+      "venue": "第23回ITSシンポジウム, 広島国際会議場",
+      "year": 2025,
+      "month": "December"
+    },
+    {
+      "id": "domestic-2025-takayama-bottleneck",
+      "subtype": "domestic_conference_non_peer_reviewed",
+      "authors": "高山雄貴, 佐津川功季",
+      "title": "A bottleneck model with shared autonomous vehicles: Scale economies and price regulations",
+      "venue": "第39回応用地域学会 (ARSC) 研究発表大会, 富山大学",
+      "year": 2025,
+      "month": "November"
+    },
+    {
+      "id": "domestic-2025-kawase-stochastic",
+      "subtype": "domestic_conference_non_peer_reviewed",
+      "authors": "河瀬理貴, 佐津川功季, 瀬尾亨",
+      "title": "不確実性下の動的システム最適配分の理論解析：確率計画法アプローチ",
+      "venue": "土木計画学研究・講演集, vol.71, 香川大学",
+      "year": 2025,
+      "month": "June"
+    },
+    {
+      "id": "domestic-2025-sakai-queue",
+      "subtype": "domestic_conference_non_peer_reviewed",
+      "authors": "酒井高良, 赤松隆, 佐津川功季",
+      "title": "Queue replacement approach to dynamic user equilibrium assignment with route and departure time choice",
+      "venue": "土木計画学研究・講演集, vol.71, 香川大学",
+      "year": 2025,
+      "month": "June"
+    },
+    {
+      "id": "domestic-2024-mizutani-monitoring",
+      "subtype": "domestic_conference_non_peer_reviewed",
+      "authors": "水谷大二郎, 桑原育也, 幸地佳, 深水貴斗, 佐津川功季, 川崎洋輔, 桑原雅夫",
+      "title": "常時モニタリング情報を用いたETC施設の故障予測",
+      "venue": "JAAM研究・実践発表会",
+      "year": 2024,
+      "month": "November"
+    },
+    {
+      "id": "domestic-2024-kawasaki-anomaly",
+      "subtype": "domestic_conference_non_peer_reviewed",
+      "authors": "川崎洋輔, 水谷大二郎, 佐津川功季, 桑原雅夫, 緒方達也, 倉森健",
+      "title": "多次元センサーデータを用いた走行車両重量測定装置の異常検知手法の提案",
+      "venue": "土木計画学研究・講演集, vol.70, 岡山大学",
+      "year": 2024,
+      "month": "November"
+    },
+    {
+      "id": "domestic-2023-hara-preference",
+      "subtype": "domestic_conference_non_peer_reviewed",
+      "authors": "原祐輔, 川崎洋輔, 佐津川功季, 井料隆雅",
+      "title": "予約システムにおける探索行動と選好誘出の影響評価のための実験的アプローチ",
+      "venue": "土木計画学研究・講演集, vol.67, 福岡大学",
+      "year": 2023,
+      "month": "June"
+    },
+    {
+      "id": "domestic-2023-satsukawa-reservation",
+      "subtype": "domestic_conference_non_peer_reviewed",
+      "authors": "佐津川功季, 原祐輔, 川崎洋輔, 井料隆雅",
+      "title": "不確実性下における都市交通サービスの予約システム設計に関する研究",
+      "venue": "土木計画学研究・講演集, vol.67, 福岡大学",
+      "year": 2023,
+      "month": "June"
+    },
+    {
+      "id": "domestic-2022-ikushima-battery",
+      "subtype": "domestic_conference_non_peer_reviewed",
+      "authors": "生嶋理恵, 水谷大二郎, 佐津川功季, 川崎洋輔, 桑原雅夫",
+      "title": "点検データの統計分析に基づく購読道路蓄電池設備の更新施策",
+      "venue": "JAAM研究・実践発表会",
+      "year": 2022,
+      "month": "November"
+    },
+    {
+      "id": "domestic-2022-fukuyama-spare",
+      "subtype": "domestic_conference_non_peer_reviewed",
+      "authors": "福山峻一, 水谷大二郎, 佐津川功季",
+      "title": "連続体近似によるETC施設予備部品の最適配置計画",
+      "venue": "土木計画学研究・講演集, vol.66, 琉球大学",
+      "year": 2022,
+      "month": "November"
+    },
+    {
+      "id": "domestic-2022-yoshizawa-signal",
+      "subtype": "domestic_conference_non_peer_reviewed",
+      "authors": "吉澤尚輝, 佐津川功季, 井料隆雅",
+      "title": "経路選択を考慮した適応型信号制御の動学解析",
+      "venue": "土木計画学研究・講演集, vol.66, 琉球大学",
+      "year": 2022,
+      "month": "November"
+    },
+    {
+      "id": "domestic-2022-sakai-optimal",
+      "subtype": "domestic_conference_non_peer_reviewed",
+      "authors": "酒井高良, 赤松隆, 佐津川功季",
+      "title": "動的システム最適配分の大域的最適解：待ち行列は存在しうるか",
+      "venue": "土木計画学研究・講演集, vol.65, 広島大学（オンライン）",
+      "year": 2022,
+      "month": "June"
+    },
+    {
+      "id": "domestic-2021-yoshizawa-signal",
+      "subtype": "domestic_conference_non_peer_reviewed",
+      "authors": "吉澤尚輝, 佐津川功季, 井料隆雅",
+      "title": "経路選択と時間価値の異質性を考慮した自律分散型信号制御の評価",
+      "venue": "土木計画学研究・講演集, vol.64, 福島大学（オンライン）",
+      "year": 2021,
+      "month": "December"
+    },
+    {
+      "id": "domestic-2021-satsukawa-bundling",
+      "subtype": "domestic_conference_non_peer_reviewed",
+      "authors": "佐津川功季, 原祐輔, 川崎洋輔, 井料隆雅",
+      "title": "複数選択肢をバンドルする予約システムによる効率的な資源配分の理論解析",
+      "venue": "土木計画学研究・講演集, vol.64, 福島大学（オンライン）",
+      "year": 2021,
+      "month": "December"
+    },
+    {
+      "id": "domestic-2021-ikushima-maintenance",
+      "subtype": "domestic_conference_non_peer_reviewed",
+      "authors": "生嶋理恵, 水谷大二郎, 佐津川功季, 川崎洋輔, 桑原雅夫",
+      "title": "現場技術者へのアンケート調査に基づく高速道路設備の維持管理施策の改善可能性",
+      "venue": "土木計画学研究・講演集, vol.64, 福島大学（オンライン）",
+      "year": 2021,
+      "month": "December"
+    },
+    {
+      "id": "domestic-2021-sakai-bottleneck",
+      "subtype": "domestic_conference_non_peer_reviewed",
+      "authors": "酒井高良, 赤松隆, 佐津川功季",
+      "title": "利用者の異質性を考慮したコリドーネットワーク出発時刻選択問題",
+      "venue": "第35回応用地域学会 (ARSC) 研究発表大会, 金沢大学（オンライン）",
+      "year": 2021,
+      "month": "November"
+    },
+    {
+      "id": "domestic-2021-ikushima-knowledge",
+      "subtype": "domestic_conference_non_peer_reviewed",
+      "authors": "生嶋理恵, 水谷大二郎, 佐津川功季, 川崎洋輔, 桑原雅夫",
+      "title": "現場技術者の知見を活用した高速道路設備の維持管理施策の改善可能性",
+      "venue": "JAAM研究・実践発表会（オンライン）",
+      "year": 2021,
+      "month": "November"
+    },
+    {
+      "id": "domestic-2021-liu-due",
+      "subtype": "domestic_conference_non_peer_reviewed",
+      "authors": "Yang Liu, Takashi Nagae and Koki Satsukawa",
+      "title": "Dynamic user equilibrium in many-to-one corridor network with irregular ordered capacity patterns",
+      "venue": "土木計画学研究・講演集, vol.63, 東北大学（オンライン）",
+      "year": 2021,
+      "month": "June"
+    },
+    {
+      "id": "domestic-2021-sakai-tandem",
+      "subtype": "domestic_conference_non_peer_reviewed",
+      "authors": "酒井高良, 赤松隆, 佐津川功季",
+      "title": "スケジュールコストの異質性を考慮したタンデムボトルネック出発時刻選択問題",
+      "venue": "土木計画学研究・講演集, vol.63, 東北大学（オンライン）",
+      "year": 2021,
+      "month": "June"
+    },
+    {
+      "id": "domestic-2020-kawasaki-tourism",
+      "subtype": "domestic_conference_non_peer_reviewed",
+      "authors": "川崎洋輔, 佐津川功季, 梅田祥吾, 桑原雅夫",
+      "title": "観光地における長期交通状態予測手法の提案",
+      "venue": "第18回ITSシンポジウム, 愛媛大学（オンライン）",
+      "year": 2020,
+      "month": "December"
+    },
+    {
+      "id": "domestic-2020-satsukawa-potential",
+      "subtype": "domestic_conference_non_peer_reviewed",
+      "authors": "佐津川功季, 和田健太郎",
+      "title": "ポテンシャル・ゲームに基づく動的システム最適配分の確率的安定性解析",
+      "venue": "土木計画学研究・講演集, vol.62, 信州大学（オンライン）",
+      "year": 2020,
+      "month": "November"
+    },
+    {
+      "id": "domestic-2020-satsukawa-spare",
+      "subtype": "domestic_conference_non_peer_reviewed",
+      "authors": "佐津川功季, 水谷大二郎, 川崎洋輔, 金田威夫, 桑原雅夫",
+      "title": "高速道路施設を構成する部品備蓄の最適計画に関する研究",
+      "venue": "土木計画学研究・講演集, vol.62, 信州大学（オンライン）",
+      "year": 2020,
+      "month": "November"
+    },
+    {
+      "id": "domestic-2018-satsukawa-csis",
+      "subtype": "domestic_conference_non_peer_reviewed",
+      "authors": "佐津川功季, 和田健太郎, 大口敬",
+      "title": "渋滞パターンに基づく道路ネットワークの交通性能とその低下メカニズムの解析",
+      "venue": "東京大学空間情報科学研究センター全国共同利用研究発表大会「CSIS DAYS 2018」, 東京大学",
+      "year": 2018,
+      "month": "November"
+    },
+    {
+      "id": "domestic-2018-satsukawa-game",
+      "subtype": "domestic_conference_non_peer_reviewed",
+      "authors": "佐津川功季, 和田健太郎, 井料隆雅",
+      "title": "ゲーム理論的アプローチによる動的利用者均衡の確率的安定性の解析",
+      "venue": "土木計画学研究・講演集, vol.58, 大分大学",
+      "year": 2018,
+      "month": "November"
+    },
+    {
+      "id": "domestic-2018-satsukawa-network",
+      "subtype": "domestic_conference_non_peer_reviewed",
+      "authors": "佐津川功季, 和田健太郎, 大口敬",
+      "title": "渋滞パターンの縮約に基づく一般構造ネットワークの交通性能近似手法の考察",
+      "venue": "土木計画学研究・講演集, vol.57, 東京工業大学",
+      "year": 2018,
+      "month": "June"
+    },
+    {
+      "id": "domestic-2017-satsukawa-ramp-control",
+      "subtype": "domestic_conference_non_peer_reviewed",
+      "authors": "佐津川功季, 和田健太郎, 大口敬",
+      "title": "複雑なネットワークにおけるMFDを活用した協調ランプ制御手法の有効性評価と考察",
+      "venue": "第9回高速道路の交通データ利用に関する勉強会, 高知工科大学",
+      "year": 2017,
+      "month": "October"
+    },
+    {
+      "id": "domestic-2017-satsukawa-ramp",
+      "subtype": "domestic_conference_non_peer_reviewed",
+      "authors": "佐津川功季, 森部伸一, 和田健太郎, 大口敬",
+      "title": "首都圏高速道路ネットワークの効率的利用のためのランプ制御",
+      "venue": "土木計画学研究・講演集, vol.55, 愛媛大学",
+      "year": 2017,
+      "month": "June"
+    },
+    {
+      "id": "domestic-2016-wada-kinematic",
+      "subtype": "domestic_conference_non_peer_reviewed",
+      "authors": "和田健太郎, 瀬尾亨, 中西航, 柳原正実, 佐津川功季",
+      "title": "Kinematic Wave理論の近年の展開：交通流の変分理論とネットワーク拡張",
+      "venue": "土木計画学研究・講演集, vol.54, P24, 長崎大学",
+      "year": 2016,
+      "month": "November"
+    },
+    {
+      "id": "domestic-2016-satsukawa-nash",
+      "subtype": "domestic_conference_non_peer_reviewed",
+      "authors": "佐津川功季, 和田健太郎",
+      "title": "単一終点ネットワークにおける動的交通量配分問題のNash均衡解の解法について",
+      "venue": "土木計画学研究・講演集, vol.54, 13, 長崎大学",
+      "year": 2016,
+      "month": "November"
+    },
+    {
+      "id": "domestic-2016-wada-traffic",
+      "subtype": "domestic_conference_non_peer_reviewed",
+      "authors": "和田健太郎, 佐津川功季",
+      "title": "動的配分理論による道路ネットワークの交通性能解析",
+      "venue": "土木計画学研究・講演集, vol.54, 12, 長崎大学",
+      "year": 2016,
+      "month": "November"
+    },
+    {
+      "id": "domestic-2015-satsukawa-throughput",
+      "subtype": "domestic_conference_non_peer_reviewed",
+      "authors": "佐津川功季, 和田健太郎",
+      "title": "渋滞パターンに着目したネットワークスループットの低下メカニズムに関する分析",
+      "venue": "土木計画学研究・講演集, vol.52, 237, 秋田大学",
+      "year": 2015,
+      "month": "November"
+    },
+    {
+      "id": "domestic-2014-wada-mfd",
+      "subtype": "domestic_conference_non_peer_reviewed",
+      "authors": "和田健太郎, 佐津川功季",
+      "title": "動的利用者均衡状態におけるMFDの解析: 1起点多終点ネットワークの場合",
+      "venue": "土木計画学研究・講演集, vol.50, 125, 鳥取大学",
+      "year": 2014,
+      "month": "November"
     }
   ],
   "grants": [
