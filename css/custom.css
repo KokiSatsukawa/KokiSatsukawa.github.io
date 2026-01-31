@@ -1,5 +1,7 @@
 body {
     padding-top: 50px; /* Padding for .navbar-fixed-top. Change value if navbar height changes. Remove if using .navbar-static-top. */
+    font-family: "Roboto", "Noto Sans JP", sans-serif;
+    font-size: 17px;
 }
 
 .copyright {
@@ -33,7 +35,7 @@ p { line-height: 180%}
 
 .item-title,
 .publication-title {
-    font-size: 16px;
+    font-size: 17px;
     letter-spacing: 0.1px;
     color: #111;
     line-height: 1.5;
@@ -44,12 +46,12 @@ p { line-height: 180%}
 }
 
 .detail-text {
-    font-size: 15px;
+    font-size: 16px;
     color: #333;
 }
 
 .page-header {
-    font-size: 32px;
+    font-size: 34px;
 }
 
 .contact-page p {
@@ -83,35 +85,53 @@ p { line-height: 180%}
 }
 
 .publication-list {
-    padding-left: 20px;
+    padding-left: 0;
     margin: 0;
 }
 
 .publication-item {
+    display: grid;
+    grid-template-columns: 1.7em 1fr;
+    column-gap: 2px;
+    align-items: first baseline;
+    line-height: 1.5;
     margin-bottom: 12px;
+}
+
+.publication-number {
+    color: #555;
+    font-size: 17px;
+    line-height: 1.5;
+    font-variant-numeric: tabular-nums;
+}
+
+.publication-body {
+    min-width: 0;
 }
 
 .publication-authors {
     color: #333;
-    font-size: 15px;
+    font-size: 16px;
+    line-height: 1.5;
     margin-bottom: 4px;
 }
 
 .publication-venue {
     color: #333;
-    font-size: 15px;
+    font-size: 16px;
+    line-height: 1.5;
     margin-bottom: 4px;
 }
 
 .section-title {
-    font-size: 22px;
+    font-size: 24px;
     font-weight: 600;
     letter-spacing: 0.4px;
     margin: 22px 0 10px;
 }
 
 .section-subtitle {
-    font-size: 18px;
+    font-size: 19px;
     font-weight: 600;
     letter-spacing: 0.2px;
     margin: 12px 0 6px;

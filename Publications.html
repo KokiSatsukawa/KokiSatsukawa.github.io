@@ -5,6 +5,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <title>Koki Satsukawa - Publications</title>
@@ -134,7 +137,7 @@
                 return title;
             }
 
-            function renderItem(item) {
+            function renderItem(item, indexLabel) {
                 const venue = renderVenue(item);
                 const yearText = item.year ? String(item.year) : "";
                 const monthText = item.month ? String(item.month) : "";
@@ -199,11 +202,14 @@
                     }
                 }
                 return `
-                    <li class="publication-item">
-                        <div class="publication-title item-title">${renderTitle(item)}</div>
-                        <div class="publication-authors">${escapeHtml(item.authors)}</div>
-                        <div class="publication-venue">${venue}${suffix}</div>
-                    </li>
+                    <div class="publication-item">
+                        <div class="publication-number">${escapeHtml(String(indexLabel))}.</div>
+                        <div class="publication-body">
+                            <div class="publication-title item-title">${renderTitle(item)}</div>
+                            <div class="publication-authors">${escapeHtml(item.authors)}</div>
+                            <div class="publication-venue">${venue}${suffix}</div>
+                        </div>
+                    </div>
                 `;
             }
 
@@ -214,18 +220,21 @@
                     if (!b.year) return -1;
                     return Number(b.year) - Number(a.year);
                 });
-                const cards = sortedItems.map(renderItem).join("");
+                const total = sortedItems.length;
+                const cards = sortedItems
+                    .map((item, index) => renderItem(item, total - index))
+                    .join("");
                 return `
                     <div class="publication-section section-block">
                         <h3 class="section-title">${escapeHtml(section.label)}</h3>
-                        <ol class="publication-list" reversed>
+                        <div class="publication-list">
                             ${cards}
-                        </ol>
+                        </div>
                     </div>
                 `;
             }
 
-            function renderOtherItem(item) {
+            function renderOtherItem(item, indexLabel) {
                 const title = item.title || item.title_web || "";
                 const authors = item.authors || item.authors_web || "";
                 const venue = item.venue || item.venue_web || "";
@@ -242,23 +251,29 @@
                     venueLine = venueLine ? `${venueLine} (In Japanese)` : "(In Japanese)";
                 }
                 return `
-                    <li class="publication-item">
-                        <div class="publication-title item-title">${titleText}</div>
-                        ${authorsText ? `<div class="publication-authors">${authorsText}</div>` : ""}
-                        ${venueLine ? `<div class="publication-venue">${venueLine}</div>` : ""}
-                    </li>
+                    <div class="publication-item">
+                        <div class="publication-number">${escapeHtml(String(indexLabel))}.</div>
+                        <div class="publication-body">
+                            <div class="publication-title item-title">${titleText}</div>
+                            ${authorsText ? `<div class="publication-authors">${authorsText}</div>` : ""}
+                            ${venueLine ? `<div class="publication-venue">${venueLine}</div>` : ""}
+                        </div>
+                    </div>
                 `;
             }
 
             function renderOtherSection(label, items) {
                 if (!items.length) return "";
-                const cards = items.map(renderOtherItem).join("");
+                const total = items.length;
+                const cards = items
+                    .map((item, index) => renderOtherItem(item, total - index))
+                    .join("");
                 return `
                     <div class="publication-section section-block">
                         <h3 class="section-title">${escapeHtml(label)}</h3>
-                        <ol class="publication-list" reversed>
+                        <div class="publication-list">
                             ${cards}
-                        </ol>
+                        </div>
                     </div>
                 `;
             }
