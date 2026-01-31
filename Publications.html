@@ -163,12 +163,28 @@
                 if (yearText) {
                     suffix += `${(suffix || venue) ? ", " : ""}${yearText}`;
                 }
-                if (item.status === "accepted" || isJapanese) {
+                const status = item.status ? String(item.status) : "";
+                let statusTag = "";
+                if (status === "accepted") {
+                    statusTag = "Accepted";
+                } else if (status === "under_review") {
+                    statusTag = "Under Review";
+                } else if (status === "revision") {
+                    statusTag = "Under Revision";
+                } else if (status === "in_preparation") {
+                    statusTag = "In Preparation";
+                } else if (status) {
+                    statusTag = status.replace(/_/g, " ");
+                }
+
+                if (status === "accepted" || isJapanese || statusTag) {
                     let tag = "";
-                    if (isJapanese && item.status === "accepted") {
+                    if (isJapanese && status === "accepted") {
                         tag = " (In Japanese. Accepted)";
                     } else if (isJapanese) {
                         tag = " (In Japanese)";
+                    } else if (statusTag) {
+                        tag = ` (${statusTag})`;
                     } else {
                         tag = " (Accepted)";
                     }

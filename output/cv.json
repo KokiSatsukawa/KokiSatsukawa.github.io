@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-01-30T15:52:03.666533+00:00",
+  "generated_at": "2026-01-31T01:57:42.224696+00:00",
   "meta": {
     "complete_pdf_url": "output/complete_cv.pdf"
   },
@@ -441,7 +441,6 @@
       "authors": "Takara Sakai, Takashi Akamatsu and Koki Satsukawa",
       "venue": "11th Symposium of the European Association for Research in Transportation (hEART2023)",
       "location": "Zurich, Switzerland",
-      "venue_link": "https://heart2023.org/",
       "year": 2023
     },
     {
@@ -481,7 +480,6 @@
       "authors": "Koki Satsukawa, Kentaro Wada and David Watling",
       "venue": "The 24th International Symposium on Transportation and Traffic Theory (ISTTT24)",
       "location": "Beijing, China (online)",
-      "venue_link": "http://isttt24.buaa.edu.cn/",
       "year": 2022
     },
     {
@@ -612,49 +610,60 @@
       "subtype": "preprint",
       "title": "Assessing the evolutionary process of self-financed shared mobility systems: A laboratory experimental approach",
       "authors": "Haruki Takiguchi, Sowa Suzuki, Takamasa Iryo, Koki Satsukawa and Haruko Nakao",
-      "venue": "Under review / revision / preparation"
+      "year": 2025,
+      "status": "in_preparation"
     },
     {
       "id": "preprint-2025-iryo-markov",
       "subtype": "preprint",
       "title": "Markov-chain-based model for the evolutionary process of self-financed shared mobility systems: Theoretical assessments",
       "authors": "Takamasa Iryo, David Watling, Koki Satsukawa, Richard Connors, Haruko Nakao and Sowa Suzuki",
-      "venue": "Under review / revision / preparation"
+      "year": 2025,
+      "status": "in_preparation"
     },
     {
       "id": "preprint-2025-smith-gating",
       "subtype": "preprint",
       "title": "New stable responsive local gating strategies to control vehicle queues and flows in congested urban networks",
       "authors": "Michael Smith, Ronghui Liu, Takamasa Iryo, Koki Satsukawa, Richard Mounce and David Watling",
-      "venue": "Under review / revision / preparation"
+      "year": 2025,
+      "status": "in_preparation"
     },
     {
       "id": "preprint-2025-sakai-queue",
       "subtype": "preprint",
       "title": "Queue replacement approach to dynamic user equilibrium assignment with route and departure time choice",
       "authors": "Takara Sakai, Takashi Akamatsu and Koki Satsukawa",
-      "venue": "Under review / revision / preparation"
+      "venue": "arXiv",
+      "year": 2025,
+      "status": "Under Review",
+      "link": "https://arxiv.org/abs/2508.07159"
     },
     {
       "id": "preprint-2025-kawase-network-design",
       "subtype": "preprint",
       "title": "Flexible and reliable transportation network design for emerging transportation services: multi-stage stochastic programming approach",
       "authors": "Riki Kawase, Koki Satsukawa and Toru Seo",
-      "venue": "Under review / revision / preparation"
+      "year": 2025,
+      "status": "Under Review"
     },
     {
       "id": "preprint-2025-satsukawa-bottleneck",
       "subtype": "preprint",
       "title": "A bottleneck model with autonomous vehicles: Scale economies and price regulations",
       "authors": "Koki Satsukawa and Yuki Takayama",
-      "venue": "Under review / revision / preparation"
+      "venue": "arXiv",
+      "year": 2025,
+      "status": "Under Review",
+      "link": "https://arxiv.org/abs/2508.08848"
     },
     {
       "id": "preprint-2022-sakai-non-existence",
       "subtype": "preprint",
       "title": "Non-existence of queues for system optimal departure patterns in tree networks",
       "authors": "Takara Sakai, Koki Satsukawa and Takashi Akamatsu",
-      "venue": "arXiv preprint",
+      "venue": "arXiv",
+      "year": 2025,
       "link": "https://arxiv.org/abs/2205.06015"
     },
     {
@@ -662,15 +671,17 @@
       "subtype": "preprint",
       "title": "Global stability of day-to-day dynamics for schedule-based Markovian transit assignment with boarding queues",
       "authors": "Takashi Akamatsu, Koki Satsukawa and Yuki Oyama",
-      "venue": "arXiv preprint",
+      "venue": "arXiv",
+      "year": 2023,
       "link": "https://arxiv.org/abs/2304.02194"
     },
     {
-      "id": "preprint-2025-satsukawa-uniqueness",
+      "id": "preprint-2023-satsukawa-uniqueness",
       "subtype": "preprint",
       "title": "Uniqueness of dynamic user equilibrium in a corridor network",
       "authors": "Koki Satsukawa",
-      "venue": "Under review / revision / preparation"
+      "year": 2023,
+      "status": "in_preparation"
     }
   ],
   "grants": [

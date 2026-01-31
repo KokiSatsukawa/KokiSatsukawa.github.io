@@ -588,60 +588,68 @@ publications:
     authors: "Koki Satsukawa"
     venue: "The Second Workshop on Intelligent Transport Systems between Tongji University and the University of Tokyo, Japan"
     year: 2016
+
+    
   - id: preprint-2025-takiguchi-evolutionary
     subtype: preprint
     title: "Assessing the evolutionary process of self-financed shared mobility systems: A laboratory experimental approach"
     authors: "Haruki Takiguchi, Sowa Suzuki, Takamasa Iryo, Koki Satsukawa and Haruko Nakao"
-    venue: "Under review / revision / preparation"
+    year: 2025
+    status: in_preparation
   - id: preprint-2025-iryo-markov
     subtype: preprint
     title: "Markov-chain-based model for the evolutionary process of self-financed shared mobility systems: Theoretical assessments"
     authors: "Takamasa Iryo, David Watling, Koki Satsukawa, Richard Connors, Haruko Nakao and Sowa Suzuki"
-    venue: "Under review / revision / preparation"
+    year: 2025
+    status: in_preparation
   - id: preprint-2025-smith-gating
     subtype: preprint
     title: "New stable responsive local gating strategies to control vehicle queues and flows in congested urban networks"
     authors: "Michael Smith, Ronghui Liu, Takamasa Iryo, Koki Satsukawa, Richard Mounce and David Watling"
-    venue: "Under review / revision / preparation"
+    year: 2025
+    status: in_preparation
   - id: preprint-2025-sakai-queue
     subtype: preprint
     title: "Queue replacement approach to dynamic user equilibrium assignment with route and departure time choice"
     authors: "Takara Sakai, Takashi Akamatsu and Koki Satsukawa"
-    venue: "Under review / revision / preparation"
+    venue: "arXiv"
+    link: "https://arxiv.org/abs/2508.07159"
+    year: 2025
+    status: Under Review
   - id: preprint-2025-kawase-network-design
     subtype: preprint
     title: "Flexible and reliable transportation network design for emerging transportation services: multi-stage stochastic programming approach"
     authors: "Riki Kawase, Koki Satsukawa and Toru Seo"
-    venue: "Under review / revision / preparation"
+    year: 2025
+    status: Under Review
   - id: preprint-2025-satsukawa-bottleneck
     subtype: preprint
     title: "A bottleneck model with autonomous vehicles: Scale economies and price regulations"
     authors: "Koki Satsukawa and Yuki Takayama"
-    venue: "Under review / revision / preparation"
+    venue: "arXiv"
+    link: "https://arxiv.org/abs/2508.08848"
+    year: 2025
+    status: Under Review
   - id: preprint-2022-sakai-non-existence
     subtype: preprint
     title: "Non-existence of queues for system optimal departure patterns in tree networks"
     authors: "Takara Sakai, Koki Satsukawa and Takashi Akamatsu"
-    venue: "arXiv preprint"
+    venue: "arXiv"
     link: "https://arxiv.org/abs/2205.06015"
+    year: 2025
   - id: preprint-2023-akamatsu-global-stability
     subtype: preprint
     title: "Global stability of day-to-day dynamics for schedule-based Markovian transit assignment with boarding queues"
     authors: "Takashi Akamatsu, Koki Satsukawa and Yuki Oyama"
-    venue: "arXiv preprint"
+    venue: "arXiv"
     link: "https://arxiv.org/abs/2304.02194"
-  - id: preprint-2025-satsukawa-uniqueness
+    year: 2023
+  - id: preprint-2023-satsukawa-uniqueness
     subtype: preprint
     title: "Uniqueness of dynamic user equilibrium in a corridor network"
     authors: "Koki Satsukawa"
-    venue: "Under review / revision / preparation"
-  - id: journal-2020-dummy-hidden
-    subtype: journal_peer_reviewed
-    title: "Sample article for PDF-only listing (dummy)"
-    authors: "Koki Satsukawa and Sample Coauthor"
-    venue: "Sample Journal, 10(1), 1-10"
-    year: 2020
-    web: false
+    year: 2023
+    status: in_preparation
 
 grants:
   - id: grant-2024-jsps-dummy
