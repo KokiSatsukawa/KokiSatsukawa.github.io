@@ -205,6 +205,13 @@ def format_generic_entry(entry: dict, fields: list[str]) -> str:
             value = entry.get(f"{field}_pdf")
         if value is None and not field.endswith(("_web", "_pdf")):
             value = entry.get(f"{field}_web")
+        if value is None and field == "date":
+            month = entry.get("month")
+            year = entry.get("year")
+            if month and year:
+                value = f"{month} {year}"
+            elif year:
+                value = str(year)
         if not value:
             continue
         values.append(latex_escape(str(value)))

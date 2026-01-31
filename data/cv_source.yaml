@@ -707,11 +707,23 @@ grants:
     amount: "JPY 1,000,000"
 
 invited_talks:
-  - id: invited-2024-dummy
-    authors: "佐津川功季"
-    title: "交通ネットワーク解析の最前線（招待講演・ダミー）"
-    venue: "第10回交通システムシンポジウム"
-    date: "2024年7月"
+  - id: invited-2021-satsukawa-ramp
+    authors_web: "Koki Satsukawa and Kentaro Wada"
+    authors_pdf: "佐津川功季, 和田健太郎"
+    title_web: "Dynamic network traffic flow analysis and stochastic evolutionary game theory"
+    title_pdf: "動的ネットワーク交通流解析と確率進化ゲーム理論"
+    venue_web: "The Thirty-Third RAMP Symposium, Nanzan University"
+    venue_pdf: "第33回RAMP数理最適化シンポジウム (The Thirty-Third RAMP Symposium), 南山大学"
+    month: "November"
+    year: 2021
+    language: "ja"
+
+  - id: invited-2017-satsukawa-frontier
+    authors: "Koki Satsukawa"
+    title: "Network throughput under dynamic user equilibrium: queue spillback, paradox and traffic control"
+    venue: "Frontier of the MFD study (1), Ehime University, Japan"
+    month: "June"
+    year: 2017
 
 presentations:
   - id: seminar-2024-dummy

@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.1-u1.30-230214-2.6 (utf8.euc) (TeX Live 2024) (preloaded format=platex 2025.2.24)  31 JAN 2026 11:48
+This is e-upTeX, Version 3.141592653-p4.1.1-u1.30-230214-2.6 (utf8.euc) (TeX Live 2024) (preloaded format=platex 2025.2.24)  31 JAN 2026 12:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -344,11 +344,11 @@ LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
 
 [4]
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 12.62753pt on input line 65.
+(Font)              scaled to size 12.62753pt on input line 66.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 12.62753pt on input line 65.
+(Font)              scaled to size 12.62753pt on input line 66.
 LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
-(Font)              scaled to size 12.35164pt on input line 65.
+(Font)              scaled to size 12.35164pt on input line 66.
 
 
 [5])
@@ -374,4 +374,4 @@ Here is how much of TeX's memory you used:
  934 hyphenation exceptions out of 8191
  80i,6n,93p,430b,319s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on /Users/koki/Documents/GitHub/KokiSatsukawa.github.io/output/.texpadtmp/complete_cv.dvi (6 pages, 22956 bytes).
+Output written on /Users/koki/Documents/GitHub/KokiSatsukawa.github.io/output/.texpadtmp/complete_cv.dvi (6 pages, 23304 bytes).

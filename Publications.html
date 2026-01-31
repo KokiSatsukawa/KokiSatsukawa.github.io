@@ -226,18 +226,25 @@
             }
 
             function renderOtherItem(item) {
-                const title = item.title ? escapeHtml(item.title) : "";
-                const authors = item.authors ? escapeHtml(item.authors) : "";
-                const venue = item.venue ? escapeHtml(item.venue) : "";
+                const title = item.title || item.title_web || "";
+                const authors = item.authors || item.authors_web || "";
+                const venue = item.venue || item.venue_web || "";
+                const titleText = title ? escapeHtml(title) : "";
+                const authorsText = authors ? escapeHtml(authors) : "";
+                const venueText = venue ? escapeHtml(venue) : "";
                 const date = item.date ? escapeHtml(item.date) : "";
                 const year = item.year ? escapeHtml(String(item.year)) : "";
                 const month = item.month ? escapeHtml(String(item.month)) : "";
+                const isJapanese = item.language === "ja" || item.language === "japanese";
                 const dateText = date || (year ? (month ? `${month} ${year}` : year) : "");
-                const venueLine = [venue, dateText].filter(Boolean).join(", ");
+                let venueLine = [venueText, dateText].filter(Boolean).join(", ");
+                if (isJapanese) {
+                    venueLine = venueLine ? `${venueLine} (In Japanese)` : "(In Japanese)";
+                }
                 return `
                     <li class="publication-item">
-                        <div class="publication-title item-title">${title}</div>
-                        ${authors ? `<div class="publication-authors">${authors}</div>` : ""}
+                        <div class="publication-title item-title">${titleText}</div>
+                        ${authorsText ? `<div class="publication-authors">${authorsText}</div>` : ""}
                         ${venueLine ? `<div class="publication-venue">${venueLine}</div>` : ""}
                     </li>
                 `;
@@ -293,7 +300,24 @@
                         ...presentations.filter((item) => item.subtype === "seminar"),
                         ...(data.publications || []).filter((item) => item.subtype === "seminar"),
                     ];
-                    const othersItems = [...invited, ...workshops, ...seminars];
+                    const monthIndex = (value) => {
+                        if (!value) return 0;
+                        const v = String(value).trim().toLowerCase();
+                        const map = {
+                            january: 1, february: 2, march: 3, april: 4, may: 5, june: 6,
+                            july: 7, august: 8, september: 9, october: 10, november: 11, december: 12,
+                        };
+                        return map[v] || 0;
+                    };
+                    const othersItems = [...invited, ...workshops, ...seminars].sort((a, b) => {
+                        const ay = Number(a.year) || 0;
+                        const by = Number(b.year) || 0;
+                        if (ay !== by) return by - ay;
+                        const am = monthIndex(a.month);
+                        const bm = monthIndex(b.month);
+                        if (am !== bm) return bm - am;
+                        return 0;
+                    });
                     const othersSection = renderOtherSection(
                         "Others (Invited Talks, Selected Seminars, Workshops)",
                         othersItems
