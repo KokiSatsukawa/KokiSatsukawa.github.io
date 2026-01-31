@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-01-31T03:06:27.529926+00:00",
+  "generated_at": "2026-01-31T03:26:00.256421+00:00",
   "meta": {
     "complete_pdf_url": "output/complete_cv.pdf"
   },
@@ -548,71 +548,6 @@
       "month": "December"
     },
     {
-      "id": "talk-2024-satsukawa-convergence",
-      "subtype": "seminar",
-      "title": "Convergence and stability analysis of dynamic traffic assignment with atomic games",
-      "authors": "Koki Satsukawa",
-      "venue": "Dagstuhl Seminar 24281, Dynamic Traffic Models in Transportation Science, Dagstuhl, Germany",
-      "year": 2024
-    },
-    {
-      "id": "talk-2021-satsukawa-dynamic",
-      "subtype": "seminar",
-      "title": "Dynamic network traffic flow analysis and stochastic evolutionary game theory",
-      "authors": "Koki Satsukawa and Kentaro Wada",
-      "venue": "The Thirty-Third RAMP mathematical optimization symposium, Nanzan University, Aichi, Japan",
-      "year": 2021
-    },
-    {
-      "id": "talk-2020-satsukawa-modelling",
-      "subtype": "seminar",
-      "title": "Modelling and control of dynamic traffic flow in mixed networks of autonomous and human-driven vehicles",
-      "authors": "Koki Satsukawa and David Watling",
-      "venue": "International Workshop on Control and DTA: from principles to large-scale implementation, University of Leeds, UK",
-      "year": 2020
-    },
-    {
-      "id": "talk-2018-satsukawa-csis",
-      "subtype": "seminar",
-      "title": "渋滞パターンに基づく道路ネットワークの交通性能とその低下メカニズムの解析 (in Japanese)",
-      "authors": "Koki Satsukawa, Kentaro Wada and Takashi Oguchi",
-      "venue": "CSIS DAYS 2018, The University of Tokyo, Japan",
-      "year": 2018
-    },
-    {
-      "id": "talk-2018-satsukawa-throughput",
-      "subtype": "seminar",
-      "title": "Network throughput under dynamic user equilibrium",
-      "authors": "Koki Satsukawa",
-      "venue": "Joint Seminar between Tongji University and the University of Tokyo and 13th International Workshop on ITS, Tokyo, Japan",
-      "year": 2018
-    },
-    {
-      "id": "talk-2017-satsukawa-ramp",
-      "subtype": "seminar",
-      "title": "A comparative study of coordinated ramp metering strategies for complex networks",
-      "authors": "Koki Satsukawa",
-      "venue": "Symposium on advanced urban traffic operation and control, Tongji University, Shanghai, China",
-      "venue_link": "http://www.its.iis.u-tokyo.ac.jp/en/international-symposium/",
-      "year": 2017
-    },
-    {
-      "id": "talk-2017-satsukawa-frontier",
-      "subtype": "seminar",
-      "title": "Network throughput under dynamic user equilibrium: Queue spillback, paradox and traffic control",
-      "authors": "Koki Satsukawa",
-      "venue": "Frontier of the MFD study (1), Ehime University, Japan",
-      "year": 2017
-    },
-    {
-      "id": "talk-2016-satsukawa-traffic",
-      "subtype": "seminar",
-      "title": "Traffic performance analysis of road network based on dynamic user equilibrium",
-      "authors": "Koki Satsukawa",
-      "venue": "The Second Workshop on Intelligent Transport Systems between Tongji University and the University of Tokyo, Japan",
-      "year": 2016
-    },
-    {
       "id": "preprint-2025-takiguchi-evolutionary",
       "subtype": "preprint",
       "title": "Assessing the evolutionary process of self-financed shared mobility systems: A laboratory experimental approach",
@@ -742,20 +677,67 @@
   ],
   "presentations": [
     {
-      "id": "seminar-2024-dummy",
+      "id": "workshop-2024-satsukawa-convergence",
       "subtype": "international_seminar_workshop",
-      "authors": "佐津川功季",
-      "title": "Network dynamics under uncertainty (dummy)",
-      "venue": "International Traffic Flow Workshop, Kyoto, Japan",
-      "date": "March 2024"
+      "authors": "Koki Satsukawa",
+      "title": "Convergence and stability analysis of dynamic traffic assignment with atomic games",
+      "venue": "Dagstuhl Seminar 24281, Dynamic Traffic Models in Transportation Science",
+      "year": 2024,
+      "month": "July"
     },
     {
-      "id": "domestic-2023-dummy",
-      "subtype": "domestic_conference_non_peer_reviewed",
-      "authors": "佐津川功季",
-      "title": "都市交通における需要変動分析（ダミー）",
-      "venue": "土木学会年次学術講演会",
-      "date": "2023年9月"
+      "id": "workshop-2024-satsukawa-flexible-reservation",
+      "subtype": "international_seminar_workshop",
+      "authors": "Koki Satsukawa, Yusuke Hara, Yosuke Kawasaki and Takamasa Iryo",
+      "title": "A study on the design of a flexible reservation system for urban transport services under uncertainty",
+      "venue": "International workshop on methodologies towards sustainable and flexible city transport systems, Tohoku University (Sendai), Japan",
+      "year": 2024,
+      "month": "February"
+    },
+    {
+      "id": "workshop-2020-satsukawa-modelling",
+      "subtype": "international_seminar_workshop",
+      "authors": "Koki Satsukawa and David Watling",
+      "title": "Modelling and control of dynamic traffic flow in mixed networks of autonomous and human-driven vehicles",
+      "venue": "International Workshop on Control and DTA: from principles to large-scale implementation, University of Leeds (Leeds), UK",
+      "year": 2020,
+      "month": "February"
+    },
+    {
+      "id": "workshop-2018-satsukawa-throughput-joint",
+      "subtype": "international_seminar_workshop",
+      "authors": "Koki Satsukawa",
+      "title": "Network throughput under dynamic user equilibrium",
+      "venue": "Joint Seminar between Tongji University and the University of Tokyo and 13th International Workshop on ITS, The University of Tokyo, Tokyo, Japan",
+      "month": "November",
+      "year": 2018
+    },
+    {
+      "id": "workshop-2017-satsukawa-ramp-metering",
+      "subtype": "international_seminar_workshop",
+      "authors": "Koki Satsukawa",
+      "title": "A comparative study of coordinated ramp metering strategies for complex networks",
+      "venue": "The 3rd Workshop on Intelligent Transport Systems between Tongji University and the University of Tokyo, Tongji University (Shanghai), China",
+      "year": 2017,
+      "month": "October"
+    },
+    {
+      "id": "workshop-2016-satsukawa-throughput",
+      "subtype": "international_seminar_workshop",
+      "authors": "Koki Satsukawa",
+      "title": "Traffic performance analysis of road network based on dynamic user equilibrium",
+      "venue": "The 2nd workshop on ITS between Tongji University and the University of Tokyo, University of Tokyo (Tokyo), Japan",
+      "year": 2016,
+      "month": "November"
+    },
+    {
+      "id": "workshop-2015-satsukawa-origin-destination",
+      "subtype": "international_seminar_workshop",
+      "authors": "Koki Satsukawa, Kentaro Wada",
+      "title": "An analysis of network throughputs for different origin-destination patterns",
+      "venue": "7th Joint student seminar on civil infrastructure, Bangkok, Thailand",
+      "year": 2015,
+      "month": "August"
     }
   ],
   "grants": [
