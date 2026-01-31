@@ -179,7 +179,6 @@ def format_publication(pub: dict) -> str:
         ]
     else:
         venue_name = latex_escape(venue_raw)
-        venue_rest = ""
         year_text = ""
         if year:
             year_text = f"{latex_escape(month)} {year}" if month else str(year)
@@ -199,7 +198,27 @@ def format_publication(pub: dict) -> str:
 
 def format_generic_entry(entry: dict, fields: list[str]) -> str:
     values = []
+    combined_vnp = None
+    if any(field in fields for field in ("volume", "number", "pages")):
+        volume = entry.get("volume")
+        number = entry.get("number")
+        pages = entry.get("pages")
+        volume_text = latex_escape(str(volume)) if volume else ""
+        number_text = latex_escape(str(number)) if number else ""
+        pages_text = latex_escape(str(pages)) if pages else ""
+        if volume_text or pages_text or number_text:
+            if volume_text and number_text:
+                combined_vnp = f"{volume_text}({number_text})"
+            elif volume_text:
+                combined_vnp = volume_text
+            if pages_text:
+                combined_vnp = f"{combined_vnp}, {pages_text}" if combined_vnp else pages_text
     for field in fields:
+        if field in ("volume", "number", "pages"):
+            if combined_vnp is not None:
+                values.append(combined_vnp)
+                combined_vnp = None
+            continue
         value = entry.get(field)
         if value is None and not field.endswith(("_web", "_pdf")):
             value = entry.get(f"{field}_pdf")

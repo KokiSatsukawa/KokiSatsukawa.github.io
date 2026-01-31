@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.1-u1.30-230214-2.6 (utf8.euc) (TeX Live 2024) (preloaded format=platex 2025.2.24)  31 JAN 2026 12:26
+This is e-upTeX, Version 3.141592653-p4.1.1-u1.30-230214-2.6 (utf8.euc) (TeX Live 2024) (preloaded format=platex 2025.2.24)  31 JAN 2026 12:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -355,12 +355,12 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 4110 strings out of 473863
- 67720 string characters out of 5731558
- 480483 words of memory out of 5000000
- 27329 multiletter control sequences out of 15000+600000
+ 4111 strings out of 473863
+ 67738 string characters out of 5731558
+ 479483 words of memory out of 5000000
+ 27330 multiletter control sequences out of 15000+600000
  577585 words of font info for 86 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 80i,6n,93p,436b,319s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 80i,6n,93p,430b,319s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on /Users/koki/Documents/GitHub/KokiSatsukawa.github.io/output/.texpadtmp/complete_cv.dvi (6 pages, 25528 bytes).
+Output written on /Users/koki/Documents/GitHub/KokiSatsukawa.github.io/output/.texpadtmp/complete_cv.dvi (6 pages, 26036 bytes).
