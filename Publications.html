@@ -137,6 +137,7 @@
             function renderItem(item) {
                 const venue = renderVenue(item);
                 const yearText = item.year ? String(item.year) : "";
+                const monthText = item.month ? String(item.month) : "";
                 const isJapanese = item.language === "ja" || item.language === "japanese";
                 const location = item.subtype === "international_conference_peer_reviewed" && item.location
                     ? String(item.location)
@@ -161,7 +162,8 @@
                     suffix = `${suffix || venue ? ", " : ""}${location}`.trim();
                 }
                 if (yearText) {
-                    suffix += `${(suffix || venue) ? ", " : ""}${yearText}`;
+                    const dateText = monthText ? `${monthText} ${yearText}` : yearText;
+                    suffix += `${(suffix || venue) ? ", " : ""}${dateText}`;
                 }
                 const status = item.status ? String(item.status) : "";
                 let statusTag = "";
@@ -223,6 +225,37 @@
                 `;
             }
 
+            function renderOtherItem(item) {
+                const title = item.title ? escapeHtml(item.title) : "";
+                const authors = item.authors ? escapeHtml(item.authors) : "";
+                const venue = item.venue ? escapeHtml(item.venue) : "";
+                const date = item.date ? escapeHtml(item.date) : "";
+                const year = item.year ? escapeHtml(String(item.year)) : "";
+                const month = item.month ? escapeHtml(String(item.month)) : "";
+                const dateText = date || (year ? (month ? `${month} ${year}` : year) : "");
+                const venueLine = [venue, dateText].filter(Boolean).join(", ");
+                return `
+                    <li class="publication-item">
+                        <div class="publication-title item-title">${title}</div>
+                        ${authors ? `<div class="publication-authors">${authors}</div>` : ""}
+                        ${venueLine ? `<div class="publication-venue">${venueLine}</div>` : ""}
+                    </li>
+                `;
+            }
+
+            function renderOtherSection(label, items) {
+                if (!items.length) return "";
+                const cards = items.map(renderOtherItem).join("");
+                return `
+                    <div class="publication-section section-block">
+                        <h3 class="section-title">${escapeHtml(label)}</h3>
+                        <ol class="publication-list" reversed>
+                            ${cards}
+                        </ol>
+                    </div>
+                `;
+            }
+
             async function loadPublications() {
                 try {
                     const response = await fetch("output/cv.json", { cache: "no-store" });
@@ -251,7 +284,23 @@
                         .filter(Boolean)
                         .join("");
 
-                    container.innerHTML = sections || "<p class=\"detail-text\">No publications found.</p>";
+                    const invited = data.invited_talks || [];
+                    const presentations = data.presentations || [];
+                    const workshops = presentations.filter(
+                        (item) => item.subtype === "international_seminar_workshop"
+                    );
+                    const seminars = [
+                        ...presentations.filter((item) => item.subtype === "seminar"),
+                        ...(data.publications || []).filter((item) => item.subtype === "seminar"),
+                    ];
+                    const othersItems = [...invited, ...workshops, ...seminars];
+                    const othersSection = renderOtherSection(
+                        "Others (Invited Talks, Selected Seminars, Workshops)",
+                        othersItems
+                    );
+
+                    const combined = [sections, othersSection].filter(Boolean).join("");
+                    container.innerHTML = combined || "<p class=\"detail-text\">No publications found.</p>";
                 } catch (error) {
                     container.innerHTML = `
                         <p class="detail-text">

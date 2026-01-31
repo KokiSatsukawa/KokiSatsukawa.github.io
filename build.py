@@ -37,6 +37,8 @@ def build_json(data: dict) -> dict:
         "meta": data.get("meta", {}),
         "web": data.get("web", {}),
         "publications": web_publications,
+        "invited_talks": data.get("invited_talks", []),
+        "presentations": data.get("presentations", []),
         "grants": data.get("grants", []),
     }
 
@@ -101,6 +103,7 @@ def normalize_publication(publication: dict, variant: str) -> dict:
         "location": publication.get("location"),
         "venue_link": publication.get("venue_link"),
         "year": publication.get("year"),
+        "month": publication.get("month"),
         "status": publication.get("status"),
         "language": publication.get("language"),
         "volume": publication.get("volume"),
@@ -177,7 +180,9 @@ def format_publication(pub: dict) -> str:
     else:
         venue_name = latex_escape(venue_raw)
         venue_rest = ""
-        year_text = str(year) if year else ""
+        year_text = ""
+        if year:
+            year_text = f"{latex_escape(month)} {year}" if month else str(year)
         if accepted:
             year_text = f"{year_text} (Accepted)" if year_text else "(Accepted)"
         parts = [

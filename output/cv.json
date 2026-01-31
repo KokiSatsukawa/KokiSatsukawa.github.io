@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-01-31T02:17:58.983462+00:00",
+  "generated_at": "2026-01-31T02:48:27.325957+00:00",
   "meta": {
     "complete_pdf_url": "output/complete_cv.pdf"
   },
@@ -314,6 +314,7 @@
       "location": "Munich, Germany",
       "venue_link": "https://www.isttt2026.vtk.ed.tum.de/",
       "year": 2026,
+      "month": "July",
       "status": "accepted"
     },
     {
@@ -325,6 +326,7 @@
       "location": "Munich, Germany",
       "venue_link": "https://www.isttt2026.vtk.ed.tum.de/",
       "year": 2026,
+      "month": "July",
       "status": "accepted"
     },
     {
@@ -336,6 +338,7 @@
       "location": "Munich, Germany",
       "venue_link": "https://www.isttt2026.vtk.ed.tum.de/",
       "year": 2026,
+      "month": "July",
       "status": "accepted"
     },
     {
@@ -346,7 +349,8 @@
       "venue": "The 29th International Conference of Hong Kong Society for Transportation Studies (29th HKSTS)",
       "location": "Hong Kong, China",
       "venue_link": "https://www.hksts.org/",
-      "year": 2025
+      "year": 2025,
+      "month": "December"
     },
     {
       "id": "conf-2025-nihei-evolutionary",
@@ -356,7 +360,8 @@
       "venue": "The 29th International Conference of Hong Kong Society for Transportation Studies (29th HKSTS)",
       "location": "Hong Kong, China",
       "venue_link": "https://www.hksts.org/",
-      "year": 2025
+      "year": 2025,
+      "month": "December"
     },
     {
       "id": "conf-2025-smith-gating",
@@ -366,7 +371,8 @@
       "venue": "The 10th International Symposium on Dynamic Traffic Assignment (DTA2025)",
       "location": "Salerno, Italy",
       "venue_link": "https://www.motusanimi.it/dta2025/",
-      "year": 2025
+      "year": 2025,
+      "month": "September"
     },
     {
       "id": "conf-2025-iryo-markov",
@@ -376,7 +382,8 @@
       "venue": "The 10th International Symposium on Dynamic Traffic Assignment (DTA2025)",
       "location": "Salerno, Italy",
       "venue_link": "https://www.motusanimi.it/dta2025/",
-      "year": 2025
+      "year": 2025,
+      "month": "September"
     },
     {
       "id": "conf-2025-takiguchi-experimental",
@@ -386,7 +393,8 @@
       "venue": "The 10th International Symposium on Dynamic Traffic Assignment (DTA2025)",
       "location": "Salerno, Italy",
       "venue_link": "https://www.motusanimi.it/dta2025/",
-      "year": 2025
+      "year": 2025,
+      "month": "September"
     },
     {
       "id": "conf-2025-kosaka-lifestyle",
@@ -396,7 +404,8 @@
       "venue": "European Society of Cardiology Congress 2025 (ESC2025)",
       "location": "Madrid, Spain",
       "venue_link": "https://www.escardio.org/Congresses-Events/ESC-Congress",
-      "year": 2025
+      "year": 2025,
+      "month": "August"
     },
     {
       "id": "conf-2025-nakao-evolutionary",
@@ -406,7 +415,8 @@
       "venue": "The Twelfth Triennial Symposium on Transportation Analysis (TRISTAN XII)",
       "location": "Okinawa, Japan",
       "venue_link": "https://tristanconference.org/editions/tristan-xii/cfp",
-      "year": 2025
+      "year": 2025,
+      "month": "June"
     },
     {
       "id": "conf-2024-satsukawa-stability",
@@ -416,7 +426,8 @@
       "venue": "The 25th International Symposium on Transportation and Traffic Theory (ISTTT25)",
       "location": "Ann Arbor, USA",
       "venue_link": "https://limos.engin.umich.edu/isttt25/",
-      "year": 2024
+      "year": 2024,
+      "month": "July"
     },
     {
       "id": "conf-2024-sakai-telecommuting",
@@ -426,7 +437,8 @@
       "venue": "The 25th International Symposium on Transportation and Traffic Theory (ISTTT25)",
       "location": "Ann Arbor, USA",
       "venue_link": "https://limos.engin.umich.edu/isttt25/",
-      "year": 2024
+      "year": 2024,
+      "month": "July"
     },
     {
       "id": "conf-2023-satsukawa-reservation",
@@ -436,7 +448,8 @@
       "venue": "The 9th International Symposium on Transport Network Resilience (INSTR2023)",
       "location": "Hong Kong, China",
       "venue_link": "https://www.institute-of-transport-studies.hku.hk/instr2023",
-      "year": 2023
+      "year": 2023,
+      "month": "December"
     },
     {
       "id": "conf-2023-sakai-welfare",
@@ -445,7 +458,8 @@
       "authors": "Takara Sakai, Takashi Akamatsu and Koki Satsukawa",
       "venue": "11th Symposium of the European Association for Research in Transportation (hEART2023)",
       "location": "Zurich, Switzerland",
-      "year": 2023
+      "year": 2023,
+      "month": "September"
     },
     {
       "id": "conf-2023-satsukawa-adjustment",
@@ -455,7 +469,8 @@
       "venue": "9th International Symposium on Dynamic Traffic Assignment (DTA2023)",
       "location": "Chicago, USA",
       "venue_link": "https://sites.northwestern.edu/dta2023/",
-      "year": 2023
+      "year": 2023,
+      "month": "July"
     },
     {
       "id": "conf-2023-sakai-queue",
@@ -465,17 +480,8 @@
       "venue": "9th International Symposium on Dynamic Traffic Assignment (DTA2023)",
       "location": "Chicago, USA",
       "venue_link": "https://sites.northwestern.edu/dta2023/",
-      "year": 2023
-    },
-    {
-      "id": "conf-2022-sakai-departure",
-      "subtype": "international_conference_peer_reviewed",
-      "title": "Departure time choice problems in a corridor network with heterogeneous value of schedule delay",
-      "authors": "Takara Sakai, Takashi Akamatsu and Koki Satsukawa",
-      "venue": "The 27th International Conference of Hong Kong Society for Transportation Studies (27th HKSTS)",
-      "location": "Hong Kong, China (online)",
-      "venue_link": "https://www.hksts.org/",
-      "year": 2022
+      "year": 2023,
+      "month": "July"
     },
     {
       "id": "conf-2022-satsukawa-convergence",
@@ -484,7 +490,19 @@
       "authors": "Koki Satsukawa, Kentaro Wada and David Watling",
       "venue": "The 24th International Symposium on Transportation and Traffic Theory (ISTTT24)",
       "location": "Beijing, China (online)",
-      "year": 2022
+      "year": 2022,
+      "month": "July"
+    },
+    {
+      "id": "conf-2021-sakai-departure",
+      "subtype": "international_conference_peer_reviewed",
+      "title": "Departure time choice problems in a corridor network with heterogeneous value of schedule delay",
+      "authors": "Takara Sakai, Takashi Akamatsu and Koki Satsukawa",
+      "venue": "The 25th International Conference of Hong Kong Society for Transportation Studies (25th HKSTS)",
+      "location": "Hong Kong, China (online)",
+      "venue_link": "https://www.hksts.org/",
+      "year": 2021,
+      "month": "December"
     },
     {
       "id": "conf-2021-smith-zero-queue",
@@ -494,7 +512,8 @@
       "venue": "The 8th International Symposium on Dynamic Traffic Assignment",
       "location": "Seattle, USA (online)",
       "venue_link": "https://dta2020.com/",
-      "year": 2021
+      "year": 2021,
+      "month": "June"
     },
     {
       "id": "conf-2019-satsukawa-stochastic",
@@ -504,7 +523,8 @@
       "venue": "The 23rd International Symposium on Transportation and Traffic Theory (ISTTT23)",
       "location": "Lausanne, Switzerland",
       "venue_link": "https://isttt23.sciencesconf.org/",
-      "year": 2019
+      "year": 2019,
+      "month": "July"
     },
     {
       "id": "conf-2016-wada-mfd",
@@ -513,7 +533,8 @@
       "authors": "Kentaro Wada and Koki Satsukawa",
       "venue": "The 6th International Symposium on Dynamic Traffic Assignment",
       "location": "Sydney, Australia",
-      "year": 2016
+      "year": 2016,
+      "month": "June"
     },
     {
       "id": "conf-2015-satsukawa-od-structures",
@@ -523,7 +544,8 @@
       "venue": "The 20th International Conference of Hong Kong Society for Transportation Studies (20th HKSTS)",
       "location": "Hong Kong, China",
       "venue_link": "https://www.hksts.org/",
-      "year": 2015
+      "year": 2015,
+      "month": "December"
     },
     {
       "id": "talk-2024-satsukawa-convergence",
@@ -694,6 +716,33 @@
       "volume": "52",
       "number": "4",
       "pages": "33-38"
+    }
+  ],
+  "invited_talks": [
+    {
+      "id": "invited-2024-dummy",
+      "authors": "佐津川功季",
+      "title": "交通ネットワーク解析の最前線（招待講演・ダミー）",
+      "venue": "第10回交通システムシンポジウム",
+      "date": "2024年7月"
+    }
+  ],
+  "presentations": [
+    {
+      "id": "seminar-2024-dummy",
+      "subtype": "international_seminar_workshop",
+      "authors": "佐津川功季",
+      "title": "Network dynamics under uncertainty (dummy)",
+      "venue": "International Traffic Flow Workshop, Kyoto, Japan",
+      "date": "March 2024"
+    },
+    {
+      "id": "domestic-2023-dummy",
+      "subtype": "domestic_conference_non_peer_reviewed",
+      "authors": "佐津川功季",
+      "title": "都市交通における需要変動分析（ダミー）",
+      "venue": "土木学会年次学術講演会",
+      "date": "2023年9月"
     }
   ],
   "grants": [
