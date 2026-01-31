@@ -50,6 +50,11 @@ cv:
           label: "国内会議（査読無）"
           subtypes:
             - domestic_conference_non_peer_reviewed
+    - id: awards
+      label: "受賞"
+      source: awards
+      format: generic
+      fields: [title, organization, date]
     - id: grants
       label: "競争的研究資金"
       source: grants
@@ -639,97 +644,115 @@ publications:
     year: 2017
     language: "ja"
 
+awards:
+  - id: award-2021-jaam
+    title: "JAAM賞（優秀研究発表賞）"
+    organization: "第5回JAAM研究・実践発表会"
+    date: "2021年11月"
+
+  - id: award-2019-yonetani-sasaki
+    title: "第15回 米谷・佐佐木賞（学位論文部門）"
+    organization: "システム科学研究所"
+    date: "2019年11月"
+
+  - id: award-2018-csis
+    title: "優秀研究発表賞"
+    organization: "CSIS DAYS 2018「全国共同利用研究発表大会」"
+    date: "2018年11月"
+
+
+
 grants:
-- id: grant-2025-jsps-b
-  title: "物流の脱炭素化に向けた電力と交通を融合した電気自動車のネットワーク解析理論の構築"
-  agency: "日本学術振興会: 科学研究費助成事業 基盤研究(B)"
-  role: "分担"
-  period: "2025年4月–2028年3月"
-  amount: "分担金: 1500千円"
+  - id: grant-2025-jsps-b
+    title: "物流の脱炭素化に向けた電力と交通を融合した電気自動車のネットワーク解析理論の構築"
+    agency: "日本学術振興会: 科学研究費助成事業 基盤研究(B)"
+    role: "分担"
+    period: "2025年4月–2028年3月"
+    amount: "分担金: 1500千円"
 
-- id: grant-2025-jsps-a
-  title: "デジタルツイン時代の統合型輸送システムの分散型進化的最適化と実装"
-  agency: "日本学術振興会: 科学研究費助成事業 基盤研究(A)"
-  role: "分担"
-  period: "2025年4月–2029年3月"
-  amount: "分担金: 200千円（現在までの実績）"
+  - id: grant-2025-jsps-a
+    title: "デジタルツイン時代の統合型輸送システムの分散型進化的最適化と実装"
+    agency: "日本学術振興会: 科学研究費助成事業 基盤研究(A)"
+    role: "分担"
+    period: "2025年4月–2029年3月"
+    amount: "分担金: 200千円（現在までの実績）"
 
-- id: grant-2024-kajima-international
-  title: "「つながる」「わけあう」交通システムを活かすための自己組織化理論"
-  agency: "鹿島学術振興財団: 国際共同研究"
-  role: "分担"
-  period: "2024年4月–2026年3月"
-  amount: "分担金: 600千円"
+  - id: grant-2024-kajima-international
+    title: "「つながる」「わけあう」交通システムを活かすための自己組織化理論"
+    agency: "鹿島学術振興財団: 国際共同研究"
+    role: "分担"
+    period: "2024年4月–2026年3月"
+    amount: "分担金: 600千円"
 
-- id: grant-2024-jsps-b-autonomous
-  title: "シェア型自動運転車交通システムの規範的数理モデルの開発とその展開"
-  agency: "日本学術振興会: 科学研究費助成事業 基盤研究(B)"
-  role: "分担"
-  period: "2024年4月–2028年3月"
-  amount: "分担金: 700千円（現在までの実績）"
+  - id: grant-2024-jsps-b-autonomous
+    title: "シェア型自動運転車交通システムの規範的数理モデルの開発とその展開"
+    agency: "日本学術振興会: 科学研究費助成事業 基盤研究(B)"
+    role: "分担"
+    period: "2024年4月–2028年3月"
+    amount: "分担金: 700千円（現在までの実績）"
 
-- id: grant-2024-jsps-b-multiscale
-  title: "マルチスケール時空間経済系における粒子・流体表現を統合したメカニズム設計理論"
-  agency: "日本学術振興会: 科学研究費助成事業 基盤研究(B)"
-  role: "分担"
-  period: "2024年4月–2027年3月"
-  amount: "分担金: 1,000千円（現在までの実績）"
+  - id: grant-2024-jsps-b-multiscale
+    title: "マルチスケール時空間経済系における粒子・流体表現を統合したメカニズム設計理論"
+    agency: "日本学術振興会: 科学研究費助成事業 基盤研究(B)"
+    role: "分担"
+    period: "2024年4月–2027年3月"
+    amount: "分担金: 1,000千円（現在までの実績）"
 
-- id: grant-2023-jsps-early-career
-  title: "異質性がもたらす交通システムの進化特性解明とそれに基づく交通制御・計画の設計"
-  agency: "日本学術振興会: 科学研究費助成事業 若手研究"
-  role: "代表"
-  period: "2023年4月–2026年3月"
-  amount: "総額: 3,500千円"
+  - id: grant-2023-jsps-early-career
+    title: "異質性がもたらす交通システムの進化特性解明とそれに基づく交通制御・計画の設計"
+    agency: "日本学術振興会: 科学研究費助成事業 若手研究"
+    role: "代表"
+    period: "2023年4月–2026年3月"
+    amount: "総額: 3,500千円"
 
-- id: grant-2021-nict-shared
-  title: "多様な都市活動を支援する予測情報共有型時空間リソース有効活用技術の研究開発"
-  agency: "国立研究開発法人 情報通信研究機構 (NICT): 高度通信・放送研究開発委託研究"
-  role: "分担"
-  period: "2021年4月–2023年3月"
-  amount: "分担金: 9,000千円（東北大学研究グループへの分担金）"
+  - id: grant-2021-nict-shared
+    title: "多様な都市活動を支援する予測情報共有型時空間リソース有効活用技術の研究開発"
+    agency: "国立研究開発法人 情報通信研究機構 (NICT): 高度通信・放送研究開発委託研究"
+    role: "分担"
+    period: "2021年4月–2023年3月"
+    amount: "分担金: 9,000千円（東北大学研究グループへの分担金）"
 
-- id: grant-2021-jsps-b-matching
-  title: "交通・物流システム効率化のための市場型マッチング・システムの設計・評価法構築"
-  agency: "日本学術振興会: 科学研究費助成事業 基盤研究(B)"
-  role: "分担"
-  period: "2021年4月–2024年3月"
-  amount: "分担金: 1,500千円"
+  - id: grant-2021-jsps-b-matching
+    title: "交通・物流システム効率化のための市場型マッチング・システムの設計・評価法構築"
+    agency: "日本学術振興会: 科学研究費助成事業 基盤研究(B)"
+    role: "分担"
+    period: "2021年4月–2024年3月"
+    amount: "分担金: 1,500千円"
 
-- id: grant-2020-jsps-b-ml
-  title: "交通工学理論と機械学習を融合した道路交通システムの状態推定・将来予測・制御"
-  agency: "日本学術振興会: 科学研究費助成事業 基盤研究(B)"
-  role: "分担"
-  period: "2020年4月–2024年3月"
-  amount: "分担金: 2,400千円"
+  - id: grant-2020-jsps-b-ml
+    title: "交通工学理論と機械学習を融合した道路交通システムの状態推定・将来予測・制御"
+    agency: "日本学術振興会: 科学研究費助成事業 基盤研究(B)"
+    role: "分担"
+    period: "2020年4月–2024年3月"
+    amount: "分担金: 2,400千円"
 
-- id: grant-2020-jsps-a-maas
-  title: "MaaS＋CV時代の次世代交通システムに向けたインフラと制度の設計"
-  agency: "日本学術振興会: 科学研究費助成事業 基盤研究(A)"
-  role: "分担"
-  period: "2020年4月–2024年3月"
-  amount: "分担金: 1,200千円"
+  - id: grant-2020-jsps-a-maas
+    title: "MaaS＋CV時代の次世代交通システムに向けたインフラと制度の設計"
+    agency: "日本学術振興会: 科学研究費助成事業 基盤研究(A)"
+    role: "分担"
+    period: "2020年4月–2024年3月"
+    amount: "分担金: 1,200千円"
 
-- id: grant-2020-jsps-early-career
-  title: "高度な動的制御のためのゲーム理論に基づくネットワーク交通流解析理論の構築"
-  agency: "日本学術振興会: 科学研究費助成事業 若手研究"
-  role: "代表"
-  period: "2020年4月–2023年3月"
-  amount: "総額: 2,800千円"
+  - id: grant-2020-jsps-early-career
+    title: "高度な動的制御のためのゲーム理論に基づくネットワーク交通流解析理論の構築"
+    agency: "日本学術振興会: 科学研究費助成事業 若手研究"
+    role: "代表"
+    period: "2020年4月–2023年3月"
+    amount: "総額: 2,800千円"
 
-- id: grant-2019-jsps-a-maintenance
-  title: "社会便益を考慮した高速道路施設の維持管理高度化に関する研究"
-  agency: "日本学術振興会: 科学研究費助成事業 基盤研究(A)"
-  role: "分担"
-  period: "2019年4月–2023年3月"
-  amount: "分担金: 2,500千円"
+  - id: grant-2019-jsps-a-maintenance
+    title: "社会便益を考慮した高速道路施設の維持管理高度化に関する研究"
+    agency: "日本学術振興会: 科学研究費助成事業 基盤研究(A)"
+    role: "分担"
+    period: "2019年4月–2023年3月"
+    amount: "分担金: 2,500千円"
 
-- id: grant-2018-jsps-dc2
-  title: "交通渋滞の縮約表現に着目した大規模ネットワークの動的階層化による制御手法の研究"
-  agency: "日本学術振興会: 特別研究員奨励費 (DC2)"
-  role: "代表"
-  period: "2018年4月–2020年3月"
-  amount: "総額: 1,700千円"
+  - id: grant-2018-jsps-dc2
+    title: "交通渋滞の縮約表現に着目した大規模ネットワークの動的階層化による制御手法の研究"
+    agency: "日本学術振興会: 特別研究員奨励費 (DC2)"
+    role: "代表"
+    period: "2018年4月–2020年3月"
+    amount: "総額: 1,700千円"
 
 
 invited_talks:
