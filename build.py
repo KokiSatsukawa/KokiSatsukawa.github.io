@@ -196,6 +196,10 @@ def format_generic_entry(entry: dict, fields: list[str]) -> str:
     values = []
     for field in fields:
         value = entry.get(field)
+        if value is None and not field.endswith(("_web", "_pdf")):
+            value = entry.get(f"{field}_pdf")
+        if value is None and not field.endswith(("_web", "_pdf")):
+            value = entry.get(f"{field}_web")
         if not value:
             continue
         values.append(latex_escape(str(value)))

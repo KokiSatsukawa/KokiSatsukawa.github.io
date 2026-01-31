@@ -8,6 +8,8 @@ web:
       label: "Peer-Reviewed International Conferences"
     - id: preprint
       label: "Preprints"
+    - id: books
+      label: "Contributed Articles"
 cv:
   sections:
     - id: journal_peer_reviewed
@@ -23,10 +25,12 @@ cv:
         - international_conference_peer_reviewed
       format: publication
     - id: books
-      label: "著書・解説"
-      source: books
+      label: "寄稿・解説"
+      source: publications
+      subtypes:
+        - books
       format: generic
-      fields: [authors, title, venue, year]
+      fields: [authors, title, venue, volume, number, pages, year]
     - id: invited_talks
       label: "招待講演"
       source: invited_talks
@@ -521,23 +525,7 @@ publications:
     year: 2015
 
 
-  - id: report-2019-satsukawa-congestion
-    subtype: report
-    title_web: "Traffic performance analysis of road network based on congestion patterns (in Japanese)"
-    title_pdf: "Traffic performance analysis of road network based on congestion patterns"
-    authors: "Koki Satsukawa and Kentaro Wada"
-    venue: "SEISANKENKYU, 71(2), 89-95"
-    venue_link: "https://www.jstage.jst.go.jp/browse/seisankenkyu/-char/en"
-    year: 2019
-    doi: "https://doi.org/10.11188/seisankenkyu.71.89"
-  - id: report-2017-nakanishi-traffic
-    subtype: report
-    title_web: "Recent studies of network traffic flow modeling (in Japanese)"
-    title_pdf: "Recent studies of network traffic flow modeling"
-    authors: "Wataru Nakanishi and Koki Satsukawa"
-    venue: "JSTE Magazine \"Traffic Engineering\", 52(4), 33-38"
-    venue_link: "https://www.jste.or.jp/index.html"
-    year: 2017
+
   - id: talk-2024-satsukawa-convergence
     subtype: seminar
     title: "Convergence and stability analysis of dynamic traffic assignment with atomic games"
@@ -651,6 +639,37 @@ publications:
     year: 2023
     status: in_preparation
 
+    
+  - id: report-2019-satsukawa-congestion
+    subtype: books
+    title_web: "Traffic performance analysis of road network based on congestion patterns"
+    title_pdf: "渋滞の空間分布に基づく道路ネットワークの交通性能の解析理論"
+    authors_web: "Koki Satsukawa and Kentaro Wada"
+    authors_pdf: "佐津川功季, 和田健太郎"
+    venue_web: "SEISANKENKYU"
+    venue_pdf: "生産研究"
+    volume: "71"
+    number: "2"
+    pages: "89-95"
+    venue_link: "https://www.jstage.jst.go.jp/browse/seisankenkyu/-char/en"
+    year: 2019
+    doi: "https://doi.org/10.11188/seisankenkyu.71.89"
+    language: "ja"
+  - id: report-2017-nakanishi-traffic
+    subtype: books
+    title_web: "Recent studies of network traffic flow modeling"
+    title_pdf: "Kinematic Wave理論のネットワーク拡張"
+    authors_web: "Wataru Nakanishi and Koki Satsukawa"
+    authors_pdf: "中西航, 佐津川功季"
+    venue_web: "JSTE Magazine \"Traffic Engineering\""
+    venue_pdf: "交通工学"
+    volume: "52"
+    number: "4"
+    pages: "33-38"
+    venue_link: "https://www.jste.or.jp/index.html"
+    year: 2017
+    language: "ja"
+
 grants:
   - id: grant-2024-jsps-dummy
     title: "Grant-in-Aid for Scientific Research (C) (dummy)"
@@ -664,13 +683,6 @@ grants:
     role: "Co-Investigator"
     period: "2022–2023"
     amount: "JPY 1,000,000"
-
-books:
-  - id: book-2023-dummy
-    authors: "佐津川功季"
-    title: "都市交通計画の基礎（ダミー）"
-    venue: "交通工学出版"
-    year: 2023
 
 invited_talks:
   - id: invited-2024-dummy

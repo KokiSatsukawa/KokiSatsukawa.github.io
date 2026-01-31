@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-01-31T01:57:42.224696+00:00",
+  "generated_at": "2026-01-31T02:17:58.983462+00:00",
   "meta": {
     "complete_pdf_url": "output/complete_cv.pdf"
   },
@@ -16,6 +16,10 @@
       {
         "id": "preprint",
         "label": "Preprints"
+      },
+      {
+        "id": "books",
+        "label": "Contributed Articles"
       }
     ]
   },
@@ -522,25 +526,6 @@
       "year": 2015
     },
     {
-      "id": "report-2019-satsukawa-congestion",
-      "subtype": "report",
-      "title": "Traffic performance analysis of road network based on congestion patterns (in Japanese)",
-      "authors": "Koki Satsukawa and Kentaro Wada",
-      "venue": "SEISANKENKYU, 71(2), 89-95",
-      "venue_link": "https://www.jstage.jst.go.jp/browse/seisankenkyu/-char/en",
-      "year": 2019,
-      "doi": "https://doi.org/10.11188/seisankenkyu.71.89"
-    },
-    {
-      "id": "report-2017-nakanishi-traffic",
-      "subtype": "report",
-      "title": "Recent studies of network traffic flow modeling (in Japanese)",
-      "authors": "Wataru Nakanishi and Koki Satsukawa",
-      "venue": "JSTE Magazine \"Traffic Engineering\", 52(4), 33-38",
-      "venue_link": "https://www.jste.or.jp/index.html",
-      "year": 2017
-    },
-    {
       "id": "talk-2024-satsukawa-convergence",
       "subtype": "seminar",
       "title": "Convergence and stability analysis of dynamic traffic assignment with atomic games",
@@ -682,6 +667,33 @@
       "authors": "Koki Satsukawa",
       "year": 2023,
       "status": "in_preparation"
+    },
+    {
+      "id": "report-2019-satsukawa-congestion",
+      "subtype": "books",
+      "title": "Traffic performance analysis of road network based on congestion patterns",
+      "authors": "Koki Satsukawa and Kentaro Wada",
+      "venue": "SEISANKENKYU",
+      "venue_link": "https://www.jstage.jst.go.jp/browse/seisankenkyu/-char/en",
+      "year": 2019,
+      "language": "ja",
+      "volume": "71",
+      "number": "2",
+      "pages": "89-95",
+      "doi": "https://doi.org/10.11188/seisankenkyu.71.89"
+    },
+    {
+      "id": "report-2017-nakanishi-traffic",
+      "subtype": "books",
+      "title": "Recent studies of network traffic flow modeling",
+      "authors": "Wataru Nakanishi and Koki Satsukawa",
+      "venue": "JSTE Magazine \"Traffic Engineering\"",
+      "venue_link": "https://www.jste.or.jp/index.html",
+      "year": 2017,
+      "language": "ja",
+      "volume": "52",
+      "number": "4",
+      "pages": "33-38"
     }
   ],
   "grants": [
