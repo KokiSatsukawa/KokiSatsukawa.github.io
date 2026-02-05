@@ -67,6 +67,11 @@ p { line-height: 180%}
 .section-float-fix {
     display: flow-root;
 }
+.section-float-fix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
 .publication-title {
     margin-bottom: 4px;
