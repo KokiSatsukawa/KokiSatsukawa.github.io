@@ -1,25 +1,9 @@
 body {
     padding-top: 50px; /* Padding for .navbar-fixed-top. Change value if navbar height changes. Remove if using .navbar-static-top. */
+    font-family: "Roboto", "Noto Sans JP", sans-serif;
+    font-size: 17px;
 }
 
-.portfolio-item {
-    margin-bottom: 25px;
-}
-
-.footer-blurb {
-    padding: 30px 0;
-	text-align: center;
-    background-color: lightskyblue;
-}
-
-.footer-blurb h3 {
-    color: midnightblue;
-    }
-    
-.footer-blurb-item {
-    padding: 30px 0;
-    }
- 
 .copyright {
 	background-color: #fff;
 	text-align: center;
@@ -29,19 +13,14 @@ body {
 p { line-height: 180%}
 
 .LICV{
-    padding-left: 10px;
-    margin-left: 10px;
-    line-height: 1.7;
+    padding-left: 18px;
+    margin: 6px 0 22px;
+    line-height: 1.6;
 }
 
 .home-title {
     font-family: "Times New Roman", Times, serif;
     font-style: normal;
-}
-
-.home-subtitle {
-    font-size: 17px;
-    margin-top: 6px;
 }
 
 .home-intro {
@@ -54,16 +33,121 @@ p { line-height: 180%}
 
 
 
-.cv-item {
-    font-size: 16px;
+.item-title,
+.publication-title {
+    font-size: 17px;
+    letter-spacing: 0.1px;
+    color: #111;
+    line-height: 1.5;
+}
+
+.item-title-strong {
+    font-weight: 600;
 }
 
 .detail-text {
-    font-size: 14px;
+    font-size: 16px;
+    color: #333;
+}
+
+.page-header {
+    font-size: 34px;
+}
+
+.contact-page p {
+    margin: 0 0 6px;
+}
+
+.section-block {
+    margin-bottom: 30px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.section-float-fix {
+    display: flow-root;
+}
+
+.publication-title {
+    margin-bottom: 4px;
+    font-weight: normal;
+}
+
+.publication-title a {
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px solid #ccc;
+}
+
+.publication-title a:hover,
+.publication-title a:focus {
+    border-bottom-color: #999;
+}
+
+.publication-list {
+    padding-left: 0;
+    margin: 0;
+}
+
+.publication-item {
+    display: grid;
+    grid-template-columns: 1.7em 1fr;
+    column-gap: 2px;
+    align-items: first baseline;
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+
+.publication-number {
+    color: #555;
+    font-size: 17px;
+    line-height: 1.5;
+    font-variant-numeric: tabular-nums;
+}
+
+.publication-body {
+    min-width: 0;
+}
+
+.publication-authors {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 4px;
+}
+
+.publication-venue {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 4px;
 }
 
 .section-title {
-    font-size: 20px;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    margin: 22px 0 10px;
+}
+
+.section-subtitle {
+    font-size: 19px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    margin: 12px 0 6px;
+}
+
+.LICV li {
+    margin-bottom: 10px;
+}
+
+.LICV .detail-text {
+    color: #333;
+    line-height: 1.6;
+}
+
+.section-block:last-child {
+    border-bottom: none;
 }
 
 .cv-photo {
