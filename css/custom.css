@@ -42,7 +42,7 @@ p { line-height: 180%}
 }
 
 .item-title-strong {
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .detail-text {
@@ -75,7 +75,7 @@ p { line-height: 180%}
 
 .publication-title {
     margin-bottom: 4px;
-    font-weight: normal;
+    font-weight: 500;
 }
 
 .publication-title a {
@@ -117,6 +117,7 @@ p { line-height: 180%}
 .publication-authors {
     color: #333;
     font-size: 16px;
+    font-weight: 400;
     line-height: 1.5;
     margin-bottom: 4px;
 }
@@ -124,20 +125,21 @@ p { line-height: 180%}
 .publication-venue {
     color: #333;
     font-size: 16px;
+    font-weight: 400;
     line-height: 1.5;
     margin-bottom: 4px;
 }
 
 .section-title {
     font-size: 24px;
-    font-weight: 600;
+    font-weight: 500;
     letter-spacing: 0.4px;
     margin: 22px 0 10px;
 }
 
 .section-subtitle {
     font-size: 19px;
-    font-weight: 600;
+    font-weight: 500;
     letter-spacing: 0.2px;
     margin: 12px 0 6px;
 }
