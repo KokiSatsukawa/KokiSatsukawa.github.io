@@ -5,9 +5,6 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <title>Koki Satsukawa - Publications</title>
@@ -66,7 +63,7 @@
     </nav>
 
     <!-- Content -->
-    <div class="container publications-page">
+    <div class="container">
 
         <!-- Heading -->
         <div class="row">
@@ -77,7 +74,7 @@
         </div>
         <section>
             <p>
-                <span class="detail-text">For the complete list of publications, see <a id="complete-pdf-link" href="output/complete_cv.pdf">[PDF]</a>.</span>
+                <span class="detail-text">For the complete list of publications, see <a href="images/List.pdf">[PDF]</a>.</span>
             </p>
         </section>
 
@@ -105,255 +102,6 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
-    <script>
-        (function () {
-            const container = document.getElementById("publications-container");
-            const pdfLink = document.getElementById("complete-pdf-link");
-
-            function escapeHtml(text) {
-                const div = document.createElement("div");
-                div.textContent = text;
-                return div.innerHTML;
-            }
-
-            function renderVenue(item) {
-                if (!item.venue) {
-                    return "";
-                }
-                const venueText = item.venue;
-                if (item.venue_link) {
-                    const venueName = escapeHtml(venueText);
-                    return `<a href="${item.venue_link}" target="_blank" rel="noopener noreferrer">${venueName}</a>`;
-                }
-                return escapeHtml(venueText);
-            }
-
-            function renderTitle(item) {
-                const title = escapeHtml(item.title);
-                const href = item.link || item.doi;
-                if (href) {
-                    return `<a href="${href}" target="_blank" rel="noopener noreferrer">${title}</a>`;
-                }
-                return title;
-            }
-
-            function renderItem(item, indexLabel) {
-                const venue = renderVenue(item);
-                const yearText = item.year ? String(item.year) : "";
-                const monthText = item.month ? String(item.month) : "";
-                const isJapanese = item.language === "ja" || item.language === "japanese";
-                const location = item.subtype === "international_conference_peer_reviewed" && item.location
-                    ? String(item.location)
-                    : "";
-                const volume = item.volume ? String(item.volume) : "";
-                const number = item.number ? String(item.number) : "";
-                const pages = item.pages ? String(item.pages) : "";
-                let extras = "";
-                if (volume && number) {
-                    extras = `${volume}(${number})`;
-                } else if (volume) {
-                    extras = volume;
-                }
-                if (pages) {
-                    extras = extras ? `${extras}, ${pages}` : pages;
-                }
-                let suffix = "";
-                if (extras) {
-                    suffix = `${venue ? ", " : ""}${extras}`;
-                }
-                if (location) {
-                    suffix = `${suffix || venue ? ", " : ""}${location}`.trim();
-                }
-                if (yearText) {
-                    const dateText = monthText ? `${monthText} ${yearText}` : yearText;
-                    suffix += `${(suffix || venue) ? ", " : ""}${dateText}`;
-                }
-                const status = item.status ? String(item.status) : "";
-                let statusTag = "";
-                if (status === "accepted") {
-                    statusTag = "Accepted";
-                } else if (status === "under_review") {
-                    statusTag = "Under Review";
-                } else if (status === "revision") {
-                    statusTag = "Under Revision";
-                } else if (status === "in_preparation") {
-                    statusTag = "In Preparation";
-                } else if (status) {
-                    statusTag = status.replace(/_/g, " ");
-                }
-
-                if (status === "accepted" || isJapanese || statusTag) {
-                    let tag = "";
-                    if (isJapanese && status === "accepted") {
-                        tag = " (In Japanese. Accepted)";
-                    } else if (isJapanese) {
-                        tag = " (In Japanese)";
-                    } else if (statusTag) {
-                        tag = ` (${statusTag})`;
-                    } else {
-                        tag = " (Accepted)";
-                    }
-                    if (yearText) {
-                        suffix += tag;
-                    } else if (suffix || venue) {
-                        suffix += tag;
-                    } else {
-                        suffix = tag.trim();
-                    }
-                }
-                return `
-                    <div class="publication-item">
-                        <div class="publication-number">${escapeHtml(String(indexLabel))}.</div>
-                        <div class="publication-body">
-                            <div class="publication-title item-title">${renderTitle(item)}</div>
-                            <div class="publication-authors">${escapeHtml(item.authors)}</div>
-                            <div class="publication-venue">${venue}${suffix}</div>
-                        </div>
-                    </div>
-                `;
-            }
-
-            function renderSection(section, items) {
-                const sortedItems = items.slice().sort((a, b) => {
-                    if (!a.year && !b.year) return 0;
-                    if (!a.year) return 1;
-                    if (!b.year) return -1;
-                    return Number(b.year) - Number(a.year);
-                });
-                const total = sortedItems.length;
-                const cards = sortedItems
-                    .map((item, index) => renderItem(item, total - index))
-                    .join("");
-                return `
-                    <div class="publication-section section-block">
-                        <h3 class="section-title">${escapeHtml(section.label)}</h3>
-                        <div class="publication-list">
-                            ${cards}
-                        </div>
-                    </div>
-                `;
-            }
-
-            function renderOtherItem(item, indexLabel) {
-                const title = item.title || item.title_web || "";
-                const authors = item.authors || item.authors_web || "";
-                const venue = item.venue || item.venue_web || "";
-                const titleText = title ? escapeHtml(title) : "";
-                const authorsText = authors ? escapeHtml(authors) : "";
-                const venueText = venue ? escapeHtml(venue) : "";
-                const date = item.date ? escapeHtml(item.date) : "";
-                const year = item.year ? escapeHtml(String(item.year)) : "";
-                const month = item.month ? escapeHtml(String(item.month)) : "";
-                const isJapanese = item.language === "ja" || item.language === "japanese";
-                const dateText = date || (year ? (month ? `${month} ${year}` : year) : "");
-                let venueLine = [venueText, dateText].filter(Boolean).join(", ");
-                if (isJapanese) {
-                    venueLine = venueLine ? `${venueLine} (In Japanese)` : "(In Japanese)";
-                }
-                return `
-                    <div class="publication-item">
-                        <div class="publication-number">${escapeHtml(String(indexLabel))}.</div>
-                        <div class="publication-body">
-                            <div class="publication-title item-title">${titleText}</div>
-                            ${authorsText ? `<div class="publication-authors">${authorsText}</div>` : ""}
-                            ${venueLine ? `<div class="publication-venue">${venueLine}</div>` : ""}
-                        </div>
-                    </div>
-                `;
-            }
-
-            function renderOtherSection(label, items) {
-                if (!items.length) return "";
-                const total = items.length;
-                const cards = items
-                    .map((item, index) => renderOtherItem(item, total - index))
-                    .join("");
-                return `
-                    <div class="publication-section section-block">
-                        <h3 class="section-title">${escapeHtml(label)}</h3>
-                        <div class="publication-list">
-                            ${cards}
-                        </div>
-                    </div>
-                `;
-            }
-
-            async function loadPublications() {
-                try {
-                    const response = await fetch("output/cv.json", { cache: "no-store" });
-                    if (!response.ok) {
-                        throw new Error(`Failed to load cv.json: ${response.status}`);
-                    }
-                    const data = await response.json();
-
-                    if (data.meta && data.meta.complete_pdf_url) {
-                        pdfLink.href = data.meta.complete_pdf_url;
-                    }
-
-                    const display = (data.web && data.web.display_subtypes) || [];
-                    const publications = data.publications || [];
-
-                    const sections = display
-                        .map((section) => {
-                            const items = publications.filter(
-                                (item) => item.subtype === section.id
-                            );
-                            if (!items.length) {
-                                return "";
-                            }
-                            return renderSection(section, items);
-                        })
-                        .filter(Boolean)
-                        .join("");
-
-                    const invited = data.invited_talks || [];
-                    const presentations = data.presentations || [];
-                    const workshops = presentations.filter(
-                        (item) => item.subtype === "international_seminar_workshop"
-                    );
-                    const seminars = [
-                        ...presentations.filter((item) => item.subtype === "seminar"),
-                        ...(data.publications || []).filter((item) => item.subtype === "seminar"),
-                    ];
-                    const monthIndex = (value) => {
-                        if (!value) return 0;
-                        const v = String(value).trim().toLowerCase();
-                        const map = {
-                            january: 1, february: 2, march: 3, april: 4, may: 5, june: 6,
-                            july: 7, august: 8, september: 9, october: 10, november: 11, december: 12,
-                        };
-                        return map[v] || 0;
-                    };
-                    const othersItems = [...invited, ...workshops, ...seminars].sort((a, b) => {
-                        const ay = Number(a.year) || 0;
-                        const by = Number(b.year) || 0;
-                        if (ay !== by) return by - ay;
-                        const am = monthIndex(a.month);
-                        const bm = monthIndex(b.month);
-                        if (am !== bm) return bm - am;
-                        return 0;
-                    });
-                    const othersSection = renderOtherSection(
-                        "Others (Invited Talks, Selected Seminars, Workshops)",
-                        othersItems
-                    );
-
-                    const combined = [sections, othersSection].filter(Boolean).join("");
-                    container.innerHTML = combined || "<p class=\"detail-text\">No publications found.</p>";
-                } catch (error) {
-                    container.innerHTML = `
-                        <p class="detail-text">
-                            Failed to load publications. If you are viewing this file locally, please use a local server (e.g. VS Code Live Server).
-                        </p>
-                    `;
-                    console.error(error);
-                }
-            }
-
-            loadPublications();
-        })();
-    </script>
-
 </body>
 
-</html>
+</html></span>
