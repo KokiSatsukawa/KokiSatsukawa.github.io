@@ -1,0 +1,495 @@
+This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.uptex) (TeX Live 2025) (preloaded format=uplatex 2025.5.27)  7 JUN 2025 16:29
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**List.tex
+(./List.tex
+pLaTeX2e <2023-02-14u04>+1, based on
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-04-29>
+(/usr/local/texlive/2025/texmf-dist/tex/platex/jsclasses/jsarticle.cls
+Document Class: jsarticle 2025/04/27 jsclasses (okumura, texjporg)
+Class jsarticle Info: Autodetected engine: upLaTeX on input line 217.
+\jsc@mpt=\dimen162
+\jsc@mmm=\dimen163
+\jsc@smallskipamount=\skip49
+LaTeX Info: Redefining \textmc on input line 511.
+LaTeX Info: Redefining \textgt on input line 513.
+\symmincho=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `mincho' in version `bold'
+(Font)                  JY2/mc/m/n --> JY2/gt/m/n on input line 575.
+LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
+(Font)              scaled to size 10.12527pt on input line 769.
+LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
+(Font)              scaled to size 10.12527pt on input line 769.
+\fullwidth=\dimen164
+LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
+(Font)              scaled to size 8.10022pt on input line 922.
+LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
+(Font)              scaled to size 8.10022pt on input line 922.
+\c@part=\count271
+\c@section=\count272
+\c@subsection=\count273
+\c@subsubsection=\count274
+\c@paragraph=\count275
+\c@subparagraph=\count276
+\@abstractbox=\box70
+\c@figure=\count277
+\c@table=\count278
+\abovecaptionskip=\skip50
+\belowcaptionskip=\skip51
+\jsc@tocl@width=\dimen165
+\@lnumwidth=\dimen166
+\bibindent=\dimen167
+(/usr/local/texlive/2025/texmf-dist/tex/platex/jsclasses/jslogo.sty
+Package: jslogo 2019/07/25 okumura, texjporg
+LaTeX Info: Redefining \TeX on input line 82.
+LaTeX Info: Redefining \LaTeX on input line 135.
+LaTeX Info: Redefining \LaTeXe on input line 188.
+)
+\heisei=\count279
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks18
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(/usr/local/texlive/2025/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
+))
+\Gm@cnth=\count280
+\Gm@cntv=\count281
+\c@Gm@tempcnt=\count282
+\Gm@bindingoffset=\dimen168
+\Gm@wd@mp=\dimen169
+\Gm@odd@mp=\dimen170
+\Gm@even@mp=\dimen171
+\Gm@layoutwidth=\dimen172
+\Gm@layoutheight=\dimen173
+\Gm@layouthoffset=\dimen174
+\Gm@layoutvoffset=\dimen175
+\Gm@dimlist=\toks19
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/newpx/newpxtext.sty
+Package: newpxtext 2025/02/10 v1.541(Michael Sharpe) latex and unicode latex su
+pport for TeXGyrePagellaX
+
+`newpxtext' v1.541, 2025/02/10 Text macros taking advantage of TeXGyre Pagella 
+and its extensions (msharpe)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: dvipdfmx.def on input line 274.
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics-def/dvipdfmx.def
+File: dvipdfmx.def 2022/09/22 v5.0m Graphics/color driver for dvipdfmx
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/xpatch/xpatch.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2025-04-29 L3 programming layer (loader) 
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-dvipdfmx.def
+File: l3backend-dvipdfmx.def 2025-04-14 L3 backend support: dvipdfmx
+\g__graphics_track_int=\count283
+\g__pdfannot_backend_int=\count284
+\g__pdfannot_backend_link_int=\count285
+))
+Package: xpatch 2020/03/25 v0.3a Extending etoolbox patching commands
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2024-08-16 L3 Experimental document command parser
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2025/02/11 v2.5l e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count286
+))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+
+(/usr/local/texlive/2025/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/local/texlive/2025/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks20
+\XKV@tempa@toks=\toks21
+)
+\XKV@depth=\count287
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2024/04/24 v2.1b Standard LaTeX package
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/xstring/xstring.sty
+(/usr/local/texlive/2025/texmf-dist/tex/generic/xstring/xstring.tex
+\xs_counta=\count288
+\xs_countb=\count289
+)
+Package: xstring 2023/08/22 v1.86 String manipulations (CT)
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/carlisle/scalefnt.sty)
+LaTeX Font Info:    Setting zplLF sub-encoding to TS1/0 on input line 40.
+LaTeX Font Info:    Setting zplTLF sub-encoding to TS1/0 on input line 40.
+LaTeX Font Info:    Setting zplOsF sub-encoding to TS1/0 on input line 40.
+LaTeX Font Info:    Setting zplTOsF sub-encoding to TS1/0 on input line 40.
+\zpl@cnt=\count290
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/fontaxes/fontaxes.sty
+Package: fontaxes 2025-05-24 v2.0.1 Font selection axes (deprecated)
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/figureversions/figureversions.sty
+Package: figureversions 2025-04-29 v1.0.1 Figure versions
+))
+\zpl@sixem=\dimen176
+\zpl@y=\dimen177
+\zpl@x=\dimen178
+\zpl@tmpdima=\dimen179
+\zpl@tmpdimb=\dimen180
+\zpl@tmpdimc=\dimen181
+\zpl@tmpdimd=\dimen182
+\zpl@tmpdime=\dimen183
+\zpl@tmpdimf=\dimen184
+\zpl@dimA=\dimen185
+\zpl@dimAA=\dimen186
+\zpl@dimB=\dimen187
+\zpl@dimBB=\dimen188
+\zpl@dimC=\dimen189
+LaTeX Info: Redefining \oldstylenums on input line 807.
+LaTeX Font Info:    Trying to load font information for T1+zplLF on input line 
+815.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/newpx/t1zpllf.fd
+File: t1zplllf.fd 2021/05/25 v1.0 font definition file for T1/zpl/lf
+)
+LaTeX Font Info:    Trying to load font information for T1+zplTLF on input line
+ 816.
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/newpx/t1zpltlf.fd
+File: t1zpltlf.fd 2021/05/25 v1.0 font definition file for T1/zpl/tlf
+)
+LaTeX Font Info:    Trying to load font information for T1+zplOsF on input line
+ 817.
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/newpx/t1zplosf.fd
+File: t1zplosf.fd 2021/05/25 v1.0 font definition file for T1/zpl/osf
+)
+LaTeX Font Info:    Trying to load font information for T1+zplTOsF on input lin
+e 818.
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/newpx/t1zpltosf.fd
+File: t1zpltosf.fd 2021/05/25 v1.0 font definition file for T1/zpl/tosf
+))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2022/12/04 v6.7b set line spacing
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2025/02/06 v3.11 Customized lists
+\labelindent=\skip52
+\enit@outerparindent=\dimen190
+\enit@toks=\toks22
+\enit@inbox=\box71
+\enit@count@id=\count291
+\enitdp@description=\count292
+)
+LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
+(Font)              scaled to size 10.95001pt on input line 47.
+
+(./List.aux)
+\openout1 = `List.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for JY2/mc/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for JT2/mc/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+
+*geometry* detected driver: dvipdfm
+*geometry* verbose mode - [ preamble ] result:
+* driver: dvipdfm
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(62.59605pt, 472.31577pt, 62.59605pt)
+* v-part:(T,H,B)=(56.9055pt, 731.23584pt, 56.9055pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=472.31577pt
+* \textheight=731.23584pt
+* \oddsidemargin=-9.67393pt
+* \evensidemargin=-9.67393pt
+* \topmargin=-51.74951pt
+* \headheight=21.90002pt
+* \headsep=14.485pt
+* \topskip=13.97292pt
+* \footskip=28.45792pt
+* \marginparwidth=20.25055pt
+* \marginparsep=20.25055pt
+* \columnsep=20.25055pt
+* \skip\footins=17.52002pt plus 5.475pt minus 2.19pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+\c@mv@tabular=\count293
+\c@mv@boldtabular=\count294
+LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
+(Font)              scaled to size 17.49648pt on input line 48.
+LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
+(Font)              scaled to size 17.49648pt on input line 48.
+LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
+(Font)              scaled to size 18.92162pt on input line 48.
+LaTeX Font Info:    Font shape `JT2/mc/b/n' in size <18.92162> not available
+(Font)              Font shape `JT2/mc/bx/n' tried instead on input line 48.
+LaTeX Font Info:    Font shape `JT2/mc/bx/n' in size <18.92162> not available
+(Font)              Font shape `JT2/gt/m/n' tried instead on input line 48.
+LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
+(Font)              scaled to size 17.49648pt on input line 48.
+LaTeX Font Info:    Font shape `JY2/mc/b/n' in size <18.92162> not available
+(Font)              Font shape `JY2/mc/bx/n' tried instead on input line 48.
+LaTeX Font Info:    Font shape `JY2/mc/bx/n' in size <18.92162> not available
+(Font)              Font shape `JY2/gt/m/n' tried instead on input line 48.
+LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
+(Font)              scaled to size 17.49648pt on input line 48.
+LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
+(Font)              scaled to size 18.92162pt on input line 48.
+LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
+(Font)              scaled to size 12.15033pt on input line 48.
+LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
+(Font)              scaled to size 12.15033pt on input line 48.
+LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
+(Font)              scaled to size 13.14001pt on input line 48.
+LaTeX Font Info:    Calculating math sizes for size <13.14001> on input line 48
+.
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <13.14001> not available
+(Font)              size <12> substituted on input line 48.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <6.57> not available
+(Font)              size <7> substituted on input line 48.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <13.14001> not available
+(Font)              size <12> substituted on input line 48.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <6.57> not available
+(Font)              size <7> substituted on input line 48.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <13.14001> not available
+(Font)              size <12> substituted on input line 48.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <6.57> not available
+(Font)              size <7> substituted on input line 48.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <13.14001> on input line 48.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9.19797> on input line 48.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6.57> on input line 48.
+LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
+(Font)              scaled to size 8.50519pt on input line 48.
+LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
+(Font)              scaled to size 6.07516pt on input line 48.
+LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
+(Font)              scaled to size 14.5804pt on input line 51.
+LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
+(Font)              scaled to size 14.5804pt on input line 51.
+LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
+(Font)              scaled to size 15.768pt on input line 51.
+LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
+(Font)              scaled to size 14.5804pt on input line 51.
+LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
+(Font)              scaled to size 14.5804pt on input line 51.
+LaTeX Font Info:    Trying to load font information for T1+qhv on input line 51
+.
+(/usr/local/texlive/2025/texmf-dist/tex/latex/tex-gyre/t1qhv.fd
+File: t1qhv.fd 2009/09/25 v1.2 font definition file for T1/qhv
+)
+LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
+(Font)              scaled to size 14.82196pt on input line 51.
+LaTeX Font Info:    Font shape `JT2/mc/m/it' in size <10.95001> not available
+(Font)              Font shape `JT2/mc/m/n' tried instead on input line 56.
+LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
+(Font)              scaled to size 10.12527pt on input line 56.
+LaTeX Font Info:    Font shape `JY2/mc/m/it' in size <10.95001> not available
+(Font)              Font shape `JY2/mc/m/n' tried instead on input line 56.
+LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
+(Font)              scaled to size 10.12527pt on input line 56.
+LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
+(Font)              scaled to size 10.95001pt on input line 56.
+
+
+[1
+
+]
+
+[2]
+
+[3]
+LaTeX Font Info:    Calculating math sizes for size <10.95001> on input line 17
+5.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <5.475> not available
+(Font)              size <5> substituted on input line 175.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <5.475> not available
+(Font)              size <5> substituted on input line 175.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <5.475> not available
+(Font)              size <5> substituted on input line 175.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95001> on input line 175.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7.66496> on input line 175.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5.475> on input line 175.
+LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
+(Font)              scaled to size 7.08765pt on input line 175.
+LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
+(Font)              scaled to size 5.06264pt on input line 175.
+LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
+(Font)              scaled to size 12.15033pt on input line 209.
+LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
+(Font)              scaled to size 12.15033pt on input line 209.
+LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
+(Font)              scaled to size 12.35164pt on input line 209.
+
+
+[4]
+
+[5]
+
+[6]
+
+[7]
+LaTeX Font Info:    Calculating math sizes for size <15.768> on input line 399.
+
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <15.768> not available
+(Font)              size <14.4> substituted on input line 399.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <15.768> not available
+(Font)              size <14.4> substituted on input line 399.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <15.768> not available
+(Font)              size <14.4> substituted on input line 399.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <15.768> on input line 399.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <11.03755> on input line 399.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7.884> on input line 399.
+LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
+(Font)              scaled to size 10.20622pt on input line 399.
+LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
+(Font)              scaled to size 7.29019pt on input line 399.
+LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
+(Font)              scaled to size 10.20622pt on input line 399.
+LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
+(Font)              scaled to size 11.03755pt on input line 399.
+LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
+(Font)              scaled to size 8.76001pt on input line 400.
+LaTeX Font Info:    Calculating math sizes for size <8.76001> on input line 400
+.
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <4.38> not available
+(Font)              size <5> substituted on input line 400.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <4.38> not available
+(Font)              size <5> substituted on input line 400.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <4.38> not available
+(Font)              size <5> substituted on input line 400.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8.76001> on input line 400.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6.13197> on input line 400.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <4.38> on input line 400.
+LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
+(Font)              scaled to size 5.67012pt on input line 400.
+LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
+(Font)              scaled to size 4.05011pt on input line 400.
+LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
+(Font)              scaled to size 5.67012pt on input line 400.
+LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
+(Font)              scaled to size 6.13197pt on input line 400.
+
+
+[8]
+
+[9] (./List.aux)
+ ***********
+pLaTeX2e <2023-02-14u04>+1, based on
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2020/03/25>
+ ***********
+
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 1.36801pt have occurred.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 4561 strings out of 470235
+ 74350 string characters out of 5485710
+ 470613 words of memory out of 5000000
+ 31371 multiletter control sequences out of 15000+600000
+ 672624 words of font info for 114 fonts, out of 8000000 for 9000
+ 934 hyphenation exceptions out of 8191
+ 74i,7n,77p,416b,318s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+Output written on List.dvi (9 pages, 45192 bytes).
